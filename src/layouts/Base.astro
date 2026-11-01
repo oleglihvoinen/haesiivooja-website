@@ -39,8 +39,8 @@ const links=english?{
       <link rel="alternate" hreflang="en" href={altEn} />
       <link rel="alternate" hreflang="x-default" href={altFi} />
     </>}
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
-    <link rel="apple-touch-icon" href="/brand/mascot.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=20261101b" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20261101b" />
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content={english?'en_US':'fi_FI'} />
@@ -57,7 +57,7 @@ const links=english?{
   <body>
     <a class="skip" href="#content">{t.skip}</a>
     <header><div class="container inner">
-      <a class="logo" href={english?'/en/':'/'} aria-label="HaeSiivooja"><img class="brand-mascot" src="/brand/mascot.png" width="46" height="46" alt="" decoding="async" /> HaeSiivooja</a>
+      <a class="logo" href={english?'/en/':'/'} aria-label="HaeSiivooja"><img class="brand-mascot" src="/brand/mascot.png?v=20261101b" width="46" height="46" alt="" decoding="async" /> HaeSiivooja</a>
       <nav class="nav" aria-label={t.navLabel}>
         {navigation[english?'en':'fi'].map(item=><a href={item.href}>{item.title}</a>)}
         <a class="button nav-download" href={site.playUrl} target="_blank" rel="noopener noreferrer">{english?'▶ Google Play · Open test':'▶ Google Play · Avoin testaus'}</a>
