@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import {site} from '../data/site';
+const {lang='fi'}=Astro.props;
+const en=lang==='en';
+const services=en?[
+ {title:'Home cleaning',href:'/en/home-cleaning/',symbol:'⌂',summary:'Compare home cleaning providers, tasks and suitable schedules.'},
+ {title:'Move-out cleaning',href:'/en/move-out-cleaning/',symbol:'↗',summary:'Plan your move-out clean before returning the keys.'},
+ {title:'Deep cleaning',href:'/en/deep-cleaning/',symbol:'✧',summary:'Find out when a more thorough clean is helpful.'},
+ {title:'Window cleaning',href:'/en/window-cleaning/',symbol:'▤',summary:'Know what to include in your window cleaning quote.'},
+ {title:'Office cleaning',href:'/en/office-cleaning/',symbol:'▦',summary:'Plan cleaning frequency and tasks for your workplace.'},
+ {title:'Cleaning prices',href:'/en/cleaning-prices/',symbol:'€',summary:'Understand cleaning costs and compare offers fairly.'}
+]:[
+ {title:'Kotisiivous',href:'/kotisiivous/',symbol:'⌂',summary:'Vertaa kotisiivoukseen sopivia ammattilaisia, työn sisältöä ja aikatauluja.'},
+ {title:'Muuttosiivous',href:'/muuttosiivous/',symbol:'↗',summary:'Vinkit ja vertailun perusteet muuttosiivouksen tilaamiseen ennen avainten luovutusta.'},
+ {title:'Perussiivous',href:'/perussiivous/',symbol:'✧',summary:'Milloin tavallista perusteellisempi siivous kannattaa tilata?'},
+ {title:'Ikkunanpesu',href:'/ikkunanpesu/',symbol:'▤',summary:'Mitä pyytää tarjoukseen ja mitä työn laajuudesta on hyvä sopia.'},
+ {title:'Toimistosiivous',href:'/toimistosiivous/',symbol:'▦',summary:'Ohjeita tilan, siivoustiheyden ja tarjouspyynnön määrittämiseen.'},
+ {title:'Siivouksen hinta',href:'/siivouksen-hinta/',symbol:'€',summary:'Mistä siivouspalvelun hinta muodostuu ja miten vertaat tarjouksia.'}
+];
+const guides=en?[
+ {title:'Move-out cleaning checklist',summary:'A room-by-room guide before property handover.',href:'/en/guides/move-out-cleaning-checklist/'},
+ {title:'Home cleaning prices',summary:'Understand why similar cleaning quotes can differ.',href:'/en/guides/home-cleaning-prices/'},
+ {title:'Household tax deduction',summary:'How to check Finnish tax deduction eligibility.',href:'/en/guides/household-tax-deduction-cleaning/'}
+]:[
+ {title:'Muuttosiivouksen tarkistuslista',summary:'Mitä käydä läpi asunnon luovutusta varten?',href:'/oppaat/muuttosiivouksen-tarkistuslista/'},
+ {title:'Kotisiivouksen hinnan vertailu',summary:'Miksi kaksi siivoustarjousta voivat olla erilaisia?',href:'/oppaat/kotisiivouksen-hinta/'},
+ {title:'Kotitalousvähennys',summary:'Miten tarkistaa siivouspalvelun mahdollinen vähennyskelpoisuus?',href:'/oppaat/kotitalousvahennys-siivous/'}
+];
+const howUrl=en?'/en/how-it-works/':'/miten-se-toimii/';
+const aboutUrl=en?'/en/about-us/':'/tietoa-meista/';
+const cleanersUrl=en?'/en/for-cleaners/':'/siivoojaksi/';
+---
+<Base lang={lang} canonicalPath={en?'/en/':'/'} description={en?'Find home cleaning, move-out cleaning and other cleaning professionals in Finland. Compare service options with HaeSiivooja.':'Etsitkö siivoojaa? HaeSiivooja auttaa löytämään siivousalan ammattilaisia ja vertailemaan kotisiivouksen, muuttosiivouksen ja muiden palveluiden vaihtoehtoja.'}>
+  <section class="hero"><div class="container hero-grid">
+    <div><span class="eyebrow">{en?'Cleaning services, made easier':'Siivouspalvelut helpommin'}</span><h1>{en?'Looking for a cleaner in Finland? Start with HaeSiivooja.':'Etsitkö siivoojaa? Aloita HaeSiivoojasta.'}</h1><p class="lead">{en?'Discover cleaning professionals, explore your options and plan home cleaning or other jobs in one place. HaeSiivooja helps you begin your search.':'Löydä siivousalan ammattilaisia, tutustu vaihtoehtoihin ja suunnittele kotisiivous tai muu siivoustyö vaivattomasti. HaeSiivooja kokoaa etsimisen yhteen palveluun.'}</p><div class="cta"><a class="button" href={site.searchUrl}>{en?'Find a cleaner with AI search →':'Etsi siivooja AI-haulla →'}</a><a class="button-secondary" href={howUrl}>{en?'How HaeSiivooja works':'Näin HaeSiivooja toimii'}</a></div><div class="tags">{(en?['Home cleaning','Move-out cleaning','Cleaning companies','Finland']:['Kotisiivous','Muuttosiivous','Siivousyritykset','Suomessa']).map(x=><span class="tag">{x}</span>)}</div></div>
+    <div class="visual" role="img" aria-label={en?'Illustrative cleaning service categories, not actual provider search results':'Esimerkkikuva HaeSiivoojan palvelukategorioista, ei oikea hakutulos'}><div class="vtop"><span class="vlogo">{en?'Find cleaning help':'Löydä siivousapu'}</span><span class="vicon">✓</span></div><p class="muted">{en?'What needs cleaning?':'Mitä haluat siivota?'}</p><div class="vcard"><div><strong>{en?'Home':'Koti'}</strong><small>{en?'One-off or regular cleaning':'Kertaluonteinen tai säännöllinen'}</small></div><span class="vicon">⌂</span></div><div class="vcard"><div><strong>{en?'Moving':'Muutto'}</strong><small>{en?'Move-out and end-of-tenancy cleaning':'Muuttosiivous ja luovutussiivous'}</small></div><span class="vicon">↗</span></div><div class="vcard"><div><strong>{en?'Workplace':'Työtila'}</strong><small>{en?'Cleaning for businesses':'Siivous yrityksen tarpeisiin'}</small></div><span class="vicon">▦</span></div><p style="font-size:.78rem;color:#648077;margin:18px 0 0">{en?'Illustrative service categories. Check real availability using the search service.':'Havainnekuva palveluluokista. Saatavuus tarkistetaan hakupalvelussa.'}</p></div>
+  </div></section>
+  <section class="section"><div class="container"><span class="eyebrow">{en?'Popular cleaning services':'Suositut siivouspalvelut'}</span><h2>{en?'Choose the right cleaning service':'Valitse tarpeeseesi sopiva siivous'}</h2><p class="lead">{en?'The price and work involved vary by service. Learn what to check before booking.':'Eri palveluiden hinnoittelu ja työmäärä vaihtelevat. Lue, mitä kannattaa selvittää ennen tilausta.'}</p><div class="grid3">{services.map(s=><article class="card"><div class="symbol" aria-hidden="true">{s.symbol}</div><h3>{s.title}</h3><p>{s.summary}</p><a href={s.href}>{en?'Learn more →':'Lue lisää →'}</a></article>)}</div></div></section>
+  <section class="section soft"><div class="container split"><div><span class="eyebrow">{en?'Getting started':'Näin pääset alkuun'}</span><h2>{en?'Three steps towards a cleaner home':'Kolme askelta kohti siistiä kotia'}</h2><ol class="list-clean">{en?<><li><strong>Describe your needs.</strong> Tell the provider what, where and when.</li><li><strong>Compare options.</strong> Review providers, scope and conditions.</li><li><strong>Confirm details.</strong> Agree on the price, date and any extras.</li></>:<><li><strong>Kuvaile tarve.</strong> Kerro, mitä siivotaan, missä ja milloin.</li><li><strong>Vertaile vaihtoehtoja.</strong> Tarkista palveluntarjoajan tiedot, työn sisältö ja ehdot.</li><li><strong>Sovi yksityiskohdista.</strong> Varmista hinta, aikataulu ja mahdolliset lisätyöt ennen tilausta.</li></>}</ol><a class="button-secondary" href={howUrl}>{en?'Read the guide':'Lue ohje'}</a></div><div class="card"><h3>{en?'HaeSiivooja is a platform, not a cleaning company':'HaeSiivooja on alusta, ei siivousyritys'}</h3><p>{en?'The platform helps customers find independent cleaning professionals. Each provider sets its own services, pricing and availability.':'Palvelu auttaa asiakkaita löytämään siivousalan ammattilaisia. Yksittäisen siivouspalvelun sisältö, hinnoittelu ja saatavuus määräytyvät palveluntarjoajan ja sovittujen ehtojen mukaan.'}</p><a href={aboutUrl}>{en?'About HaeSiivooja →':'Tutustu HaeSiivoojaan →'}</a></div></div></section>
+  <section class="section"><div class="container"><span class="eyebrow">{en?'Useful information':'Hyödyllistä tietoa'}</span><h2>{en?'Practical cleaning guides':'Siivousoppaat päätöksen tueksi'}</h2><div class="grid3">{guides.map(g=><article class="card"><h3>{g.title}</h3><p>{g.summary}</p><a href={g.href}>{en?'Read the guide →':'Avaa opas →'}</a></article>)}</div></div></section>
+  <section class="section soft"><div class="container"><div class="cta-panel"><h2>{en?'Are you a cleaning professional?':'Oletko siivousalan ammattilainen?'}</h2><p>{en?'Discover how HaeSiivooja can make it easier for customers to find your services.':'Tutustu siihen, miten HaeSiivooja voi auttaa tuomaan palvelusi asiakkaiden löydettäväksi.'}</p><a class="button-secondary" href={cleanersUrl}>{en?'Learn about HaeSiivooja for cleaners':'Tutustu siivoojille tarkoitettuun palveluun'}</a></div></div></section>
+</Base>

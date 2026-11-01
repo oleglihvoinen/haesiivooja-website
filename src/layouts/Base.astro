@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+import legacyPages from '../data/legacy-pages.json';
+import {site,navigation} from '../data/site';
+import {ui,alternateFor} from '../data/i18n';
+const {title,description,canonicalPath='/',breadcrumbs=[],schema=[],lang='fi'} = Astro.props;
+const english=lang==='en';
+const t=ui[english?'en':'fi'];
+const url=new URL(canonicalPath,site.url).href;
+const fullTitle=title ? `${title} | ${site.name}` : (english ? 'HaeSiivooja – Find Cleaning Services in Finland' : 'HaeSiivooja – löydä siivooja ja siivouspalvelut Suomessa');
+const desc=description||(english?'Find cleaning professionals and compare home, move-out and other cleaning services in Finland with HaeSiivooja.':site.description);
+const fiPath=alternateFor(canonicalPath,'fi');
+const enPath=alternateFor(canonicalPath,'en');
+const altFi=fiPath?new URL(fiPath,site.url).href:null;
+const altEn=enPath?new URL(enPath,site.url).href:null;
+const organization={
+ '@type':'Organization','@id':`${site.url}/#organization`,name:'HaeSiivooja Oy',url:site.url,
+ logo:`${site.url}/logo.svg`,contactPoint:{'@type':'ContactPoint',email:site.email,contactType:'customer support'},sameAs:[site.playUrl]
+};
+const webSite={'@type':'WebSite','@id':`${site.url}/#website`,name:site.name,url:site.url,inLanguage:['fi-FI','en'],publisher:{'@id':`${site.url}/#organization`}};
+const pageSchema={'@type':'WebPage','@id':`${url}#webpage`,name:fullTitle,description:desc,url,inLanguage:english?'en':'fi-FI',isPartOf:{'@id':`${site.url}/#website`},...(altFi&&altEn?{translationOfWork:{'@id':`${altFi}#webpage`}}:{})};
+const crumbs=breadcrumbs.length?{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:t.home,item:new URL(english?'/en/':'/',site.url).href},...breadcrumbs.map((b,i)=>({'@type':'ListItem',position:i+2,name:b.title,item:new URL(b.href,site.url).href}))]}:null;
+const jsonLd={'@context':'https://schema.org','@graph':[organization,webSite,pageSchema,...schema,...(crumbs?[crumbs]:[])]};
+const legal=legacyPages.filter((p)=>['terms-of-service','privacy-policy','accessibility-statement'].includes(p.slug));
+const legalLabels={'terms-of-service':t.legalTerms,'privacy-policy':t.legalPrivacy,'accessibility-statement':t.legalAccessibility};
+const links=english?{
+ find:'/en/find-a-cleaner/',services:'/en/cleaning-services/',price:'/en/cleaning-prices/',guides:'/en/guides/',cleaners:'/en/for-cleaners/',about:'/en/about-us/',contact:'/en/contact/'
+}:{find:'/etsi-siivooja/',services:'/siivouspalvelut/',price:'/siivouksen-hinta/',guides:'/oppaat/',cleaners:'/siivoojaksi/',about:'/tietoa-meista/',contact:'/yhteystiedot/'};
+---
+<!doctype html>
+<html lang={english?'en':'fi'}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="description" content={desc} />
+    <meta name="theme-color" content="#116f66" />
+    <title>{fullTitle}</title>
+    <link rel="canonical" href={url} />
+    {altFi&&altEn&&<>
+      <link rel="alternate" hreflang="fi" href={altFi} />
+      <link rel="alternate" hreflang="en" href={altEn} />
+      <link rel="alternate" hreflang="x-default" href={altFi} />
+    </>}
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={english?'en_US':'fi_FI'} />
+    {altFi&&altEn&&<meta property="og:locale:alternate" content={english?'fi_FI':'en_US'}/>}
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={url} />
+    <meta name="twitter:card" content="summary" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <a class="skip" href="#content">{t.skip}</a>
+    <header><div class="container inner">
+      <a class="logo" href={english?'/en/':'/'} aria-label="HaeSiivooja"><span class="mark" aria-hidden="true">✓</span> HaeSiivooja</a>
+      <nav class="nav" aria-label={t.navLabel}>
+        {navigation[english?'en':'fi'].map(item=><a href={item.href}>{item.title}</a>)}
+        <a class="button" href={site.searchUrl}>{t.search}</a>
+        <span class="lang-switch" aria-label="Language / Kieli">
+          {english&&fiPath?<a href={fiPath} lang="fi" hreflang="fi">FI</a>:<span aria-current="page">FI</span>}
+          <span aria-hidden="true"> / </span>
+          {!english&&enPath?<a href={enPath} lang="en" hreflang="en">EN</a>:<span aria-current="page">EN</span>}
+        </span>
+      </nav>
+    </div></header>
+    <main id="content"><slot /></main>
+    <footer class="footer"><div class="container">
+      <div class="footer-cols">
+        <div><h3>HaeSiivooja</h3><p>{t.platformCopy}</p><p><a href={`mailto:${site.email}`}>{site.email}</a></p></div>
+        <div><strong>{t.customers}</strong><ul><li><a href={links.find}>{english?'Find a cleaner':'Etsi siivooja'}</a></li><li><a href={links.services}>{english?'Cleaning services':'Siivouspalvelut'}</a></li><li><a href={links.price}>{t.compare}</a></li><li><a href={links.guides}>{t.guides}</a></li></ul></div>
+        <div><strong>{t.forProviders}</strong><ul><li><a href={links.cleaners}>{t.forCleaners}</a></li><li><a href={links.about}>{t.about}</a></li><li><a href={links.contact}>{t.contact}</a></li>{legal.map(page=><li><a href={`/${page.slug}/`}>{legalLabels[page.slug]}</a></li>)}</ul></div>
+      </div>
+      <div class="bottom"><small>© {new Date().getFullYear()} HaeSiivooja Oy. {t.disclaimer}</small></div>
+    </div></footer>
+  </body>
+</html>

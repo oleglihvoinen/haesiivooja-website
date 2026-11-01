@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://haesiivooja.fi/sitemap-index.xml

@@ -1,0 +1,22 @@
+{
+  "name": "haesiivooja-website",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check:seo": "node scripts/seo-check.mjs",
+    "check": "npm run check:content && npm run build && npm run check:seo",
+    "predeploy": "bash scripts/production-preflight.sh",
+    "check:content": "node scripts/content-check.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.4.4",
+    "@astrojs/sitemap": "^3.7.4"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

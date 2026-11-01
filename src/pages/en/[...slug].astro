@@ -1,0 +1,7 @@
+---
+import DetailPage from '../../components/DetailPage.astro';
+import pages from '../../data/pages.en.json';
+export function getStaticPaths(){return pages.map(page=>({params:{slug:page.slug},props:{page}}));}
+const {page}=Astro.props;
+---
+<DetailPage page={page} lang="en" />
