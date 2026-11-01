@@ -38,7 +38,7 @@ if [[ "$ACTION" == cutover ]]; then
     mv -- "$RETIRED" "$ROOT"
     echo 'Could not activate release. Restored original WordPress.' >&2; exit 1
   fi
-  if ! (nginx -t && systemctl reload nginx && probe / && probe /en/ && probe /robots.txt && probe /sitemap-index.xml); then
+  if ! (nginx -t && systemctl reload nginx && probe / && probe /en/ && probe /en/home-cleaning/ && probe /robots.txt && probe /sitemap-index.xml); then
     echo 'New site failed checks. Restoring the original WordPress root.' >&2
     rm -- "$ROOT"
     mv -- "$RETIRED" "$ROOT"
