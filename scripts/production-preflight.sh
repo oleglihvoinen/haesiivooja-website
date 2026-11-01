@@ -90,13 +90,18 @@ const localGallery='src/data/app-screenshots.local.json';
 if(fs.existsSync(localGallery)){
  const shots=JSON.parse(fs.readFileSync(localGallery,'utf8'));
  if(!Array.isArray(shots)||shots.length<1)throw Error('WordPress screenshot manifest is empty');
- for(const s of shots){
+ const excluded=shots.filter(s=>/\/app-screen-0[45]\./.test(s.src||''));
+ const allowed=shots.filter(s=>!/\/app-screen-0[45]\./.test(s.src||''));
+ for(const s of allowed){
    if(!s.src?.startsWith('/app-screenshots/')||!fs.existsSync('dist'+s.src))
-     throw Error('Original app screenshot missing from dist: '+s.src);
+     throw Error('Published app screenshot missing from dist: '+s.src);
  }
- if(!homeFi.includes('screenshot-showcase')||!homeEn.includes('screenshot-showcase'))
-   throw Error('Original app screenshot gallery missing from Finnish or English homepage');
- console.log('Original WordPress app screenshots included in both homepages: '+shots.length);
+ for(const s of excluded){
+   if(fs.existsSync('dist'+s.src))throw Error('Rejected app screenshot still in dist: '+s.src);
+ }
+ if(allowed.length>0 && (!homeFi.includes('screenshot-showcase')||!homeEn.includes('screenshot-showcase')))
+   throw Error('App screenshot gallery missing from Finnish or English homepage');
+ console.log('Application screenshots published: '+allowed.length+'; excluded rejected screenshots: '+excluded.length);
 }
 console.log('Privacy and bilingual app information pages: OK. Verify actual data processing before release.');
 JS
