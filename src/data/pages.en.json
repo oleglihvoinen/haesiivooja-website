@@ -278,22 +278,30 @@
   {
     "slug": "about-us",
     "title": "Our History – Hae Siivooja Cleaning Marketplace",
-    "description": "Learn how Oleg Lihvoinen and Viktoriya Lihvoinen created a two-sided cleaning marketplace in Finland.",
+    "description": "The HaeSiivooja story: Finnish cleaning marketplace created by Android developer Oleg Lihvoinen and UX/UI designer Viktoriya Lihvoinen.",
     "eyebrow": "About us",
     "h1": "Our history: connecting cleaners and customers",
     "intro": "It all started with a simple idea: make finding trusted nearby cleaning help easier, while creating more opportunities for people working in cleaning.",
     "sections": [
       {
-        "heading": "One platform, two needs",
-        "text": "Customers need reliable cleaning help, while professionals need clients. Hae Siivooja brings them together in a digital, sustainable and transparent marketplace in Finland."
+        "heading": "It started with a simple idea",
+        "text": "Many people in Finland wanted an easier way to find a reliable cleaner near their homes. At the same time, skilled cleaning professionals were looking for customers and work opportunities. We wanted to connect those two groups through a convenient digital service."
       },
       {
-        "heading": "Technology with purpose",
-        "text": "The aim is to simplify everyday life, support local professionals and strengthen trust between both sides of the marketplace."
+        "heading": "Building a transparent Finnish marketplace",
+        "text": "What began as a small idea grew into HaeSiivooja, a digital and sustainable marketplace where customers can discover local cleaning help and professionals can present their services. Our goal is to strengthen trust, opportunity and community through clearer choices and easier connections."
       },
       {
-        "heading": "Built by a two-person team",
-        "text": "Oleg Lihvoinen developed the Android app. Viktoriya Lihvoinen designed the UX/UI, visuals and official haesiivooja.fi website."
+        "heading": "The two people behind HaeSiivooja",
+        "text": "The app was developed by a two-person team: Oleg Lihvoinen and Viktoriya Lihvoinen. Oleg is the Android developer responsible for the application's technical implementation. Viktoriya designed its user experience, user interface, visuals and official website at haesiivooja.fi."
+      },
+      {
+        "heading": "What customers and cleaners can do",
+        "text": "Customers search by the location where cleaning is needed and can book without a platform booking fee after registration. Cleaning professionals can create a profile, showcase their skills and connect with potential customers. The actual cleaning service is a separate paid job agreed with the provider."
+      },
+      {
+        "heading": "Our journey continues in open testing",
+        "text": "HaeSiivooja is currently in open testing on Google Play. We continue improving the Android app based on real use and feedback, with the goal of making finding and booking cleaning services easier and more transparent across Finland."
       }
     ],
     "faqs": []
