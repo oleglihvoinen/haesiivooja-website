@@ -3,7 +3,7 @@
 # sudo CONFIRM_APACHE_CUTOVER=YES DISABLE_HAESIIVOOJA_COM=YES bash ops/cutover-apache.sh activate RELEASE_DIR
 # sudo bash ops/cutover-apache.sh rollback BACKUP_DIR
 set -Eeuo pipefail
-MODE="$1"; ARG="$2"
+MODE="${1:-}"; ARG="${2:-}"
 CONF_DIR=/etc/apache2/sites-available
 ENABLED=/etc/apache2/sites-enabled
 BASE=/var/www/haesiivooja-astro
@@ -29,7 +29,7 @@ restore_backup(){
 }
 if [ "$MODE" = rollback ]; then restore_backup "$ARG"; exit 0; fi
 [ "$MODE" = activate ] || die "Usage: cutover-apache.sh activate RELEASE_DIR | rollback BACKUP_DIR"
-[ "\${CONFIRM_APACHE_CUTOVER:-NO}" = YES ] || die "Set CONFIRM_APACHE_CUTOVER=YES after inspecting Apache vhosts."
+[ "${CONFIRM_APACHE_CUTOVER:-NO}" = YES ] || die "Set CONFIRM_APACHE_CUTOVER=YES after inspecting Apache vhosts."
 case "$ARG" in "$BASE"/releases/*) ;; *) die "Release must be under $BASE/releases/" ;; esac
 for path in index.html en/index.html en/home-cleaning/index.html robots.txt sitemap-index.xml; do
  [ -f "$ARG/$path" ] || die "Release missing: $path"
@@ -78,7 +78,7 @@ PY
 ln -s "$ARG" "$BASE/current.new"
 mv -Tf "$BASE/current.new" "$BASE/current"
 if [ -L "$ENABLED/wordpress.conf" ]; then a2dissite -q wordpress.conf; fi
-if [ "\${DISABLE_HAESIIVOOJA_COM:-NO}" = YES ]; then
+if [ "${DISABLE_HAESIIVOOJA_COM:-NO}" = YES ]; then
  for name in haesiivooja.com.conf haesiivooja_com-ssl.conf; do
    if [ -L "$ENABLED/$name" ]; then a2dissite -q "$name"; fi
  done
