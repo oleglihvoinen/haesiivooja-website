@@ -11,3 +11,7 @@ dist/
 wp-content/
 wp-config.php
 .DS_Store
+
+# Original WordPress app screenshots, restored locally on the VPS
+/public/app-screenshots/
+/src/data/app-screenshots.local.json

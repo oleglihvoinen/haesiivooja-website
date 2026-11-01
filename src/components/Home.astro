@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import {site} from '../data/site';
 import {services,guides,faqs} from '../data/marketing';
+import {appScreenshots} from '../data/app-screenshots';
 const {lang='fi'}=Astro.props;
 const en=lang==='en';
 const t=en?{
@@ -22,7 +23,7 @@ const t=en?{
  annual:'Yearly subscription',yearDesc:'Annual billing option for professionals who plan to use HaeSiivooja throughout the year.',
  price:'Professional subscription',planLink:'Cleaner subscription details',
  noPrice:'Registration is free. Cleaner subscriptions cost €5.50 monthly or €60 yearly. Customers pay a €12.50 service fee when booking; the cleaning work costs extra.',
- story:'Our story',storyBody:'HaeSiivooja was created by Oleg Lihvoinen, Android developer, and Viktoriya Lihvoinen, UX/UI designer responsible for the app experience, visual identity and official website.',
+ story:'Our story',storyBody:'HaeSiivooja was created by Oleg Lihvoinen, mobile developer, and Viktoriya Lihvoinen, UX/UI designer responsible for the app experience, visual identity and official website.',
  storyLink:'Read our history',faq:'Frequently asked questions',free:'Free registration · €12.50 booking service fee',
  note:'Creating an account is free. Customers pay a €12.50 service fee when making a booking, plus the cleaning price agreed with the professional.',
  cta:'Try the HaeSiivooja app',ctaDesc:'The Android app is available through Google Play open testing.',allGuides:'All cleaning guides'
@@ -44,7 +45,7 @@ const t=en?{
  annual:'Vuositilaus',yearDesc:'Vuosittainen vaihtoehto ammattilaiselle, joka aikoo käyttää markkinapaikkaa pitkäjänteisesti.',
  price:'Siivoojan tilaus',planLink:'Siivoojan tilaukset ja ehdot',
  noPrice:'Rekisteröityminen on maksutonta. Siivoojalle kuukausitilaus 5,50 € tai vuositilaus 60 €. Asiakas maksaa varauksen yhteydessä 12,50 € palvelumaksun ja siivoustyöstä erikseen.',
- story:'Meidän tarinamme',storyBody:'HaeSiivoojan toteuttivat Android-kehittäjä Oleg Lihvoinen ja UX/UI-suunnittelija Viktoriya Lihvoinen, joka suunnitteli myös sovelluksen visuaalisen ilmeen ja verkkosivuston.',
+ story:'Meidän tarinamme',storyBody:'HaeSiivoojan toteuttivat mobiilisovelluskehittäjä Oleg Lihvoinen ja UX/UI-suunnittelija Viktoriya Lihvoinen, joka suunnitteli myös sovelluksen visuaalisen ilmeen ja verkkosivuston.',
  storyLink:'Lue tarinamme',faq:'Usein kysytyt kysymykset',free:'Maksuton rekisteröityminen · palvelumaksu 12,50 €/varaus',
  note:'Rekisteröityminen on maksutonta. Asiakas maksaa varausta tehdessään 12,50 € palvelumaksun. Siivoustyöstä maksetaan lisäksi sovittu hinta siivoojalle.',
  cta:'Kokeile HaeSiivooja-sovellusta',ctaDesc:'Android-sovellus on saatavilla Google Playn avoimen testauksen kautta.',allGuides:'Kaikki siivousoppaat'
@@ -61,7 +62,7 @@ const appSchema={'@type':'SoftwareApplication',name:'HaeSiivooja',applicationCat
   <div><span class="eyebrow">{t.label}</span><h1>{t.title}</h1><p class="lead">{t.intro}</p>
     <div class="cta"><a class="button" href={proUrl}>{en?'Join as a cleaner':'Liity siivoojaksi'} →</a><a class="button-secondary" href={custUrl}>{en?'Find a cleaner':'Etsi siivooja'} →</a></div><p><a class="play-inline" href={site.playUrl} target="_blank" rel="noopener noreferrer">▶ {t.download} · {t.open} →</a></p>
     <div class="tags"><span class="tag">✓ {t.free}</span><span class="tag">✓ {t.open}</span></div>
-    <p class="market-disclaimer"><a href={site.searchUrl}>{t.ai} →</a></p>
+    
   </div>
   <div class="marketplace-visual" role="img" aria-label={en?'Illustration of customers and cleaners connecting in one app':'Havainnekuva asiakkaiden ja siivoojien kohtaamisesta'}>
     <div class="market-top">HaeSiivooja <span class="market-version">Android</span></div>

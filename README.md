@@ -1,6 +1,6 @@
 # HaeSiivooja — Finnish Cleaning Marketplace
 
-Bilingual product website for the **HaeSiivooja Android app**, connecting people who need cleaning services with cleaning professionals searching for customers in Finland.
+Bilingual product website for the **HaeSiivooja mobile app (Android and iOS)**, connecting people who need cleaning services with cleaning professionals searching for customers in Finland.
 
 ## Main product and conversion
 
@@ -9,6 +9,8 @@ Bilingual product website for the **HaeSiivooja Android app**, connecting people
 **We are looking for cleaners throughout Finland** to join HaeSiivooja and reach more customers.
 
 **Customer journey:** install the Android app, register for free, search cleaners near the cleaning location, agree on the job and register for free and pay a **€12.50 customer service fee when making a booking**. The cleaning job itself is a separate paid service from the chosen professional.
+
+**Development:** Oleg Lihvoinen is the mobile developer (Android and iOS); Viktoriya Lihvoinen designed the UX/UI and website.
 
 **Cleaner journey:** install the Android app, create a professional profile, describe services and the work area, and find prospective customers. Cleaner registration is free. Professional subscriptions cost **€5.50 monthly** or **€60 yearly**; the applicable billing and renewal conditions are shown in the app.
 
@@ -44,3 +46,7 @@ See [docs/DEPLOY.md](docs/DEPLOY.md). Build a versioned static release, verify i
 ## Legal accuracy to verify
 
 The Google Play developer listing identifies HaeSiivooja Oy. Keep privacy disclosures consistent with the actual Android SDKs, Google Play Data safety section, location use, financial data, deletion process, storage providers and international transfers. The website privacy policy is not a substitute for a real processing inventory. Confirm that the displayed customer and cleaner fees match the current app checkout, including VAT treatment and subscription renewal terms.
+
+## Restoring original WordPress app screenshots
+
+The original WordPress uploads remain on the VPS unless they were removed separately. The Astro site serves a curated local copy, not WordPress itself. Run `python3 scripts/restore-wordpress-app-images.py --scan` and then `python3 scripts/restore-wordpress-app-images.py --apply` on the VPS before building. The importer copies actual WordPress screenshots into `public/app-screenshots/` and builds a local image manifest at `src/data/app-screenshots.local.json`. Both are kept out of Git so future deployments remain safe. Images appear in the homepage hero and the screenshot gallery after `npm run check` and the usual Apache static release activation. See `docs/RESTORE_APP_IMAGES.md`.
