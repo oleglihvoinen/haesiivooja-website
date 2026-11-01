@@ -63,7 +63,7 @@ const bad=[
  /asiakkaan varaus on maksuton/i,
  /rekisteröityneen asiakkaan varaus on maksuton/i,
  /varaa maksutta/i,
- /asiakkaan varausmaksu(?::|\\s)\\s*0\\s*€/i
+ /asiakkaan varausmaksu(?::|\s)\s*0\s*€/i
 ];
 const copySources=[
  ['Home.astro',fs.readFileSync('src/components/Home.astro','utf8')],
