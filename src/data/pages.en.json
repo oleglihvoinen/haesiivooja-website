@@ -1,28 +1,557 @@
 [
   {
-    "slug":"find-a-cleaner","title":"Find a Cleaner in Finland – Compare Cleaning Services","description":"Looking for a cleaner in Finland? Learn how to compare cleaning professionals, clarify the work and find a service that suits your home or business.","eyebrow":"Find cleaning help","h1":"Find a cleaner for your needs","intro":"Describe the kind of cleaning you need, where it should take place and when. HaeSiivooja's AI search helps you explore relevant cleaning service options in Finland.","sections":[{"heading":"What should I include in my request?","text":"A clear brief helps cleaning professionals assess the scope and schedule of the job. Mention the size of your home or premises, the rooms to be cleaned and any special requirements.","bullets":["Town or postcode and type of property","Floor area, pets and anything that needs special care","Preferred cleaning tasks and date","Whether you provide equipment or cleaning products"]},{"heading":"How do I compare cleaners?","text":"Look beyond hourly rates. Check what each quote includes, who supplies equipment, how extra work is charged and the cancellation terms. HaeSiivooja connects customers and independent providers; availability varies by area."}],"faqs":[{"q":"Can I find a cleaner near me?","a":"Start your search with your location. Results and available times depend on cleaning providers serving that area."},{"q":"Is HaeSiivooja itself a cleaning company?","a":"No. HaeSiivooja is a digital platform for discovering independent cleaning professionals and businesses."}]},
+    "slug": "find-a-cleaner",
+    "title": "Find a Cleaner Near You in Finland – Free Booking",
+    "description": "Hae Siivooja connects customers and local cleaners. Registered customers can book a cleaner for free; cleaning work is paid separately.",
+    "eyebrow": "Find cleaning help",
+    "h1": "Find a cleaner nearby – book for free",
+    "intro": "Register in the Hae Siivooja app, find cleaning professionals near the location where you need help and book without a customer booking fee. Agree the cleaning price with the provider.",
+    "sections": [
+      {
+        "heading": "1. Register for free",
+        "text": "Create a customer account. Registration and booking through Hae Siivooja are free for customers."
+      },
+      {
+        "heading": "2. Search by cleaning location",
+        "text": "Describe the cleaning task and location to find cleaners and cleaning companies serving the area."
+      },
+      {
+        "heading": "3. Agree and book",
+        "text": "Review the provider's scope, price, schedule and payment terms. The cleaning work itself is a paid service."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is booking a cleaner free?",
+        "a": "Yes, for registered customers. You pay the cleaning professional for the actual work."
+      }
+    ]
+  },
   {
-    "slug":"cleaning-services","title":"Cleaning Services in Finland – Explore Your Options","description":"Compare types of cleaning services in Finland, from home and move-out cleaning to deep cleaning, window cleaning and office cleaning.","eyebrow":"Services guide","h1":"Cleaning services for different needs","intro":"Whether you need regular cleaning, a one-time visit or a thorough clean, choosing the right service starts with understanding what is included.","sections":[{"heading":"Home cleaning and regular maintenance","text":"Regular home cleaning helps keep everyday spaces tidy. Agree in advance which rooms and surfaces are included and how often the cleaner should visit."},{"heading":"Move-out and deep cleaning","text":"Move-out cleaning prepares a property for handover, while deep cleaning focuses on selected areas that need extra attention. Ask for a written list of tasks."},{"heading":"Window and office cleaning","text":"Window cleaning depends on the number and accessibility of windows. Office cleaning is planned around the space, usage and desired frequency."}],"faqs":[{"q":"How do I choose the right cleaning service?","a":"Start with your goal: everyday upkeep, moving, a deep clean or a specific task. Then agree on a precise scope with the provider."}]},
+    "slug": "cleaning-services",
+    "title": "Cleaning Services in Finland – Explore Your Options",
+    "description": "Compare types of cleaning services in Finland, from home and move-out cleaning to deep cleaning, window cleaning and office cleaning.",
+    "eyebrow": "Services guide",
+    "h1": "Cleaning services for different needs",
+    "intro": "Whether you need regular cleaning, a one-time visit or a thorough clean, choosing the right service starts with understanding what is included.",
+    "sections": [
+      {
+        "heading": "Home cleaning and regular maintenance",
+        "text": "Regular home cleaning helps keep everyday spaces tidy. Agree in advance which rooms and surfaces are included and how often the cleaner should visit."
+      },
+      {
+        "heading": "Move-out and deep cleaning",
+        "text": "Move-out cleaning prepares a property for handover, while deep cleaning focuses on selected areas that need extra attention. Ask for a written list of tasks."
+      },
+      {
+        "heading": "Window and office cleaning",
+        "text": "Window cleaning depends on the number and accessibility of windows. Office cleaning is planned around the space, usage and desired frequency."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How do I choose the right cleaning service?",
+        "a": "Start with your goal: everyday upkeep, moving, a deep clean or a specific task. Then agree on a precise scope with the provider."
+      }
+    ]
+  },
   {
-    "slug":"home-cleaning","title":"Home Cleaning in Finland – Find a Cleaner","description":"Need home cleaning in Finland? Compare regular and one-off cleaning, what a visit may include and what to ask before booking.","eyebrow":"For homes","h1":"Home cleaning that fits your routine","intro":"Home cleaning can be a regular service or an occasional visit. Describing the work clearly makes it easier to compare providers and avoid surprises.","sections":[{"heading":"What does home cleaning usually include?","text":"Common tasks include dusting, vacuuming, mopping floors and cleaning kitchen and bathroom surfaces. The exact tasks and duration depend on the agreement."},{"heading":"Regular cleaning or a one-off visit?","text":"Regular cleaning helps maintain a routine. A one-time service may be more suitable before guests arrive or when a home needs extra attention."},{"heading":"Before you book","text":"Share the property size, information about pets, delicate surfaces and your preferred cleaning products. Check who brings supplies and how extras are priced."}],"faqs":[{"q":"How often should I arrange home cleaning?","a":"It depends on the household and your preferences. Weekly, fortnightly and occasional cleaning are common options."},{"q":"Is home cleaning eligible for a household tax deduction?","a":"It may be, subject to current Finnish tax rules and provider eligibility. Check the Finnish Tax Administration's guidance before ordering."}]},
+    "slug": "home-cleaning",
+    "title": "Home Cleaning in Finland – Find a Cleaner",
+    "description": "Need home cleaning in Finland? Compare regular and one-off cleaning, what a visit may include and what to ask before booking.",
+    "eyebrow": "For homes",
+    "h1": "Home cleaning that fits your routine",
+    "intro": "Home cleaning can be a regular service or an occasional visit. Describing the work clearly makes it easier to compare providers and avoid surprises.",
+    "sections": [
+      {
+        "heading": "What does home cleaning usually include?",
+        "text": "Common tasks include dusting, vacuuming, mopping floors and cleaning kitchen and bathroom surfaces. The exact tasks and duration depend on the agreement."
+      },
+      {
+        "heading": "Regular cleaning or a one-off visit?",
+        "text": "Regular cleaning helps maintain a routine. A one-time service may be more suitable before guests arrive or when a home needs extra attention."
+      },
+      {
+        "heading": "Before you book",
+        "text": "Share the property size, information about pets, delicate surfaces and your preferred cleaning products. Check who brings supplies and how extras are priced."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How often should I arrange home cleaning?",
+        "a": "It depends on the household and your preferences. Weekly, fortnightly and occasional cleaning are common options."
+      },
+      {
+        "q": "Is home cleaning eligible for a household tax deduction?",
+        "a": "It may be, subject to current Finnish tax rules and provider eligibility. Check the Finnish Tax Administration's guidance before ordering."
+      }
+    ]
+  },
   {
-    "slug":"move-out-cleaning","title":"Move-Out Cleaning in Finland – Prepare for Handover","description":"Planning a move? Learn what move-out cleaning may cover, when to arrange it and how to compare quotes before handing over the keys.","eyebrow":"Moving home","h1":"Move-out cleaning before handing over the keys","intro":"A thorough move-out clean helps leave a property ready for its next occupants. The required tasks depend on its condition and your agreement with the landlord or buyer.","sections":[{"heading":"What should move-out cleaning cover?","text":"Review floors, room surfaces, kitchen cupboards, agreed appliance interiors, the bathroom and any storage areas. Check the terms of your tenancy or sale before booking."},{"heading":"Plan around moving day","text":"Whenever possible, schedule cleaning after the property is empty. Allow enough time to check the result before the keys are returned."},{"heading":"Request an itemised quote","text":"Ask whether oven and fridge interiors, windows, balconies and storage areas are included. Confirm charges for extras and any time limits in writing."}],"faqs":[{"q":"Is window cleaning included in move-out cleaning?","a":"Not necessarily. Confirm it directly in the quote or cleaning agreement."},{"q":"Who is responsible for the cleaning quality?","a":"The cleaning provider is responsible for performing the agreed work under its terms and applicable law."}]},
+    "slug": "move-out-cleaning",
+    "title": "Move-Out Cleaning in Finland – Prepare for Handover",
+    "description": "Planning a move? Learn what move-out cleaning may cover, when to arrange it and how to compare quotes before handing over the keys.",
+    "eyebrow": "Moving home",
+    "h1": "Move-out cleaning before handing over the keys",
+    "intro": "A thorough move-out clean helps leave a property ready for its next occupants. The required tasks depend on its condition and your agreement with the landlord or buyer.",
+    "sections": [
+      {
+        "heading": "What should move-out cleaning cover?",
+        "text": "Review floors, room surfaces, kitchen cupboards, agreed appliance interiors, the bathroom and any storage areas. Check the terms of your tenancy or sale before booking."
+      },
+      {
+        "heading": "Plan around moving day",
+        "text": "Whenever possible, schedule cleaning after the property is empty. Allow enough time to check the result before the keys are returned."
+      },
+      {
+        "heading": "Request an itemised quote",
+        "text": "Ask whether oven and fridge interiors, windows, balconies and storage areas are included. Confirm charges for extras and any time limits in writing."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is window cleaning included in move-out cleaning?",
+        "a": "Not necessarily. Confirm it directly in the quote or cleaning agreement."
+      },
+      {
+        "q": "Who is responsible for the cleaning quality?",
+        "a": "The cleaning provider is responsible for performing the agreed work under its terms and applicable law."
+      }
+    ]
+  },
   {
-    "slug":"deep-cleaning","title":"Deep Cleaning in Finland – Plan a Thorough Clean","description":"Find out what deep cleaning may include, how it differs from regular home cleaning and what to clarify when comparing services.","eyebrow":"A thorough clean","h1":"Deep cleaning beyond everyday upkeep","intro":"Deep cleaning focuses on areas and surfaces that need more attention than a standard cleaning visit. Define the work before you request a price.","sections":[{"heading":"What may be included?","text":"Depending on the agreement, deep cleaning can cover stubborn dirt, inside cupboards and harder-to-reach surfaces. These tasks are not automatically included in every package."},{"heading":"How should I prepare?","text":"List the most important tasks and describe the property's condition. This helps a provider estimate the time, supplies and equipment needed."}],"faqs":[{"q":"What is the difference between deep cleaning and regular cleaning?","a":"Regular cleaning maintains the home over time. Deep cleaning usually means a more thorough, specifically defined visit."}]},
+    "slug": "deep-cleaning",
+    "title": "Deep Cleaning in Finland – Plan a Thorough Clean",
+    "description": "Find out what deep cleaning may include, how it differs from regular home cleaning and what to clarify when comparing services.",
+    "eyebrow": "A thorough clean",
+    "h1": "Deep cleaning beyond everyday upkeep",
+    "intro": "Deep cleaning focuses on areas and surfaces that need more attention than a standard cleaning visit. Define the work before you request a price.",
+    "sections": [
+      {
+        "heading": "What may be included?",
+        "text": "Depending on the agreement, deep cleaning can cover stubborn dirt, inside cupboards and harder-to-reach surfaces. These tasks are not automatically included in every package."
+      },
+      {
+        "heading": "How should I prepare?",
+        "text": "List the most important tasks and describe the property's condition. This helps a provider estimate the time, supplies and equipment needed."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the difference between deep cleaning and regular cleaning?",
+        "a": "Regular cleaning maintains the home over time. Deep cleaning usually means a more thorough, specifically defined visit."
+      }
+    ]
+  },
   {
-    "slug":"window-cleaning","title":"Window Cleaning – Compare Quotes in Finland","description":"Understand what affects window cleaning prices, including window size, height, access and the surfaces covered by your quote.","eyebrow":"Windows","h1":"Window cleaning: agree on the details first","intro":"The number, structure and accessibility of windows all affect the work. A clear quote should separate included tasks from optional extras.","sections":[{"heading":"What information should I share?","text":"Count the windows or take photos. Describe double glazing, balcony glazing, high windows and any access or safety concerns."},{"heading":"What does the service include?","text":"Check whether the quote covers inside and outside panes, inner panes, frames and sills. Never assume every surface is included in the base price."}],"faqs":[{"q":"Can windows be cleaned in winter?","a":"This depends on the weather, window design and safe access. Confirm the suitable time with the provider."}]},
+    "slug": "window-cleaning",
+    "title": "Window Cleaning – Compare Quotes in Finland",
+    "description": "Understand what affects window cleaning prices, including window size, height, access and the surfaces covered by your quote.",
+    "eyebrow": "Windows",
+    "h1": "Window cleaning: agree on the details first",
+    "intro": "The number, structure and accessibility of windows all affect the work. A clear quote should separate included tasks from optional extras.",
+    "sections": [
+      {
+        "heading": "What information should I share?",
+        "text": "Count the windows or take photos. Describe double glazing, balcony glazing, high windows and any access or safety concerns."
+      },
+      {
+        "heading": "What does the service include?",
+        "text": "Check whether the quote covers inside and outside panes, inner panes, frames and sills. Never assume every surface is included in the base price."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can windows be cleaned in winter?",
+        "a": "This depends on the weather, window design and safe access. Confirm the suitable time with the provider."
+      }
+    ]
+  },
   {
-    "slug":"office-cleaning","title":"Office Cleaning in Finland – Plan a Cleaning Service","description":"Explore how to plan office cleaning, from floor area and cleaning frequency to access arrangements, hygiene needs and comparing providers.","eyebrow":"For businesses","h1":"Office cleaning for your workplace","intro":"Well-planned cleaning supports day-to-day work. Clear requirements for the space, usage and cleaning frequency make provider quotes easier to compare.","sections":[{"heading":"Describe your space and priorities","text":"Share floor area, room types, occupancy, operating hours and any requirements for washrooms, kitchens, security or access."},{"heading":"Compare frequency and service scope","text":"Separate daily or weekly tasks from occasional work. Agree on supplies, waste handling, quality checks and how exceptional situations are managed."}],"faqs":[{"q":"Should office cleaning have a written contract?","a":"A written contract specifying tasks, frequency and responsibilities helps avoid misunderstandings."}]},
+    "slug": "office-cleaning",
+    "title": "Office Cleaning in Finland – Plan a Cleaning Service",
+    "description": "Explore how to plan office cleaning, from floor area and cleaning frequency to access arrangements, hygiene needs and comparing providers.",
+    "eyebrow": "For businesses",
+    "h1": "Office cleaning for your workplace",
+    "intro": "Well-planned cleaning supports day-to-day work. Clear requirements for the space, usage and cleaning frequency make provider quotes easier to compare.",
+    "sections": [
+      {
+        "heading": "Describe your space and priorities",
+        "text": "Share floor area, room types, occupancy, operating hours and any requirements for washrooms, kitchens, security or access."
+      },
+      {
+        "heading": "Compare frequency and service scope",
+        "text": "Separate daily or weekly tasks from occasional work. Agree on supplies, waste handling, quality checks and how exceptional situations are managed."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Should office cleaning have a written contract?",
+        "a": "A written contract specifying tasks, frequency and responsibilities helps avoid misunderstandings."
+      }
+    ]
+  },
   {
-    "slug":"cleaning-prices","title":"Cleaning Prices in Finland – Compare Quotes","description":"How much does cleaning cost in Finland? Learn which factors affect home and move-out cleaning prices and how to compare total costs.","eyebrow":"Pricing guide","h1":"What affects the price of cleaning?","intro":"Cleaning costs depend on the work, property, timing and provider. The hourly rate alone does not tell you the final price.","sections":[{"heading":"Five important price factors","text":"Compare like for like by checking the tasks included and any charges for travel, supplies or special jobs.","bullets":["Estimated duration and minimum charge","Property size and condition","One-off versus recurring appointments","Materials, travel and additional tasks","Any platform or service-provider fees"]},{"heading":"Ask for the total price including VAT","text":"Check whether applicable VAT is included and what happens if the work takes longer than expected. Review any fees in the current HaeSiivooja application terms before placing an order."},{"heading":"Household tax deductions depend on eligibility","text":"Cleaning carried out in your home may qualify for a Finnish household tax deduction. Check the current rules and the provider's status with the Finnish Tax Administration."}],"faqs":[{"q":"Can I know the cleaning cost in advance?","a":"A provider may offer an estimate or fixed price based on your description. Confirm what the quote covers and when additional charges may arise."},{"q":"Is the lowest hourly rate always cheapest?","a":"Not necessarily. Duration, extra charges and the agreed scope determine the total cost."}]},
+    "slug": "cleaning-prices",
+    "title": "Hae Siivooja Pricing – €0 Customer Booking Fee",
+    "description": "Customers can book cleaners for free after registration. The cleaning work itself is paid according to the provider's price.",
+    "eyebrow": "Pricing guide",
+    "h1": "€0 booking fee for registered customers",
+    "intro": "Customers pay no Hae Siivooja booking fee after registration. The chosen cleaner or cleaning company charges for the actual cleaning work.",
+    "sections": [
+      {
+        "heading": "Customer booking: free",
+        "text": "Registration and booking are free for customers on the platform. Cleaning is not free."
+      },
+      {
+        "heading": "Price of the cleaning work",
+        "text": "The provider agrees a price based on the scope, location and duration.",
+        "bullets": [
+          "Check the total price including applicable VAT",
+          "Ask about travel and extras",
+          "Confirm cancellation and payment terms"
+        ]
+      },
+      {
+        "heading": "Professional terms",
+        "text": "Any platform fees for cleaners are governed by the current professional conditions."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do customers pay a booking fee?",
+        "a": "No. Booking is free for registered customers. The cleaning service itself is paid separately."
+      }
+    ]
+  },
   {
-    "slug":"how-it-works","title":"How HaeSiivooja Works – Guide for Customers","description":"Learn how to get started with HaeSiivooja: describe your cleaning needs, explore providers and check terms before booking.","eyebrow":"Getting started","h1":"How to start using HaeSiivooja","intro":"HaeSiivooja helps you explore cleaning services. Describe your needs and review provider information before agreeing on the work.","sections":[{"heading":"1. Describe the cleaning job","text":"Choose home cleaning, move-out cleaning or another task and share your town or postcode. A more specific description improves the search."},{"heading":"2. Review provider information","text":"Check the scope, available information, prices and proposed schedules. Results vary by area, and not every service is available everywhere."},{"heading":"3. Check terms before ordering","text":"Confirm the work, payment terms, cancellation conditions and provider responsibilities in the current application. Don't rely on a short listing alone."}],"faqs":[{"q":"Do I have to download an app?","a":"You can read the website guides without an app. Start searching for services using HaeSiivooja's online AI search."}]},
+    "slug": "how-it-works",
+    "title": "How HaeSiivooja Works – Guide for Customers",
+    "description": "Learn how to get started with HaeSiivooja: describe your cleaning needs, explore providers and check terms before booking.",
+    "eyebrow": "Getting started",
+    "h1": "How to start using HaeSiivooja",
+    "intro": "HaeSiivooja helps you explore cleaning services. Describe your needs and review provider information before agreeing on the work.",
+    "sections": [
+      {
+        "heading": "1. Describe the cleaning job",
+        "text": "Choose home cleaning, move-out cleaning or another task and share your town or postcode. A more specific description improves the search."
+      },
+      {
+        "heading": "2. Review provider information",
+        "text": "Check the scope, available information, prices and proposed schedules. Results vary by area, and not every service is available everywhere."
+      },
+      {
+        "heading": "3. Check terms before ordering",
+        "text": "Confirm the work, payment terms, cancellation conditions and provider responsibilities in the current application. Don't rely on a short listing alone."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do I have to download an app?",
+        "a": "You can read the website guides without an app. Start searching for services using HaeSiivooja's online AI search."
+      }
+    ]
+  },
   {
-    "slug":"for-cleaners","title":"For Cleaning Professionals – Join HaeSiivooja","description":"Offer cleaning services in Finland? Discover how HaeSiivooja helps customers find independent cleaning professionals and businesses.","eyebrow":"For professionals","h1":"Make your cleaning services easier to discover","intro":"HaeSiivooja is a digital platform designed to connect customers with cleaning professionals and businesses. Explore how it may support your services.","sections":[{"heading":"Who is the platform for?","text":"The service is designed for cleaning professionals and businesses looking to reach customers. Check current registration requirements and available features in the application."},{"heading":"Present your service clearly","text":"Include the areas you cover, service types, relevant company details, availability and your pricing approach. Up-to-date information helps customers make decisions."},{"heading":"Review the latest terms","text":"Before registering, check the applicable contractual terms and any platform fees. This guide does not replace the current application terms."}],"faqs":[{"q":"Can cleaning companies join HaeSiivooja?","a":"The platform is designed for cleaning service providers, including businesses. Review the registration options available in the application."}]},
+    "slug": "for-cleaners",
+    "title": "Find Cleaning Clients in Finland – Hae Siivooja",
+    "description": "Cleaning professionals can showcase their services and find local customers through the Hae Siivooja marketplace.",
+    "eyebrow": "For professionals",
+    "h1": "Cleaning professional? Find new customers",
+    "intro": "Hae Siivooja connects people needing cleaning with professionals looking for local customers and opportunities.",
+    "sections": [
+      {
+        "heading": "Create a professional profile",
+        "text": "Describe your services, experience and the areas you serve so customers can discover you."
+      },
+      {
+        "heading": "Connect with potential clients",
+        "text": "Customers looking for home, move-out and other cleaning can find relevant providers. Work is not guaranteed."
+      },
+      {
+        "heading": "Agree service conditions",
+        "text": "Professionals set or agree their job pricing and follow applicable professional terms."
+      }
+    ],
+    "faqs": []
+  },
   {
-    "slug":"about-us","title":"About HaeSiivooja – Cleaning Services Marketplace","description":"Learn about HaeSiivooja Oy, the Finnish digital platform helping customers discover independent cleaning professionals.","eyebrow":"About us","h1":"Connecting people who need cleaning with professionals","intro":"HaeSiivooja Oy develops a digital service to make finding and comparing cleaning services in Finland easier and more transparent.","sections":[{"heading":"Who is HaeSiivooja for?","text":"The platform is intended for individuals and businesses looking for cleaning help, as well as professionals who want to present their services."},{"heading":"How is it different from a cleaning company?","text":"HaeSiivooja is a marketplace, not the company performing each cleaning job. Independent providers carry out the work. Available services vary by location."}],"faqs":[]},
+    "slug": "about-us",
+    "title": "Our History – Hae Siivooja Cleaning Marketplace",
+    "description": "Learn how Oleg Lihvoinen and Viktoriya Lihvoinen created a two-sided cleaning marketplace in Finland.",
+    "eyebrow": "About us",
+    "h1": "Our history: connecting cleaners and customers",
+    "intro": "It all started with a simple idea: make finding trusted nearby cleaning help easier, while creating more opportunities for people working in cleaning.",
+    "sections": [
+      {
+        "heading": "One platform, two needs",
+        "text": "Customers need reliable cleaning help, while professionals need clients. Hae Siivooja brings them together in a digital, sustainable and transparent marketplace in Finland."
+      },
+      {
+        "heading": "Technology with purpose",
+        "text": "The aim is to simplify everyday life, support local professionals and strengthen trust between both sides of the marketplace."
+      },
+      {
+        "heading": "Built by a two-person team",
+        "text": "Oleg Lihvoinen developed the Android app. Viktoriya Lihvoinen designed the UX/UI, visuals and official haesiivooja.fi website."
+      }
+    ],
+    "faqs": []
+  },
   {
-    "slug":"contact","title":"Contact HaeSiivooja – Support and Enquiries","description":"Contact HaeSiivooja Oy by email about its cleaning marketplace, AI search, application or potential cooperation.","eyebrow":"Contact","h1":"Contact HaeSiivooja","intro":"Questions about the HaeSiivooja platform, application or a potential partnership? Reach us by email.","sections":[{"heading":"Customer enquiries","text":"Email: info@haesiivooja.fi. Please do not send passwords or sensitive personal information by email."},{"heading":"Looking for a cleaner?","text":"Explore the cleaning guides or open HaeSiivooja's AI search. Available services depend on individual providers."}],"faqs":[]},
+    "slug": "contact",
+    "title": "Contact HaeSiivooja – Support and Enquiries",
+    "description": "Contact HaeSiivooja Oy by email about its cleaning marketplace, AI search, application or potential cooperation.",
+    "eyebrow": "Contact",
+    "h1": "Contact HaeSiivooja",
+    "intro": "Questions about the HaeSiivooja platform, application or a potential partnership? Reach us by email.",
+    "sections": [
+      {
+        "heading": "Customer enquiries",
+        "text": "Email: info@haesiivooja.fi. Please do not send passwords or sensitive personal information by email."
+      },
+      {
+        "heading": "Looking for a cleaner?",
+        "text": "Explore the cleaning guides or open HaeSiivooja's AI search. Available services depend on individual providers."
+      }
+    ],
+    "faqs": []
+  },
   {
-    "slug":"guides","title":"Cleaning Guides – Tips for Hiring and Comparing","description":"Practical cleaning guides for Finland: a move-out checklist, home cleaning price comparisons and household tax deduction basics.","eyebrow":"Guides","h1":"Cleaning guides to help you make informed choices","intro":"Preparing the details before you request a cleaning service helps prevent confusion. Use these guides and checklists when comparing providers.","sections":[{"heading":"What will you find?","text":"Our guides cover preparing for move-out cleaning, comparing cleaning quotes and checking household tax deduction eligibility using the latest official guidance.","bullets":["A move-out cleaning checklist","What affects the total cost of home cleaning","Finnish Tax Administration guidance on household deductions"]}],"faqs":[]}
+    "slug": "guides",
+    "title": "Cleaning Guides – Tips for Hiring and Comparing",
+    "description": "Practical cleaning guides for Finland: a move-out checklist, home cleaning price comparisons and household tax deduction basics.",
+    "eyebrow": "Guides",
+    "h1": "Cleaning guides to help you make informed choices",
+    "intro": "Preparing the details before you request a cleaning service helps prevent confusion. Use these guides and checklists when comparing providers.",
+    "sections": [
+      {
+        "heading": "What will you find?",
+        "text": "Our guides cover preparing for move-out cleaning, comparing cleaning quotes and checking household tax deduction eligibility using the latest official guidance.",
+        "bullets": [
+          "A move-out cleaning checklist",
+          "What affects the total cost of home cleaning",
+          "Finnish Tax Administration guidance on household deductions"
+        ]
+      }
+    ],
+    "faqs": []
+  },
+  {
+    "slug": "privacy",
+    "title": "Privacy Policy – Hae Siivooja",
+    "description": "How the Hae Siivooja app and website process account, booking, location and other personal data.",
+    "eyebrow": "Hae Siivooja app",
+    "h1": "Hae Siivooja – privacy policy",
+    "intro": "Last updated 1 November 2026. This policy covers the Hae Siivooja app and website.",
+    "sections": [
+      {
+        "heading": "1. Data controller",
+        "text": "Hae Siivooja / HaeSiivooja Oy. Privacy contact: info@haesiivooja.fi."
+      },
+      {
+        "heading": "2. Data processed",
+        "text": "Depending on use, data may include name, email, phone number, cleaning address, account details, authentication information, bookings, reviews, messages, technical usage information and location needed to find nearby cleaners. If payment functionality is provided, transaction details may be processed; card data handling depends on the payment provider."
+      },
+      {
+        "heading": "3. Purposes",
+        "text": "We use data for accounts, matching customers and cleaning professionals, arranging bookings, support, applicable payments or billing, security, improving the service and legal obligations."
+      },
+      {
+        "heading": "4. Legal grounds",
+        "text": "Data processing may rely on a contract, legal obligation, legitimate interest or consent, depending on the activity."
+      },
+      {
+        "heading": "5. Sharing",
+        "text": "Relevant details may be shared with the selected cleaning provider for a booking, and with essential technical or payment processors as applicable. Personal data is not sold. Disclosure may be required by law."
+      },
+      {
+        "heading": "6. Retention",
+        "text": "Data is kept for as long as necessary for the service or legal obligations. Some accounting or transaction records may be retained after an account is deleted where required by law."
+      },
+      {
+        "heading": "7. Your rights",
+        "text": "You may request access, correction or deletion and exercise applicable rights to restriction, objection, portability or withdrawal of consent. You may complain to the Finnish Data Protection Ombudsman."
+      },
+      {
+        "heading": "8. Security",
+        "text": "Appropriate technical and organizational measures are used to safeguard personal information."
+      },
+      {
+        "heading": "9. Account deletion",
+        "text": "Request deletion at info@haesiivooja.fi using the account email address. Do not send passwords or payment-card data. Identity verification and legal retention requirements may apply."
+      },
+      {
+        "heading": "10. Updates and contact",
+        "text": "Updates are published here. Ask info@haesiivooja.fi for details of processors, cookies or any international transfers that apply."
+      }
+    ],
+    "faqs": []
+  },
+  {
+    "slug": "terms-of-service",
+    "title": "Terms of Service – Hae Siivooja",
+    "description": "Terms for customers and cleaning professionals using the Hae Siivooja marketplace.",
+    "eyebrow": "Hae Siivooja app",
+    "h1": "Hae Siivooja – terms of service",
+    "intro": "Please read these terms when using the Hae Siivooja app.",
+    "sections": [
+      {
+        "heading": "1. General",
+        "text": "Hae Siivooja connects customers and cleaning professionals in Finland. The platform itself does not perform cleaning work."
+      },
+      {
+        "heading": "2. Registration",
+        "text": "Users must provide accurate information and protect login credentials."
+      },
+      {
+        "heading": "3. Accounts",
+        "text": "Each user is responsible for activity on their account."
+      },
+      {
+        "heading": "4. Using the platform",
+        "text": "Customers can find and book cleaning professionals; cleaners can showcase services and find clients. Use must comply with the law."
+      },
+      {
+        "heading": "5. Payments",
+        "text": "Bookings are free for registered customers. Cleaning prices and payment methods are agreed with the provider. Any platform payment tools or professional fees follow separately stated applicable terms."
+      },
+      {
+        "heading": "6. Trust and safety",
+        "text": "Check provider information, service scope, terms and availability. Outcomes cannot be guaranteed."
+      },
+      {
+        "heading": "7. Responsibility",
+        "text": "The provider performs and is responsible for the agreed cleaning service subject to applicable law. Mandatory consumer rights remain protected."
+      },
+      {
+        "heading": "8. Privacy",
+        "text": "Personal data is processed as explained at https://haesiivooja.fi/en/privacy/."
+      },
+      {
+        "heading": "9. Changes",
+        "text": "Terms can be updated with notice as required."
+      },
+      {
+        "heading": "10. Contact",
+        "text": "info@haesiivooja.fi."
+      }
+    ],
+    "faqs": []
+  },
+  {
+    "slug": "accessibility-statement",
+    "title": "Accessibility – Hae Siivooja",
+    "description": "Accessibility goals and feedback contact for the Hae Siivooja application and website.",
+    "eyebrow": "Hae Siivooja app",
+    "h1": "Accessibility",
+    "intro": "We aim to make Hae Siivooja clear and accessible to as many people as possible.",
+    "sections": [
+      {
+        "heading": "Our goals",
+        "text": "We aim for responsive layouts, clear content and keyboard usability. This is not a claim of independent accessibility certification."
+      },
+      {
+        "heading": "Feedback",
+        "text": "Report accessibility barriers to info@haesiivooja.fi, including the page and device or assistive technology where possible."
+      }
+    ],
+    "faqs": []
+  },
+  {
+    "slug": "app-guide",
+    "title": "App Guide – Hae Siivooja",
+    "description": "How to find and book cleaners and how cleaning professionals can find clients in Finland.",
+    "eyebrow": "Hae Siivooja app",
+    "h1": "App guide",
+    "intro": "One marketplace for customers and cleaning professionals.",
+    "sections": [
+      {
+        "heading": "Customers",
+        "text": "Register, search by cleaning location and book without a customer booking fee. Agree on the cleaning price and conditions before confirming."
+      },
+      {
+        "heading": "Cleaning professionals",
+        "text": "Create a profile, describe your services and coverage, and connect with people looking for cleaners."
+      },
+      {
+        "heading": "AI cleaning search",
+        "text": "Use the Hae Siivooja AI cleaning search to explore providers."
+      }
+    ],
+    "faqs": []
+  },
+  {
+    "slug": "payments",
+    "title": "Payments and Prices – Hae Siivooja",
+    "description": "Customers book cleaners for free after registration. Cleaning work is paid according to provider terms.",
+    "eyebrow": "Hae Siivooja app",
+    "h1": "Payments and prices",
+    "intro": "Booking a cleaner is free for registered customers.",
+    "sections": [
+      {
+        "heading": "Customer booking fee",
+        "text": "€0 after registration."
+      },
+      {
+        "heading": "Cleaning cost",
+        "text": "Agree the actual cleaning price with the cleaner or cleaning company. Free booking does not mean free cleaning."
+      },
+      {
+        "heading": "Payment methods",
+        "text": "Confirm the selected provider's accepted methods or any separately disclosed app payment functionality."
+      },
+      {
+        "heading": "Professional conditions",
+        "text": "Any professional platform fees follow the currently applicable professional terms."
+      }
+    ],
+    "faqs": []
+  },
+  {
+    "slug": "cleaner-terms",
+    "title": "Terms for Cleaners – Hae Siivooja",
+    "description": "Cleaning professional conditions and responsibilities on the Hae Siivooja marketplace.",
+    "eyebrow": "Hae Siivooja app",
+    "h1": "Terms for cleaning professionals",
+    "intro": "Hae Siivooja can help cleaning professionals connect with local customers.",
+    "sections": [
+      {
+        "heading": "Profile",
+        "text": "You are responsible for accurate profile, service and service-area information."
+      },
+      {
+        "heading": "Customer enquiries",
+        "text": "The platform helps you find prospective customers but does not guarantee work."
+      },
+      {
+        "heading": "Pricing and responsibility",
+        "text": "The cleaner agrees pricing and is responsible for providing the cleaning service and following applicable requirements."
+      },
+      {
+        "heading": "Platform conditions",
+        "text": "Review any professional fees and applicable conditions in the current app terms."
+      }
+    ],
+    "faqs": []
+  },
+  {
+    "slug": "delete-account",
+    "title": "Delete Your Account – Hae Siivooja",
+    "description": "How to request deletion of a Hae Siivooja account and related personal data.",
+    "eyebrow": "Hae Siivooja app",
+    "h1": "Delete your account",
+    "intro": "You can request deletion of your account and associated personal information.",
+    "sections": [
+      {
+        "heading": "Email your request",
+        "text": "Contact info@haesiivooja.fi with subject Delete my account and the email address linked to your account. Do not send your password."
+      },
+      {
+        "heading": "Verification and retention",
+        "text": "Account ownership may need to be verified. Some records may be retained when legally required."
+      }
+    ],
+    "faqs": []
+  }
 ]
