@@ -1,25 +1,32 @@
-# Hae Siivooja — Cleaning Marketplace Website
+# HaeSiivooja — Finnish Cleaning Marketplace
 
-Official Finnish and English marketing website for the **Hae Siivooja** application.
+Bilingual product website for the **HaeSiivooja Android app**, connecting people who need cleaning services with cleaning professionals searching for customers in Finland.
 
-**One marketplace, two audiences**
-- **Customers:** find cleaning professionals near the location of the job, compare providers and book in the app. Registration and cleaner booking are **free for customers**. The cleaning service itself is paid separately, at the price agreed with the provider.
-- **Cleaning professionals:** present cleaning services, define service areas and find potential customers.
+## Main product and conversion
 
-Hae Siivooja is a Finnish digital marketplace, not a company providing all cleaning jobs itself. Site copy describes the app as built by Android developer **Oleg Lihvoinen** and UX/UI designer **Viktoriya Lihvoinen**, who also designed the website.
+**Primary entry:** [HaeSiivooja Android app on Google Play](https://play.google.com/store/apps/details?id=com.cleanerfinder) — currently in open testing.
 
-## Technology
-- Astro, static pre-rendered HTML, no runtime database.
-- Separate Finnish routes and English routes under `/en/`, with fully English slugs.
-- Per-page SEO titles and descriptions, canonical tags, reciprocal hreflang, JSON-LD and XML sitemap.
-- Responsive customer/cleaner landing pages and internal service guides.
-- App information pages: `/terms-of-service/`, `/privacy/`, `/accessibility-statement/`, `/app-guide/`, `/maksut/`, `/cleaner/`, `/tilin-poisto/`, plus English equivalents.
+**Customer journey:** install the Android app, register for free, search cleaners near the cleaning location, agree on the job and book with **€0 HaeSiivooja customer booking fee**. The actual cleaning job is a paid service from the chosen professional.
 
-**Google Play privacy policy:** `https://haesiivooja.fi/privacy/`. The no-slash URL `/privacy` should redirect to this page through Apache's standard DirectorySlash behavior.
+**Cleaner journey:** install the Android app, create a professional profile, describe services and the work area, and find prospective customers. Professional subscription options: **monthly or yearly**; the current amounts and renewal conditions must be checked in the app before subscribing. Do not invent or copy historic pricing into marketing content.
 
-## Development
+**Optional separate feature:** AI cleaning search on the web. It must remain a secondary link, not the main app download, booking or cleaner-signup CTA.
 
-Requires Node.js >= 22.22.0.
+## Content and SEO
+
+- Distinct Finnish and English localized pages, descriptions and semantic page headings.
+- Structured customer/cleaner journeys and substantial service-specific copy.
+- Dedicated pricing/subscription area and transparent distinction between customer bookings and paid cleaning jobs.
+- Three linked cleaning guides, useful FAQs, and the two-founder history of Oleg Lihvoinen and Viktoriya Lihvoinen.
+- Canonical URLs, reciprocal hreflang, Open Graph metadata, JSON-LD organization/website/app and FAQ markup, robots and XML sitemap.
+- Privacy policy at `/privacy/` (English: `/en/privacy/`), terms, cleaner conditions, accessibility and account deletion.
+- GitHub Actions validates Astro build, links, translations, privacy pages, primary Google Play CTAs, subscription cards and HTML content.
+
+**Search engine visibility:** technical SEO and useful content support discovery but cannot guarantee Google rankings. Use Search Console to inspect coverage and queries, and keep content accurate as the app changes.
+
+## Local development
+
+Node.js >= 22.22.0.
 
 ```bash
 npm install
@@ -28,12 +35,10 @@ npm run predeploy
 npm run dev
 ```
 
-## Deployment
-See [docs/DEPLOY.md](docs/DEPLOY.md) for static Apache deployment.
+## Apache deployment
 
-## Content accuracy checklist
-- Confirm the legal identity of the data controller against the actual Google Play developer listing.
-- Verify processing of location, account data, app analytics/SDKs, payment data and any international transfers; update policy to match the deployed app and Play Console Data safety declaration.
-- Ensure account deletion works in the app or on the web and meets Google Play requirements.
-- Verify fees for professionals in the current app conditions. Never present free **customer booking** as free **cleaning work**.
-- Confirm that service claims, availability and app features are accurate.
+See [docs/DEPLOY.md](docs/DEPLOY.md). Build a versioned static release, verify it and atomically switch the `/var/www/haesiivooja-astro/current` symlink only after validation. This repository does not require WordPress or a production Node process.
+
+## Legal accuracy to verify
+
+The Google Play developer listing identifies HaeSiivooja Oy. Keep privacy disclosures consistent with the actual Android SDKs, Google Play Data safety section, location use, financial data, deletion process, storage providers and international transfers. The website privacy policy is not a substitute for a real processing inventory. Verify professional subscription prices and renewal terms inside the running app.
