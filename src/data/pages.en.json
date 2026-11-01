@@ -46,6 +46,14 @@
       {
         "heading": "Window and office cleaning",
         "text": "Window cleaning depends on the number and accessibility of windows. Office cleaning is planned around the space, usage and desired frequency."
+      },
+      {
+        "heading": "One marketplace for different cleaning jobs",
+        "text": "HaeSiivooja is a Finnish marketplace: customers find cleaners and cleaning professionals find potential customers. Home cleaning, moving, windows and offices require different work scopes."
+      },
+      {
+        "heading": "Use the Android app for local matching",
+        "text": "Get the app on Google Play during open testing and search based on the cleaning address. Actual marketplace booking takes place in the mobile app. AI search is an optional separate web feature."
       }
     ],
     "faqs": [
@@ -74,6 +82,14 @@
       {
         "heading": "Before you book",
         "text": "Share the property size, information about pets, delicate surfaces and your preferred cleaning products. Check who brings supplies and how extras are priced."
+      },
+      {
+        "heading": "Agree on what home cleaning includes",
+        "text": "A visit may include vacuuming, mopping, dusting and cleaning kitchen and bathroom surfaces. Oven cleaning, windows, materials and travel charges may require separate agreement, so confirm the quote before booking."
+      },
+      {
+        "heading": "Find home cleaners nearby",
+        "text": "Enter the cleaning location and property size in the HaeSiivooja Android app. Compare local providers and agree the work duration. Booking is free for registered customers, while the actual cleaning is paid separately."
       }
     ],
     "faqs": [
@@ -106,6 +122,14 @@
       {
         "heading": "Request an itemised quote",
         "text": "Ask whether oven and fridge interiors, windows, balconies and storage areas are included. Confirm charges for extras and any time limits in writing."
+      },
+      {
+        "heading": "Use a property handover checklist",
+        "text": "Check which areas must be cleaned before giving back the keys. Agree separately about cupboard interiors, appliances, windows, balconies, saunas and storage spaces."
+      },
+      {
+        "heading": "Plan the timing",
+        "text": "Arrange cleaning after the property has been emptied and before handover. Tell the provider about access arrangements and any deadlines."
       }
     ],
     "faqs": [
@@ -134,6 +158,14 @@
       {
         "heading": "How should I prepare?",
         "text": "List the most important tasks and describe the property's condition. This helps a provider estimate the time, supplies and equipment needed."
+      },
+      {
+        "heading": "When a more thorough clean makes sense",
+        "text": "Deep cleaning helps with areas that ordinary maintenance leaves behind, such as kitchen grease, bathroom limescale, skirting boards, behind furniture or neglected surfaces."
+      },
+      {
+        "heading": "Agree the scope and estimate",
+        "text": "Describe the current condition, materials and specific tasks so the professional can estimate duration, supplies and the final cost."
       }
     ],
     "faqs": [
@@ -158,6 +190,14 @@
       {
         "heading": "What does the service include?",
         "text": "Check whether the quote covers inside and outside panes, inner panes, frames and sills. Never assume every surface is included in the base price."
+      },
+      {
+        "heading": "Window types and accessibility affect quotes",
+        "text": "Tell the cleaner the number of windows, their sizes, whether they open, the floor level and any balcony glazing. Check whether inside and outside panes, frames and blinds are included."
+      },
+      {
+        "heading": "Prioritize safe access",
+        "text": "High or difficult-to-reach windows may require special equipment. The professional should decide how to perform the job safely before quoting."
       }
     ],
     "faqs": [
@@ -182,6 +222,14 @@
       {
         "heading": "Compare frequency and service scope",
         "text": "Separate daily or weekly tasks from occasional work. Agree on supplies, waste handling, quality checks and how exceptional situations are managed."
+      },
+      {
+        "heading": "Describe the premises",
+        "text": "Specify floor area, workstations, kitchens, toilets, meeting rooms and desired cleaning frequency. Building access and working hours influence the plan."
+      },
+      {
+        "heading": "Confirm access and responsibilities",
+        "text": "Agree about keys, cleaning products, restricted areas and appropriate insurance, then compare clearly itemized quotes from providers serving your location."
       }
     ],
     "faqs": [
@@ -341,6 +389,14 @@
           "What affects the total cost of home cleaning",
           "Finnish Tax Administration guidance on household deductions"
         ]
+      },
+      {
+        "heading": "What can you learn here?",
+        "text": "Use the move-out checklist for handover, the home-cleaning prices guide for comparing quotes and the household tax deduction guide for checking Finnish tax eligibility."
+      },
+      {
+        "heading": "When you're ready to book",
+        "text": "Open the HaeSiivooja Android app on Google Play, enter the cleaning location and choose a suitable professional. Booking is free for registered customers; the cleaning job is paid separately."
       }
     ],
     "faqs": []
