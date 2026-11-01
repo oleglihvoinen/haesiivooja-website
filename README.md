@@ -1,5 +1,8 @@
 # HaeSiivooja website — bilingual SEO-first Astro
 
+> **Ubuntu production server update (2026-11-01):** The actual VPS uses **Apache2**, not Nginx. Both `haesiivooja.fi` and `haesiivooja.com` share `/var/www/html`, and duplicate HTTP vhosts exist for `.fi`. Follow [docs/DEPLOY_APACHE.md](docs/DEPLOY_APACHE.md) for this server; do **not** run the Nginx or `/var/www/html` symlink cutover scripts. Inspect the Apache vhosts before changing live routing.
+
+
 **Status: staging foundation, not yet the live WordPress replacement.** Contains 17 Finnish and 17 corresponding English routes (including the two homepages), with human-readable English slugs, fully translated service and guide copy, hreflang alternate links, Finnish/English navigation, independent self-canonicals, translated SEO titles/descriptions and structured data. Sitemap lists both sets of URLs. Original WordPress media/theme not yet imported; do not describe the result as pixel-perfect.
 
 ## Requirements
