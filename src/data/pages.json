@@ -50,6 +50,14 @@
       {
         "heading": "Ikkunanpesu ja toimistosiivous",
         "text": "Ikkunanpesussa vaikuttavat ikkunoiden määrä, saavutettavuus ja pestävät pinnat. Toimistosiivouksessa ratkaisevaa on tilan käyttötapa ja sopiva palvelurytmi."
+      },
+      {
+        "heading": "Yksi sovellus – useita siivoustarpeita",
+        "text": "HaeSiivooja on suomalainen markkinapaikka, jonka kautta asiakas etsii siivoojaa ja ammattilainen asiakkaita. Kotisiivouksen, muuttosiivouksen, ikkunanpesun ja toimistosiivouksen sisältö määritellään aina erikseen."
+      },
+      {
+        "heading": "Android-sovelluksella löydät paikalliset tekijät",
+        "text": "Asenna avoimessa testauksessa oleva sovellus Google Playsta ja hae siivoojaa siivouskohteen sijainnin perusteella. Varsinainen varaus tapahtuu mobiilisovelluksessa; erillinen AI-siivoushaku on lisätoiminto."
       }
     ],
     "faqs": [
@@ -78,6 +86,14 @@
       {
         "heading": "Varmista ennen varausta",
         "text": "Kerro neliöt, lemmikit, mahdolliset vaikeasti puhdistettavat pinnat ja toiveet pesuaineista. Pyydä selkeä tieto siitä, tuoko siivooja välineet ja mitä lisäpalvelut maksavat."
+      },
+      {
+        "heading": "Kotisiivouksen sisältö kannattaa sopia etukäteen",
+        "text": "Kotisiivoukseen voi kuulua lattioiden imurointi ja pesu, pölyjen pyyhkiminen, keittiön ja kylpyhuoneen puhdistus sekä muut yhdessä sovitut työt. Tarkista, sisältyvätkö esimerkiksi uunin puhdistus, ikkunanpesu, tarvikkeet ja matkat hintaan."
+      },
+      {
+        "heading": "Löydä kotisiivooja läheltäsi",
+        "text": "Kerro siivouskohteen sijainti ja asunnon koko HaeSiivooja-Android-sovelluksessa. Vertaile paikallisia tekijöitä ja sovittavaa työaikaa. Rekisteröityneen asiakkaan varaus on maksuton, mutta siivoustyö hinnoitellaan erikseen."
       }
     ],
     "faqs": [
@@ -110,6 +126,14 @@
       {
         "heading": "Pyydä eritelty tarjous",
         "text": "Kysy, sisältyvätkö uunin ja jääkaapin sisäpuolinen puhdistus, ikkunanpesu, parveke ja varastot. Myös mahdolliset lisätyöt ja aikarajat kannattaa kirjata."
+      },
+      {
+        "heading": "Muuttopäivän tarkistuslista",
+        "text": "Varmista, mitkä tilat ja pinnat pitää puhdistaa ennen avainten luovutusta. Sovi erikseen esimerkiksi kaappien sisäpuolista, kodinkoneista, ikkunoista, saunasta, parvekkeesta ja varastosta."
+      },
+      {
+        "heading": "Varaa oikeaan aikaan",
+        "text": "Muuttosiivous kannattaa ajoittaa asunnon tyhjennyksen jälkeen mutta ennen luovutusta. Kerro työn tekijälle kulkujärjestelyistä ja mahdollisista aikarajoista."
       }
     ],
     "faqs": [
@@ -138,6 +162,14 @@
       {
         "heading": "Miten valmistaudun?",
         "text": "Listaa tehtävät tärkeysjärjestykseen ja kuvaile kohteen kunto. Näin palveluntarjoaja voi arvioida tarvittavan ajan ja sopivat välineet."
+      },
+      {
+        "heading": "Milloin tarvitaan perusteellisempaa siivousta?",
+        "text": "Perussiivous sopii, kun tavanomainen ylläpitosiivous ei riitä. Kohteena voivat olla esimerkiksi keittiön rasvaiset pinnat, kylpyhuoneen kalkki, listat, kalusteiden taustat tai pitkään puhdistamattomat alueet."
+      },
+      {
+        "heading": "Sovi tarkka sisältö ja arvioitu kesto",
+        "text": "Kuvaile likaisuus, pintamateriaalit, tarvittavat välineet ja erityiskohteet. Näin palveluntarjoaja voi arvioida työajan, hinnoittelun ja mahdolliset lisätyöt."
       }
     ],
     "faqs": [
@@ -162,6 +194,14 @@
       {
         "heading": "Mitä ikkunanpesu sisältää?",
         "text": "Sovi etukäteen, pestäänkö sisä- ja ulkopinnat, välilasit, karmit ja ikkunalaudat. Älä oleta kaikkien työvaiheiden sisältyvän perushintaan."
+      },
+      {
+        "heading": "Ikkunoiden määrä ja saavutettavuus vaikuttavat hintaan",
+        "text": "Kerro ikkunoiden lukumäärä, koko, avattavuus, kerros ja mahdollinen parvekelasitus. Pyydä erittely sisä- ja ulkopintojen, karmien ja sälekaihtimien pesusta."
+      },
+      {
+        "heading": "Turvallinen ikkunanpesu",
+        "text": "Vaikeapääsyinen tai korkealla sijaitseva ikkuna voi edellyttää erikoisvälineitä. Ammattilaisen tulee arvioida työn turvallinen toteutus ennen tarjousta."
       }
     ],
     "faqs": [
@@ -186,6 +226,14 @@
       {
         "heading": "Vertaa siivousrytmiä ja työn rajausta",
         "text": "Päivittäiset, viikoittaiset ja erikseen tilattavat työt on hyvä erottaa toisistaan. Sovi tarvikkeista, jätehuollosta, laadun seurannasta ja poikkeustilanteista erikseen."
+      },
+      {
+        "heading": "Määrittele työtilan tarpeet",
+        "text": "Kerro työpisteiden määrä, pinta-ala, keittiö-, wc- ja neuvottelutilat sekä toivottu käyntitiheys. Yrityksen aikataulu ja käyttörajoitukset vaikuttavat käytännön järjestelyihin."
+      },
+      {
+        "heading": "Sovi avaimista ja vastuista",
+        "text": "Tarkista kulkuoikeudet, välineet, siivousaineet, tietosuojaan liittyvät tilat sekä vakuutukset. Vertaile selkeästi eriteltyjä tarjouksia alueella toimivilta siivousyrityksiltä."
       }
     ],
     "faqs": [
@@ -345,6 +393,14 @@
           "Kotisiivouksen hintaan vaikuttavat tekijät",
           "Verohallinnon ohjeet kotitalousvähennyksestä"
         ]
+      },
+      {
+        "heading": "Mitä löydät oppaista?",
+        "text": "Muuttosiivouksen tarkistuslista auttaa asunnon luovutuksessa, kotisiivouksen hintaopas tarjoaa vertailuvinkkejä ja kotitalousvähennysopas kertoo, mitä Verohallinnon ajantasaisista ehdoista on hyvä tarkistaa."
+      },
+      {
+        "heading": "Kun olet valmis varaamaan",
+        "text": "Lataa HaeSiivooja-Android-sovellus Google Playsta. Etsi siivoojaa sijaintisi tai siivouskohteen perusteella. Rekisteröitymisen jälkeen varaus ei maksa asiakkaalle, mutta sovitusta siivoustyöstä maksetaan erikseen."
       }
     ],
     "faqs": []
