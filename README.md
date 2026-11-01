@@ -1,56 +1,45 @@
-# HaeSiivooja — Finnish Cleaning Marketplace
+# HaeSiivooja — Cleaning Marketplace in Finland
 
-Bilingual product website for the **HaeSiivooja mobile app (Android and iOS)**, connecting people who need cleaning services with cleaning professionals searching for customers in Finland.
+**Find a cleaner. Find customers.**
 
-## Main product and conversion
+HaeSiivooja connects people who need cleaning services with cleaning professionals who want to find customers throughout Finland. The mobile marketplace helps both sides find each other based on where cleaning is needed.
 
-**Primary entry:** [HaeSiivooja Android app on Google Play](https://play.google.com/store/apps/details?id=com.cleanerfinder) — currently in open testing.
+## For cleaning professionals
 
-**We are looking for cleaners throughout Finland** to join HaeSiivooja and reach more customers.
+**We're looking for cleaners across Finland!**
 
-**Customer journey:** install the Android app, register for free, search cleaners near the cleaning location, agree on the job and register for free and pay a **€12.50 customer service fee when making a booking**. The cleaning job itself is a separate paid service from the chosen professional.
+- Register for free and create a professional profile.
+- Present your cleaning services and service area.
+- Make it easier for potential customers nearby to discover your work.
+- Choose a professional subscription: **€5.50 per month** or **€60 per year**.
+- Connect with potential customers and agree on the scope and price of cleaning jobs.
 
-**Development:** Oleg Lihvoinen is the mobile developer (Android and iOS); Viktoriya Lihvoinen designed the UX/UI and website.
+Customer demand and individual bookings depend on the area and are not guaranteed.
 
-**Cleaner journey:** install the Android app, create a professional profile, describe services and the work area, and find prospective customers. Cleaner registration is free. Professional subscriptions cost **€5.50 monthly** or **€60 yearly**; the applicable billing and renewal conditions are shown in the app.
+## For customers
 
-**Optional separate feature:** AI cleaning search on the web. It must remain a secondary link, not the main app download, booking or cleaner-signup CTA.
+- **Registration is free.**
+- Search for cleaning professionals near your home, office or other cleaning location.
+- Explore services and find a provider that matches your needs.
+- Pay a **€12.50 service fee when making a booking**.
+- Agree the price of the cleaning work separately with the chosen professional.
 
-## Content and SEO
+The booking service fee and the price of the cleaning work are separate charges.
 
-- Distinct Finnish and English localized pages, descriptions and semantic page headings.
-- Structured customer/cleaner journeys and substantial service-specific copy.
-- Dedicated pricing/subscription area: free registration, €12.50 customer booking service fee, €5.50/month or €60/year for cleaners, and separately priced cleaning work.
-- Three linked cleaning guides, useful FAQs, and the two-founder history of Oleg Lihvoinen and Viktoriya Lihvoinen.
-- Canonical URLs, reciprocal hreflang, Open Graph metadata, JSON-LD organization/website/app and FAQ markup, robots and XML sitemap.
-- Privacy policy at `/privacy/` (English: `/en/privacy/`), terms, cleaner conditions, accessibility and account deletion.
-- GitHub Actions validates Astro build, links, translations, privacy pages, primary Google Play CTAs, subscription cards and HTML content.
+## Cleaning services
 
-**Search engine visibility:** technical SEO and useful content support discovery but cannot guarantee Google rankings. Use Search Console to inspect coverage and queries, and keep content accurate as the app changes.
+Discover local professionals for home cleaning, move-out cleaning, deep cleaning, window cleaning and office cleaning. Availability varies by location and service provider.
 
-## Local development
+## Get the app
 
-Node.js >= 22.22.0.
+HaeSiivooja is available for Android through **Google Play open testing**.
 
-```bash
-npm install
-npm run check
-npm run predeploy
-npm run dev
-```
+[Find HaeSiivooja on Google Play](https://play.google.com/store/apps/details?id=com.cleanerfinder)
 
-## Apache deployment
+An optional [AI-powered cleaning search](https://app.haesiivooja.fi/) is also available as a separate web feature. The mobile app is the primary marketplace experience.
 
-See [docs/DEPLOY.md](docs/DEPLOY.md). Build a versioned static release, verify it and atomically switch the `/var/www/haesiivooja-astro/current` symlink only after validation. This repository does not require WordPress or a production Node process.
+## Learn more
 
-## Legal accuracy to verify
+Visit [haesiivooja.fi](https://haesiivooja.fi/) for Finnish and English information about the marketplace, service categories, pricing, cleaner subscriptions, guides and frequently asked questions.
 
-The Google Play developer listing identifies HaeSiivooja Oy. Keep privacy disclosures consistent with the actual Android SDKs, Google Play Data safety section, location use, financial data, deletion process, storage providers and international transfers. The website privacy policy is not a substitute for a real processing inventory. Confirm that the displayed customer and cleaner fees match the current app checkout, including VAT treatment and subscription renewal terms.
-
-## Restoring original WordPress app screenshots
-
-The original WordPress uploads remain on the VPS unless they were removed separately. The Astro site serves a curated local copy, not WordPress itself. Run `python3 scripts/restore-wordpress-app-images.py --scan` and then `python3 scripts/restore-wordpress-app-images.py --apply` on the VPS before building. The importer copies actual WordPress screenshots into `public/app-screenshots/` and builds a local image manifest at `src/data/app-screenshots.local.json`. Both are kept out of Git so future deployments remain safe. Images appear in the homepage hero and the screenshot gallery after `npm run check` and the usual Apache static release activation. See `docs/RESTORE_APP_IMAGES.md`.
-
-## Sitemap and logo
-
-The directly readable page-URL sitemap is [`/sitemap.xml`](https://haesiivooja.fi/sitemap.xml); Astro also generates a valid `sitemap-index.xml` pointing to its child files. The company logo and `favicon.ico` use the saved HaeSiivooja water-drop mascot artwork. App screenshots 4 and 5 are excluded from published galleries and build output.
+[Terms of service](https://haesiivooja.fi/terms-of-service/) · [Privacy policy](https://haesiivooja.fi/privacy/) · [Contact](https://haesiivooja.fi/yhteystiedot/)
