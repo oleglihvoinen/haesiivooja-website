@@ -8,11 +8,16 @@ const t=ui[en?'en':'fi'];
 const canonicalPath=legacy?`/${page.slug}/`:(en?`/en/${page.slug}/`:`/${page.slug}/`);
 const breadcrumbs=[{title:page.h1||page.title,href:canonicalPath}];
 const schema=!legacy&&page.faqs?.length?[{'@type':'FAQPage',mainEntity:page.faqs.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))}]:[];
+// WordPress may include its own H1 inside the body. Keep the page title as the only H1.
+// Preserve the imported HTML and heading attributes, changing only H1 tags to H2.
+const legacyContent = legacy && typeof page.content === 'string'
+  ? page.content.replace(/<(\/?)(h1)(?=[\s>])/gi, '<$1h2')
+  : '';
 ---
 <Base lang={lang} title={page.title} description={page.description||page.title} canonicalPath={canonicalPath} breadcrumbs={breadcrumbs} schema={schema}>
 {legacy ? <>
   <section class="page-intro"><div class="container"><div class="crumbs"><a href="/">{t.home}</a> / {page.title}</div><h1>{page.title}</h1></div></section>
-  <section class="section"><div class="container article" set:html={page.content}></div></section>
+  <section class="section"><div class="container article" set:html={legacyContent}></div></section>
 </> : <>
   <section class="page-intro"><div class="container"><div class="crumbs"><a href={en?'/en/':'/'}>{t.home}</a> / {page.h1}</div><span class="eyebrow">{page.eyebrow}</span><h1>{page.h1}</h1><p class="lead">{page.intro}</p><div class="cta"><a class="button" href={site.searchUrl}>{t.searchAction}</a><a class="button-secondary" href={en?'/en/cleaning-services/':'/siivouspalvelut/'}>{t.services}</a></div></div></section>
   <section class="section"><div class="container split"><div class="prose">{page.sections.map(section=><section style="margin-bottom:46px"><h2>{section.heading}</h2><p>{section.text}</p>{section.bullets?.length>0&&<ul class="list-clean">{section.bullets.map(item=><li>{item}</li>)}</ul>}</section>)}</div><aside class="card"><h3>{t.remember}</h3><p>{t.rememberText}</p><a href={en?'/en/cleaning-prices/':'/siivouksen-hinta/'}>{t.pricingTips}</a></aside></div></section>
