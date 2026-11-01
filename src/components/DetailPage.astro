@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import {site} from '../data/site';
 import {services,guides,faqs} from '../data/marketing';
+import {appScreenshots} from '../data/app-screenshots';
 const {page,lang='fi'}=Astro.props;
 const en=lang==='en';
 const canonicalPath=en?`/en/${page.slug}/`:`/${page.slug}/`;
@@ -46,6 +47,11 @@ const guidesUrl=en?'/en/guides/':'/oppaat/';
     <p class="aside-note">{en?'AI cleaning search is an optional separate web feature.':'AI-siivoushaku on erillinen vapaaehtoinen verkkotoiminto.'} <a href={site.searchUrl}>{en?'Try AI search':'Kokeile AI-hakua'}</a></p>
     </aside>}
   </div></section>
+  {['app-guide'].includes(page.slug)&&appScreenshots.length>0&&<section class="section screenshot-showcase"><div class="container">
+    <h2>{en?'HaeSiivooja app screenshots':'HaeSiivooja-sovelluksen kuvakaappaukset'}</h2>
+    <p class="lead">{en?'Original screenshots restored from the earlier HaeSiivooja website.':'Alkuperäiseltä HaeSiivooja-verkkosivustolta palautetut sovelluskuvat.'}</p>
+    <div class="app-gallery">{appScreenshots.slice(0,8).map((shot,index)=><figure class="app-gallery-item"><img src={shot.src} alt={en?shot.altEn:shot.altFi} loading="lazy" decoding="async" width="360" height="720"/><figcaption>{en?`App screen ${index+1}`:`Sovellusnäkymä ${index+1}`}</figcaption></figure>)}</div>
+  </div></section>}
   {(isProfessional||isPrice)&&<section class="section soft"><div class="container">
     <span class="eyebrow">{en?'For professional cleaners':'Siivousalan ammattilaisille'}</span><h2>{en?'Choose how you use HaeSiivooja':'Valitse HaeSiivooja-tilaus ammattilaiselle'}</h2>
     <p class="lead">{en?'Registration for cleaners is free. Professional subscriptions cost €5.50 per month or €60 per year. Check billing and renewal conditions in the app.':'Siivoojan rekisteröityminen on maksutonta. Kuukausitilaus maksaa 5,50 € ja vuositilaus 60 €. Tarkista laskutuksen ja uusiutumisen ehdot sovelluksesta.'}</p>

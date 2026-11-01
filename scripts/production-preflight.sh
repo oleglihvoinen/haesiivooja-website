@@ -84,5 +84,18 @@ if(!homeFi.includes('Etsimme siivoojia')||!homeEn.includes('cleaners'))throw Err
 console.log('Confirmed pricing, free signup, cleaner recruiting and SEO sitemap regression checks passed.');
 
 console.log('Marketplace: Google Play CTAs, cleaner plans, substantive bilingual pages, FAQ and button contrast checks OK.');
+// If the local WordPress image import has run, require genuine image assets and gallery output.
+const localGallery='src/data/app-screenshots.local.json';
+if(fs.existsSync(localGallery)){
+ const shots=JSON.parse(fs.readFileSync(localGallery,'utf8'));
+ if(!Array.isArray(shots)||shots.length<1)throw Error('WordPress screenshot manifest is empty');
+ for(const s of shots){
+   if(!s.src?.startsWith('/app-screenshots/')||!fs.existsSync('dist'+s.src))
+     throw Error('Original app screenshot missing from dist: '+s.src);
+ }
+ if(!homeFi.includes('screenshot-showcase')||!homeEn.includes('screenshot-showcase'))
+   throw Error('Original app screenshot gallery missing from Finnish or English homepage');
+ console.log('Original WordPress app screenshots included in both homepages: '+shots.length);
+}
 console.log('Privacy and bilingual app information pages: OK. Verify actual data processing before release.');
 JS
