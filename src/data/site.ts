@@ -1,7 +1,7 @@
 export const site = {
-  name: 'HaeSiivooja',
+  name: 'Hae Siivooja',
   url: 'https://haesiivooja.fi',
-  description: 'HaeSiivooja auttaa löytämään ja vertailemaan siivousalan ammattilaisia Suomessa. Tutustu kotisiivoukseen, muuttosiivoukseen ja muihin palveluihin.',
+  description: 'Hae Siivooja yhdistää siivoojaa etsivät asiakkaat ja asiakkaita etsivät siivousalan ammattilaiset Suomessa. Rekisteröityneen asiakkaan varaus on maksuton.',
   email: 'info@haesiivooja.fi',
   searchUrl: 'https://app.haesiivooja.fi/',
   playUrl: 'https://play.google.com/store/apps/details?id=com.cleanerfinder',
@@ -10,13 +10,13 @@ export const navigation = {
  fi:[
   {title:'Etsi siivooja',href:'/etsi-siivooja/'},
   {title:'Siivouspalvelut',href:'/siivouspalvelut/'},
-  {title:'Hinnat',href:'/siivouksen-hinta/'},
-  {title:'Siivoojille',href:'/siivoojaksi/'},
+  {title:'Varaus 0 €',href:'/siivouksen-hinta/'},
+  {title:'Löydä asiakkaita',href:'/siivoojaksi/'},
  ],
  en:[
   {title:'Find a cleaner',href:'/en/find-a-cleaner/'},
   {title:'Cleaning services',href:'/en/cleaning-services/'},
-  {title:'Prices',href:'/en/cleaning-prices/'},
-  {title:'For cleaners',href:'/en/for-cleaners/'},
+  {title:'Free booking',href:'/en/cleaning-prices/'},
+  {title:'Find customers',href:'/en/for-cleaners/'},
  ],
 };

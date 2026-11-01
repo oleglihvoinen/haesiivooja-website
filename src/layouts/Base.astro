@@ -1,28 +1,25 @@
 ---
 import '../styles/global.css';
-import legacyPages from '../data/legacy-pages.json';
 import {site,navigation} from '../data/site';
 import {ui,alternateFor} from '../data/i18n';
 const {title,description,canonicalPath='/',breadcrumbs=[],schema=[],lang='fi'} = Astro.props;
 const english=lang==='en';
 const t=ui[english?'en':'fi'];
 const url=new URL(canonicalPath,site.url).href;
-const fullTitle=title ? `${title} | ${site.name}` : (english ? 'HaeSiivooja – Find Cleaning Services in Finland' : 'HaeSiivooja – löydä siivooja ja siivouspalvelut Suomessa');
+const fullTitle=title ? `${title} | ${site.name}` : (english ? 'Hae Siivooja – Find Cleaners and Cleaning Clients in Finland' : 'Hae Siivooja – löydä siivooja tai siivousasiakkaita Suomessa');
 const desc=description||(english?'Find cleaning professionals and compare home, move-out and other cleaning services in Finland with HaeSiivooja.':site.description);
 const fiPath=alternateFor(canonicalPath,'fi');
 const enPath=alternateFor(canonicalPath,'en');
 const altFi=fiPath?new URL(fiPath,site.url).href:null;
 const altEn=enPath?new URL(enPath,site.url).href:null;
 const organization={
- '@type':'Organization','@id':`${site.url}/#organization`,name:'HaeSiivooja Oy',url:site.url,
+ '@type':'Organization','@id':`${site.url}/#organization`,name:'Hae Siivooja',url:site.url,
  logo:`${site.url}/logo.svg`,contactPoint:{'@type':'ContactPoint',email:site.email,contactType:'customer support'},sameAs:[site.playUrl]
 };
 const webSite={'@type':'WebSite','@id':`${site.url}/#website`,name:site.name,url:site.url,inLanguage:['fi-FI','en'],publisher:{'@id':`${site.url}/#organization`}};
 const pageSchema={'@type':'WebPage','@id':`${url}#webpage`,name:fullTitle,description:desc,url,inLanguage:english?'en':'fi-FI',isPartOf:{'@id':`${site.url}/#website`},...(altFi&&altEn?{translationOfWork:{'@id':`${altFi}#webpage`}}:{})};
 const crumbs=breadcrumbs.length?{'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:t.home,item:new URL(english?'/en/':'/',site.url).href},...breadcrumbs.map((b,i)=>({'@type':'ListItem',position:i+2,name:b.title,item:new URL(b.href,site.url).href}))]}:null;
 const jsonLd={'@context':'https://schema.org','@graph':[organization,webSite,pageSchema,...schema,...(crumbs?[crumbs]:[])]};
-const legal=legacyPages.filter((p)=>['terms-of-service','privacy-policy','accessibility-statement'].includes(p.slug));
-const legalLabels={'terms-of-service':t.legalTerms,'privacy-policy':t.legalPrivacy,'accessibility-statement':t.legalAccessibility};
 const links=english?{
  find:'/en/find-a-cleaner/',services:'/en/cleaning-services/',price:'/en/cleaning-prices/',guides:'/en/guides/',cleaners:'/en/for-cleaners/',about:'/en/about-us/',contact:'/en/contact/'
 }:{find:'/etsi-siivooja/',services:'/siivouspalvelut/',price:'/siivouksen-hinta/',guides:'/oppaat/',cleaners:'/siivoojaksi/',about:'/tietoa-meista/',contact:'/yhteystiedot/'};
@@ -70,12 +67,31 @@ const links=english?{
     </div></header>
     <main id="content"><slot /></main>
     <footer class="footer"><div class="container">
-      <div class="footer-cols">
-        <div><h3>HaeSiivooja</h3><p>{t.platformCopy}</p><p><a href={`mailto:${site.email}`}>{site.email}</a></p></div>
-        <div><strong>{t.customers}</strong><ul><li><a href={links.find}>{english?'Find a cleaner':'Etsi siivooja'}</a></li><li><a href={links.services}>{english?'Cleaning services':'Siivouspalvelut'}</a></li><li><a href={links.price}>{t.compare}</a></li><li><a href={links.guides}>{t.guides}</a></li></ul></div>
-        <div><strong>{t.forProviders}</strong><ul><li><a href={links.cleaners}>{t.forCleaners}</a></li><li><a href={links.about}>{t.about}</a></li><li><a href={links.contact}>{t.contact}</a></li>{legal.map(page=><li><a href={`/${page.slug}/`}>{legalLabels[page.slug]}</a></li>)}</ul></div>
-      </div>
-      <div class="bottom"><small>© {new Date().getFullYear()} HaeSiivooja Oy. {t.disclaimer}</small></div>
+    <div class="footer-cols">
+      <div><h3>Hae Siivooja</h3><p>{english?'A Finnish digital marketplace: customers find cleaners and cleaners find customers.':'Suomalainen digitaalinen markkinapaikka: asiakkaat löytävät siivoojan ja siivoojat löytävät asiakkaita.'}</p><p><a href={`mailto:${site.email}`}>{site.email}</a></p></div>
+      <div><strong>{english?'Company':'Yritys'}</strong><ul>
+        <li><a href={links.about}>{english?'Our history':'Meidän tarinamme'}</a></li>
+        <li><a href={links.contact}>{english?'Contact us':'Ota meihin yhteyttä'}</a></li>
+      </ul><strong>{english?'For customers':'Asiakkaille'}</strong><ul>
+        <li><a href={links.find}>{english?'Find a cleaner':'Etsi siivooja'}</a></li>
+        <li><a href={links.price}>{english?'Prices – free booking':'Hinnat – varausmaksu 0 €'}</a></li>
+      </ul></div>
+      <div><strong>{english?'Hae Siivooja app':'Hae Siivooja -sovellus'}</strong><ul>
+        <li><a href={english?'/en/terms-of-service/':'/terms-of-service/'}>{english?'Terms of service':'Käyttöehdot'}</a></li>
+        <li><a href={english?'/en/privacy/':'/privacy/'}>{english?'Privacy policy':'Tietosuojakäytäntö'}</a></li>
+        <li><a href={english?'/en/accessibility-statement/':'/accessibility-statement/'}>{english?'Accessibility':'Saavutettavuusseloste'}</a></li>
+        <li><a href={english?'/en/app-guide/':'/app-guide/'}>{english?'App guide':'Sovelluksen opas'}</a></li>
+        <li><a href={english?'/en/payments/':'/maksut/'}>{english?'Payments':'Maksut'}</a></li>
+        <li><a href={english?'/en/cleaner-terms/':'/cleaner/'}>{english?'Cleaner terms':'Siivoojan ehdot'}</a></li>
+        <li><a href={english?'/en/delete-account/':'/tilin-poisto/'}>{english?'Delete account':'Tilin poistaminen'}</a></li>
+      </ul></div>
+      <div><strong>{english?'For cleaners':'Siivoojille'}</strong><ul>
+        <li><a href={links.cleaners}>{english?'Find customers':'Löydä asiakkaita'}</a></li>
+        <li><a href={site.searchUrl}>{english?'AI cleaning search':'AI-siivoushaku'}</a></li>
+        <li><a href={links.guides}>{english?'Cleaning guides':'Siivousoppaat'}</a></li>
+      </ul></div>
+    </div>
+    <div class="bottom"><small>© {new Date().getFullYear()} Hae Siivooja. {english?'Booking is free for registered customers; cleaning work is priced by the service provider.':'Varaaminen on rekisteröityneelle asiakkaalle maksutonta; siivoustyö on maksullista palveluntarjoajan sopimuksen mukaan.'}</small></div>
     </div></footer>
   </body>
 </html>

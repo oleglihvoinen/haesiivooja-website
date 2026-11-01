@@ -1,13 +1,7 @@
 ---
 import DetailPage from '../components/DetailPage.astro';
 import pages from '../data/pages.json';
-import legacyPages from '../data/legacy-pages.json';
-export function getStaticPaths(){
-  return [
-    ...pages.map(page=>({params:{slug:page.slug},props:{page,legacy:false}})),
-    ...legacyPages.map(page=>({params:{slug:page.slug},props:{page,legacy:true}}))
-  ];
-}
-const {page,legacy=false}=Astro.props;
+export function getStaticPaths(){return pages.map(page=>({params:{slug:page.slug},props:{page}}));}
+const {page}=Astro.props;
 ---
-<DetailPage page={page} legacy={legacy} lang="fi" />
+<DetailPage page={page} lang="fi" />
