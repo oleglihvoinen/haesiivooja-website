@@ -87,3 +87,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible {outline:3px solid 
 .app-gallery-item img{display:block;max-width:100%;width:auto;height:auto;max-height:380px;margin:0 auto;object-fit:contain;border-radius:10px}
 .app-gallery-item figcaption{font-size:.82rem;color:#5e716e;margin-top:10px}
 @media(max-width:800px){.real-app-hero{min-height:400px}.real-phone{max-height:355px}.real-phone img{max-height:320px}}
+
+/* HaeSiivooja original water-drop mascot identity. */
+.logo{display:inline-flex;align-items:center;gap:10px}
+.brand-mascot{display:block;flex-shrink:0;width:46px;height:46px;object-fit:cover;border-radius:12px;box-shadow:0 2px 8px rgba(9,65,59,.15)}
+.footer-brand{display:flex;align-items:center;gap:10px}
+.brand-footer-mascot{display:block;width:45px;height:45px;object-fit:cover;border-radius:12px}

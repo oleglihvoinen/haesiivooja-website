@@ -10,6 +10,7 @@ function loadScreenshots(): AppScreenshot[] {
   const items=JSON.parse(fs.readFileSync(file,'utf8')) as AppScreenshot[];
   if(!Array.isArray(items))throw new Error('Invalid local app screenshot manifest');
   return items.filter((item)=>typeof item?.src==='string'&&/^\/app-screenshots\/app-screen-\d{2}\.(png|jpg|jpeg|webp)$/i.test(item.src))
+              .filter((item)=>!(item.src.includes('app-screen-04.') || item.src.includes('app-screen-05.')))
               .slice(0,8);
 }
 export const appScreenshots=loadScreenshots();

@@ -49,7 +49,7 @@ const guidesUrl=en?'/en/guides/':'/oppaat/';
   </div></section>
   {['app-guide'].includes(page.slug)&&appScreenshots.length>0&&<section class="section screenshot-showcase"><div class="container">
     <h2>{en?'HaeSiivooja app screenshots':'HaeSiivooja-sovelluksen kuvakaappaukset'}</h2>
-    <p class="lead">{en?'Original screenshots restored from the earlier HaeSiivooja website.':'Alkuperäiseltä HaeSiivooja-verkkosivustolta palautetut sovelluskuvat.'}</p>
+    <p class="lead">{en?'Explore the HaeSiivooja mobile experience.':'Tutustu HaeSiivooja-mobiilisovelluksen näkymiin.'}</p>
     <div class="app-gallery">{appScreenshots.slice(0,8).map((shot,index)=><figure class="app-gallery-item"><img src={shot.src} alt={en?shot.altEn:shot.altFi} loading="lazy" decoding="async" width="360" height="720"/><figcaption>{en?`App screen ${index+1}`:`Sovellusnäkymä ${index+1}`}</figcaption></figure>)}</div>
   </div></section>}
   {(isProfessional||isPrice)&&<section class="section soft"><div class="container">

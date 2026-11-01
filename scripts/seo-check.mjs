@@ -43,9 +43,11 @@ for(const file of files){
  if(/noindex/i.test(html))issues.push(`${file}: contains noindex`);
  if(/lorem ipsum|john doe/i.test(html))issues.push(`${file}: contains placeholder text`);
 }
-for(const r of ['robots.txt','sitemap-index.xml'])if(!fs.existsSync(path.join(dist,r)))issues.push(`Missing ${r}`);
+for(const r of ['robots.txt','sitemap-index.xml','sitemap.xml','favicon.ico','brand/mascot.png'])if(!fs.existsSync(path.join(dist,r)))issues.push(`Missing ${r}`);
 const xmlFiles=fs.existsSync(dist)?fs.readdirSync(dist).filter(x=>/^sitemap.*\.xml$/.test(x)):[];
-const xml=xmlFiles.map(x=>fs.readFileSync(path.join(dist,x),'utf8')).join(' ');
+const xml=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');
+if(!xml.includes('<urlset'))issues.push('sitemap.xml must be a direct page-URL sitemap');
+if(!fs.readFileSync(path.join(dist,'robots.txt'),'utf8').includes('https://haesiivooja.fi/sitemap.xml'))issues.push('robots.txt must reference the direct page sitemap');
 for(const [fi,en] of pairs){for(const slug of [fi,en])if(!xml.includes(base+slug))issues.push(`Sitemap missing ${slug}`);}
 if(files.length<34)issues.push(`Expected at least 34 localized HTML files; got ${files.length}`);
 console.log(`Checked ${files.length} generated HTML files, ${pairs.length} translation pairs, sitemaps`);

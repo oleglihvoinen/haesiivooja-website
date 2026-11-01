@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
-    "build": "astro build",
+    "build": "astro build && node scripts/publish-sitemap.mjs",
     "preview": "astro preview",
     "check:seo": "node scripts/seo-check.mjs",
     "check": "npm run check:content && npm run build && npm run check:seo",

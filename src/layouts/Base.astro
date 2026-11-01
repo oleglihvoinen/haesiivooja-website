@@ -14,7 +14,7 @@ const altFi=fiPath?new URL(fiPath,site.url).href:null;
 const altEn=enPath?new URL(enPath,site.url).href:null;
 const organization={
  '@type':'Organization','@id':`${site.url}/#organization`,name:'Hae Siivooja',url:site.url,
- logo:`${site.url}/logo.svg`,contactPoint:{'@type':'ContactPoint',email:site.email,contactType:'customer support'},sameAs:[site.playUrl]
+ logo:`${site.url}/brand/mascot.png`,contactPoint:{'@type':'ContactPoint',email:site.email,contactType:'customer support'},sameAs:[site.playUrl]
 };
 const webSite={'@type':'WebSite','@id':`${site.url}/#website`,name:site.name,url:site.url,inLanguage:['fi-FI','en'],publisher:{'@id':`${site.url}/#organization`}};
 const pageSchema={'@type':'WebPage','@id':`${url}#webpage`,name:fullTitle,description:desc,url,inLanguage:english?'en':'fi-FI',isPartOf:{'@id':`${site.url}/#website`},...(altFi&&altEn?{translationOfWork:{'@id':`${altFi}#webpage`}}:{})};
@@ -39,8 +39,9 @@ const links=english?{
       <link rel="alternate" hreflang="en" href={altEn} />
       <link rel="alternate" hreflang="x-default" href={altFi} />
     </>}
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/brand/mascot.png" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content={english?'en_US':'fi_FI'} />
     {altFi&&altEn&&<meta property="og:locale:alternate" content={english?'fi_FI':'en_US'}/>}
@@ -56,7 +57,7 @@ const links=english?{
   <body>
     <a class="skip" href="#content">{t.skip}</a>
     <header><div class="container inner">
-      <a class="logo" href={english?'/en/':'/'} aria-label="HaeSiivooja"><span class="mark" aria-hidden="true">✓</span> HaeSiivooja</a>
+      <a class="logo" href={english?'/en/':'/'} aria-label="HaeSiivooja"><img class="brand-mascot" src="/brand/mascot.png" width="46" height="46" alt="" decoding="async" /> HaeSiivooja</a>
       <nav class="nav" aria-label={t.navLabel}>
         {navigation[english?'en':'fi'].map(item=><a href={item.href}>{item.title}</a>)}
         <a class="button nav-download" href={site.playUrl} target="_blank" rel="noopener noreferrer">{english?'▶ Google Play · Open test':'▶ Google Play · Avoin testaus'}</a>
@@ -70,7 +71,7 @@ const links=english?{
     <main id="content"><slot /></main>
     <footer class="footer"><div class="container">
     <div class="footer-cols">
-      <div><h3>Hae Siivooja</h3><p>{english?'A Finnish digital marketplace: customers find cleaners and cleaners find customers.':'Suomalainen digitaalinen markkinapaikka: asiakkaat löytävät siivoojan ja siivoojat löytävät asiakkaita.'}</p><p><a href={`mailto:${site.email}`}>{site.email}</a></p></div>
+      <div><h3 class="footer-brand"><img class="brand-footer-mascot" src="/brand/mascot.png" width="45" height="45" alt="" loading="lazy" decoding="async" />Hae Siivooja</h3><p>{english?'A Finnish digital marketplace: customers find cleaners and cleaners find customers.':'Suomalainen digitaalinen markkinapaikka: asiakkaat löytävät siivoojan ja siivoojat löytävät asiakkaita.'}</p><p><a href={`mailto:${site.email}`}>{site.email}</a></p></div>
       <div><strong>{english?'Company':'Yritys'}</strong><ul>
         <li><a href={links.about}>{english?'Our history':'Meidän tarinamme'}</a></li>
         <li><a href={links.contact}>{english?'Contact us':'Ota meihin yhteyttä'}</a></li>
@@ -90,7 +91,7 @@ const links=english?{
       <div><strong>{english?'For cleaners':'Siivoojille'}</strong><ul>
         <li><a href={links.cleaners}>{english?'Find customers':'Löydä asiakkaita'}</a></li>
         <li><a href={site.playUrl} target="_blank" rel="noopener noreferrer">{english?'Download the Android app':'Lataa Android-sovellus'}</a></li>
-        <li><a href={links.guides}>{english?'Cleaning guides':'Siivousoppaat'}</a></li><li><a href="/sitemap-index.xml">{english?'Sitemap':'Sivukartta'}</a></li>
+        <li><a href={links.guides}>{english?'Cleaning guides':'Siivousoppaat'}</a></li><li><a href="/sitemap.xml">{english?'Sitemap':'Sivukartta'}</a></li>
       </ul></div>
     </div>
     <div class="bottom"><small>© {new Date().getFullYear()} Hae Siivooja. {english?'Registration is free. Customers pay a €12.50 service fee when booking; cleaning work is priced separately. Cleaner subscriptions: €5.50/month or €60/year.':'Rekisteröityminen on maksutonta. Asiakkaan palvelumaksu on 12,50 € varauksen yhteydessä; siivoojan tilaus 5,50 €/kk tai 60 €/vuosi.'}</small></div>

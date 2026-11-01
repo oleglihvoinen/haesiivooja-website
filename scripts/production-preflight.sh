@@ -76,10 +76,11 @@ const copySources=[
 for(const [label,content] of copySources){
  for(const pattern of bad)if(pattern.test(content))throw Error(label+': stale free-booking claim: '+pattern);
 }
-for(const path of ['dist/robots.txt','dist/sitemap-index.xml']){
+for(const path of ['dist/robots.txt','dist/sitemap-index.xml','dist/sitemap.xml','dist/favicon.ico','dist/brand/mascot.png']){
  if(!fs.existsSync(path))throw Error('Missing search engine discovery file: '+path);
 }
-if(!html('dist/robots.txt').includes('https://haesiivooja.fi/sitemap-index.xml'))throw Error('robots.txt has no canonical sitemap reference');
+if(!html('dist/robots.txt').includes('https://haesiivooja.fi/sitemap.xml'))throw Error('robots.txt has no direct URL sitemap reference');
+if(!html('dist/sitemap.xml').includes('<urlset'))throw Error('Direct sitemap has no page loc entries');
 if(!homeFi.includes('Etsimme siivoojia')||!homeEn.includes('cleaners'))throw Error('Cleaner recruitment messaging missing from homepage');
 console.log('Confirmed pricing, free signup, cleaner recruiting and SEO sitemap regression checks passed.');
 

@@ -70,7 +70,7 @@ const appSchema={'@type':'SoftwareApplication',name:'HaeSiivooja',applicationCat
         <img src={appScreenshots[0].src} alt={en?appScreenshots[0].altEn:appScreenshots[0].altFi} width="420" height="840" loading="eager" decoding="async" />
       </div>
       {appScreenshots.length > 1 && <div class="real-phone secondary-phone"><img src={appScreenshots[1].src} alt={en?appScreenshots[1].altEn:appScreenshots[1].altFi} width="420" height="840" loading="eager" decoding="async" /></div>}
-      <figcaption>{en?'Real HaeSiivooja app screenshots':'Aitoja HaeSiivooja-sovelluksen kuvakaappauksia'}</figcaption>
+      <figcaption>{en?'HaeSiivooja mobile app':'HaeSiivooja-mobiilisovellus'}</figcaption>
     </figure>
   ) : (
   <div class="marketplace-visual" role="img" aria-label={en?'Illustration of customers and cleaners connecting in one app':'Havainnekuva asiakkaiden ja siivoojien kohtaamisesta'}>
@@ -93,7 +93,7 @@ const appSchema={'@type':'SoftwareApplication',name:'HaeSiivooja',applicationCat
 {appScreenshots.length > 0 && <section class="section screenshot-showcase"><div class="container">
   <span class="eyebrow">{en?'Inside the app':'Sovelluksen näkymät'}</span>
   <h2>{en?'See HaeSiivooja in action':'Tutustu HaeSiivooja-sovellukseen'}</h2>
-  <p class="lead">{en?'Original HaeSiivooja mobile app screenshots restored from the previous website.':'Alkuperäiseltä HaeSiivooja-verkkosivustolta palautetut sovelluksen kuvakaappaukset.'}</p>
+  <p class="lead">{en?'Discover the HaeSiivooja app for customers and cleaning professionals.':'Tutustu HaeSiivooja-sovelluksen näkymiin asiakkaille ja siivousalan ammattilaisille.'}</p>
   <div class="app-gallery">
     {appScreenshots.slice(0,8).map((item,index)=><figure class="app-gallery-item">
       <img src={item.src} alt={en?item.altEn:item.altFi} loading="lazy" decoding="async" width="360" height="720" />

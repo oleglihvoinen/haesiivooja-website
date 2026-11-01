@@ -19,7 +19,7 @@ test -f "$RELEASE/index.html"
 test -f "$RELEASE/en/index.html"
 test -f "$RELEASE/privacy/index.html"
 test -f "$RELEASE/en/privacy/index.html"
-test -f "$RELEASE/sitemap-index.xml"
+test -f "$RELEASE/sitemap.xml"
 ```
 
 If Apache is already configured to point at `/var/www/haesiivooja-astro/current`, activate the tested release:
@@ -53,7 +53,7 @@ curl -fIL https://haesiivooja.fi/privacy/
 curl -fIL https://haesiivooja.fi/en/privacy/
 curl -fIL https://haesiivooja.fi/
 curl -fIL https://haesiivooja.fi/en/
-curl -fIL https://haesiivooja.fi/sitemap-index.xml
+curl -fIL https://haesiivooja.fi/sitemap.xml
 ```
 
 In Google Play Console set the Privacy Policy URL to **https://haesiivooja.fi/privacy/** after it is live, and ensure the app contains the same privacy link. Google Play also requires accurate Data safety disclosures and account deletion support.
