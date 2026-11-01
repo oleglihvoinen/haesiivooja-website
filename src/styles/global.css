@@ -16,3 +16,50 @@
 .persona-card{padding:34px}.persona-card ol{padding-left:22px;margin:20px 0 30px}.persona-card li{margin-bottom:10px}.persona-card .button,.persona-card .button-secondary{white-space:normal}
 .market-disclaimer{font-size:.93rem;color:#536d64;margin-top:25px}
 @media(max-width:850px){.marketplace-visual{width:100%}}
+
+
+/* Marketplace UI fixes: card link rules must not override button foregrounds. */
+a.button, .card a.button, .persona-card a.button, .price-card a.button,
+.nav a.button, .compact-cta a.button, .button:visited {color:#fff;text-decoration:none}
+a.button:hover, .card a.button:hover, .nav a.button:hover {color:#fff;background:#09584f}
+a.button-secondary, .card a.button-secondary, .button-secondary:visited {color:#125e55;text-decoration:none}
+a.button-secondary:hover, .card a.button-secondary:hover {color:#0b5049;background:#e9f5f1}
+a:focus-visible, button:focus-visible, summary:focus-visible {outline:3px solid #e79f2a;outline-offset:4px}
+.nav-download{font-size:.86rem!important;min-height:44px}
+.market-version{font-size:.75rem;letter-spacing:0;color:#53786c}
+.service-card{display:flex;flex-direction:column;gap:10px;min-height:265px}
+.service-card p{flex:1}
+.service-card a{margin-top:auto;align-self:flex-start}
+.services-grid .card{transition:transform .18s ease,box-shadow .18s ease}
+.services-grid .card:hover{transform:translateY(-3px);box-shadow:0 15px 34px #0e5c5018}
+.content-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:start}
+.content-layout:has(.longform:only-child){grid-template-columns:minmax(0,850px)}
+.longform{max-width:850px}
+.text-section{margin:0 0 42px}
+.text-section h2{font-size:clamp(1.4rem,2.2vw,1.85rem)}
+.text-section p{line-height:1.83}
+.content-aside{position:sticky;top:115px}
+.aside-note{font-size:.88rem;color:#586c65;margin-top:16px}
+.price-card{display:flex;flex-direction:column;gap:12px;min-height:280px}
+.price-card p{margin:0}
+.price-card a{align-self:flex-start;margin-top:auto;white-space:normal}
+.price-unverified{font-weight:780;color:#15655a!important;margin:10px 0 18px!important;padding:13px 14px;background:#eef7f3;border-radius:12px}
+.compact-cta{display:flex;align-items:center;justify-content:space-between;gap:35px;padding:31px 36px;border:1px solid #bddbd1;background:#fff;border-radius:22px}
+.compact-cta h2{font-size:clamp(1.5rem,2.5vw,2.05rem);margin:0 0 12px}
+.compact-cta p{margin:0}
+.compact-cta a.button{flex:none}
+.section-more{margin-top:24px;font-weight:750}
+.hero{padding:72px 0 68px}
+.hero h1{font-size:clamp(2.45rem,4.7vw,4.3rem)}
+.marketplace-visual{transform:none}
+@media(max-width:1050px){.nav{gap:12px}.nav a{font-size:.81rem}.nav-download{padding:9px 12px!important}}
+@media(max-width:850px){
+ .content-layout{grid-template-columns:1fr;gap:25px}
+ .content-aside{position:static}
+ .compact-cta{align-items:flex-start;flex-direction:column;padding:28px}
+}
+@media(max-width:520px){
+ .persona-card{padding:24px}
+ .compact-cta .button{width:100%;white-space:normal;text-align:center}
+ .nav-download{white-space:normal}
+}
