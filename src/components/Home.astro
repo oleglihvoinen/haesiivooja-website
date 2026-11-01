@@ -96,8 +96,8 @@ const appSchema={'@type':'SoftwareApplication',name:'HaeSiivooja',applicationCat
   <p class="lead">{en?'Discover the HaeSiivooja app for customers and cleaning professionals.':'Tutustu HaeSiivooja-sovelluksen näkymiin asiakkaille ja siivousalan ammattilaisille.'}</p>
   <div class="app-gallery">
     {appScreenshots.slice(0,8).map((item,index)=><figure class="app-gallery-item">
-      <img src={item.src} alt={en?item.altEn:item.altFi} loading="lazy" decoding="async" width="360" height="720" />
-      <figcaption>{en?`App screen ${index+1}`:`Sovellusnäkymä ${index+1}`}</figcaption>
+      <img src={item.src} alt={en?'HaeSiivooja mobile application interface':'HaeSiivooja-mobiilisovelluksen käyttöliittymä'} loading="lazy" decoding="async" width="360" height="720" />
+      
     </figure>)}
   </div>
 </div></section>}

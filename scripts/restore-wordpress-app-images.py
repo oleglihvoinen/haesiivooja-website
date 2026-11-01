@@ -130,7 +130,7 @@ def main() -> int:
     chosen = unique[:max(1, min(args.max, 12))]
     print("Original WordPress image directories:", ", ".join(map(str, roots)))
     for i, item in enumerate(unique[:25], 1):
-        selected = "SELECTED" if i <= len(chosen) else "candidate"
+        selected = "OMIT" if i in (4,5) else ("SELECTED" if i <= len(chosen) else "candidate")
         print(f"{selected:9} {i:02} | {item.width:4}x{item.height:<4} | score {item.score:2} | {item.path}")
     if not chosen:
         print("No app screenshots confidently detected. Try --scan --select '*app*,*mobile*,*screenshot*' or provide exact filenames.", file=sys.stderr)
@@ -145,19 +145,21 @@ def main() -> int:
             old.unlink()
     manifest=[]
     for i, item in enumerate(chosen, 1):
+        if i in (4, 5):
+            continue  # Exclude explicitly rejected screens 4 and 5.
         extension = ".jpg" if item.path.suffix.lower() == ".jpeg" else item.path.suffix.lower()
         name=f"app-screen-{i:02}{extension}"
         shutil.copy2(item.path, DEST / name)
         manifest.append({
           "src": f"/app-screenshots/{name}",
-          "altFi": f"HaeSiivooja-mobiilisovelluksen alkuperäinen kuvakaappaus {i}",
-          "altEn": f"Original HaeSiivooja mobile app screenshot {i}"
+          "altFi": f"HaeSiivooja-mobiilisovelluksen näkymä {i}",
+          "altEn": f"HaeSiivooja mobile app interface {i}"
         })
     MANIFEST.parent.mkdir(parents=True, exist_ok=True)
     temp = MANIFEST.with_name(MANIFEST.name + ".tmp")
     temp.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     temp.replace(MANIFEST)
-    print(f"RESTORED {len(manifest)} original images to {DEST}")
+    print(f"IMPORTED {len(manifest)} application images to {DEST} (screens 4 and 5 omitted)")
     print(f"Local gallery manifest: {MANIFEST}")
     print("Now run npm run check, npm run predeploy, and prepare/activate a fresh Astro release.")
     return 0

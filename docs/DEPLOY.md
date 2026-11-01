@@ -59,3 +59,5 @@ curl -fIL https://haesiivooja.fi/sitemap.xml
 In Google Play Console set the Privacy Policy URL to **https://haesiivooja.fi/privacy/** after it is live, and ensure the app contains the same privacy link. Google Play also requires accurate Data safety disclosures and account deletion support.
 
 Use a previous timestamped release for rollback by repointing `current` and reloading Apache.
+
+The main page URL sitemap is at `https://haesiivooja.fi/sitemap.xml`. The `sitemap-index.xml` is an index file which normally lists child sitemap files rather than page URLs. The build now generates both. The site uses the restored mascot `brand/mascot.png` and a multi-resolution `favicon.ico`. Screens 4 and 5 are excluded from the output.

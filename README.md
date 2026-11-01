@@ -50,3 +50,7 @@ The Google Play developer listing identifies HaeSiivooja Oy. Keep privacy disclo
 ## Restoring original WordPress app screenshots
 
 The original WordPress uploads remain on the VPS unless they were removed separately. The Astro site serves a curated local copy, not WordPress itself. Run `python3 scripts/restore-wordpress-app-images.py --scan` and then `python3 scripts/restore-wordpress-app-images.py --apply` on the VPS before building. The importer copies actual WordPress screenshots into `public/app-screenshots/` and builds a local image manifest at `src/data/app-screenshots.local.json`. Both are kept out of Git so future deployments remain safe. Images appear in the homepage hero and the screenshot gallery after `npm run check` and the usual Apache static release activation. See `docs/RESTORE_APP_IMAGES.md`.
+
+## Sitemap and logo
+
+The directly readable page-URL sitemap is [`/sitemap.xml`](https://haesiivooja.fi/sitemap.xml); Astro also generates a valid `sitemap-index.xml` pointing to its child files. The company logo and `favicon.ico` use the saved HaeSiivooja water-drop mascot artwork. App screenshots 4 and 5 are excluded from published galleries and build output.
