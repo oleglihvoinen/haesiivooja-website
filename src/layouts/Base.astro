@@ -7,7 +7,7 @@ const english=lang==='en';
 const t=ui[english?'en':'fi'];
 const url=new URL(canonicalPath,site.url).href;
 const fullTitle=title ? `${title} | ${site.name}` : (english ? 'Hae Siivooja – Find Cleaners and Cleaning Clients in Finland' : 'Hae Siivooja – löydä siivooja tai siivousasiakkaita Suomessa');
-const desc=description||(english?'Find cleaning professionals and compare home, move-out and other cleaning services in Finland with HaeSiivooja.':site.description);
+const desc=description||(english?'HaeSiivooja Android cleaning marketplace in Finland: customers find cleaners and professionals find new customers. Open testing on Google Play.':site.description);
 const fiPath=alternateFor(canonicalPath,'fi');
 const enPath=alternateFor(canonicalPath,'en');
 const altFi=fiPath?new URL(fiPath,site.url).href:null;
@@ -49,6 +49,8 @@ const links=english?{
     <meta property="og:description" content={desc} />
     <meta property="og:url" content={url} />
     <meta name="twitter:card" content="summary" />
+    <meta name="application-name" content="HaeSiivooja" />
+    <meta property="og:see_also" content={site.playUrl} />
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body>
@@ -57,7 +59,7 @@ const links=english?{
       <a class="logo" href={english?'/en/':'/'} aria-label="HaeSiivooja"><span class="mark" aria-hidden="true">✓</span> HaeSiivooja</a>
       <nav class="nav" aria-label={t.navLabel}>
         {navigation[english?'en':'fi'].map(item=><a href={item.href}>{item.title}</a>)}
-        <a class="button" href={site.searchUrl}>{t.search}</a>
+        <a class="button nav-download" href={site.playUrl} target="_blank" rel="noopener noreferrer">{english?'▶ Google Play · Open test':'▶ Google Play · Avoin testaus'}</a>
         <span class="lang-switch" aria-label="Language / Kieli">
           {english&&fiPath?<a href={fiPath} lang="fi" hreflang="fi">FI</a>:<span aria-current="page">FI</span>}
           <span aria-hidden="true"> / </span>
@@ -73,7 +75,7 @@ const links=english?{
         <li><a href={links.about}>{english?'Our history':'Meidän tarinamme'}</a></li>
         <li><a href={links.contact}>{english?'Contact us':'Ota meihin yhteyttä'}</a></li>
       </ul><strong>{english?'For customers':'Asiakkaille'}</strong><ul>
-        <li><a href={links.find}>{english?'Find a cleaner':'Etsi siivooja'}</a></li>
+        <li><a href={links.find}>{english?'Find a cleaner':'Etsi siivooja'}</a></li><li><a href={site.searchUrl}>{english?'AI cleaning search (optional)':'AI-siivoushaku (lisätoiminto)'}</a></li>
         <li><a href={links.price}>{english?'Prices – free booking':'Hinnat – varausmaksu 0 €'}</a></li>
       </ul></div>
       <div><strong>{english?'Hae Siivooja app':'Hae Siivooja -sovellus'}</strong><ul>
@@ -87,7 +89,7 @@ const links=english?{
       </ul></div>
       <div><strong>{english?'For cleaners':'Siivoojille'}</strong><ul>
         <li><a href={links.cleaners}>{english?'Find customers':'Löydä asiakkaita'}</a></li>
-        <li><a href={site.searchUrl}>{english?'AI cleaning search':'AI-siivoushaku'}</a></li>
+        <li><a href={site.playUrl} target="_blank" rel="noopener noreferrer">{english?'Download the Android app':'Lataa Android-sovellus'}</a></li>
         <li><a href={links.guides}>{english?'Cleaning guides':'Siivousoppaat'}</a></li>
       </ul></div>
     </div>

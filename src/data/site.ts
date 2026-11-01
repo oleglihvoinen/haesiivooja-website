@@ -1,5 +1,5 @@
 export const site = {
-  name: 'Hae Siivooja',
+  name: 'HaeSiivooja',
   url: 'https://haesiivooja.fi',
   description: 'Hae Siivooja yhdistää siivoojaa etsivät asiakkaat ja asiakkaita etsivät siivousalan ammattilaiset Suomessa. Rekisteröityneen asiakkaan varaus on maksuton.',
   email: 'info@haesiivooja.fi',
