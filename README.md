@@ -4,7 +4,7 @@
 
 ## Requirements
 
-- Node.js >=22.12 and npm.
+- Node.js >=22.22 and npm.
 - WordPress at `/var/www/html` as the migration source, accessible on Ubuntu through WP-CLI using its existing `wp-config.php` credentials. Do not share database credentials.
 - Nginx hostname `haesiivooja.fi`, separate from the existing `app.haesiivooja.fi` and `cascadary.com` configurations.
 
