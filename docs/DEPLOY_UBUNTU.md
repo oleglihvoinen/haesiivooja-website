@@ -34,7 +34,7 @@ sudo mkdir -p /opt/haesiivooja-website
 sudo chown "$USER":"$USER" /opt/haesiivooja-website
 git clone https://github.com/oleglihvoinen/haesiivooja-website.git /opt/haesiivooja-website
 cd /opt/haesiivooja-website
-node -v   # Node.js 22.12+ needed; upgrade using an official supported method if older.
+node -v   # Node.js 22.22+ needed; upgrade using an official supported method if older.
 ```
 
 Export original legal pages using the existing WordPress installation. No MySQL password is printed:
