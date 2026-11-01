@@ -1,29 +1,37 @@
 [
   {
     "slug": "find-a-cleaner",
-    "title": "Find a Cleaner Near You in Finland – Free Booking",
-    "description": "Hae Siivooja connects customers and local cleaners. Registered customers can book a cleaner for free; cleaning work is paid separately.",
+    "title": "Find a Cleaner in Finland – Free Registration | HaeSiivooja",
+    "description": "Find cleaners near you in Finland using the HaeSiivooja Android app. Registration free, €12.50 customer service fee per booking, cleaning work priced separately.",
     "eyebrow": "Find cleaning help",
-    "h1": "Find a cleaner nearby – book for free",
-    "intro": "Register in the Hae Siivooja app, find cleaning professionals near the location where you need help and book without a customer booking fee. Agree the cleaning price with the provider.",
+    "h1": "Find a cleaner near you – register for free",
+    "intro": "The HaeSiivooja Android app lets you discover cleaning professionals by location across Finland. Registration is free. Customers pay a €12.50 service fee when booking, plus the agreed cost of cleaning work.",
     "sections": [
       {
-        "heading": "1. Register for free",
-        "text": "Create a customer account. Registration and booking through Hae Siivooja are free for customers."
+        "heading": "1. Create an account for free",
+        "text": "Customer registration in HaeSiivooja is free. Browse cleaning services and discover professionals in your area."
       },
       {
-        "heading": "2. Search by cleaning location",
-        "text": "Describe the cleaning task and location to find cleaners and cleaning companies serving the area."
+        "heading": "2. Find nearby cleaning professionals",
+        "text": "Enter the cleaning location and compare providers' service areas, descriptions and availability. Results vary by location."
       },
       {
-        "heading": "3. Agree and book",
-        "text": "Review the provider's scope, price, schedule and payment terms. The cleaning work itself is a paid service."
+        "heading": "3. Book and confirm the full cost",
+        "text": "Registration is free. Customers pay a €12.50 service fee when making a booking. The cleaning work is paid separately at the price agreed with the professional. Review the service scope, schedule and cancellation conditions before booking."
       }
     ],
     "faqs": [
       {
-        "q": "Is booking a cleaner free?",
-        "a": "Yes, for registered customers. You pay the cleaning professional for the actual work."
+        "q": "Is registration free?",
+        "a": "Yes. Creating a HaeSiivooja account is free."
+      },
+      {
+        "q": "What is the fee for booking a cleaner?",
+        "a": "Customers pay a €12.50 service fee when making a booking, plus the separately agreed cleaning price."
+      },
+      {
+        "q": "Can I find local cleaners?",
+        "a": "Yes. Search by cleaning location; available providers vary by area."
       }
     ]
   },
@@ -89,7 +97,7 @@
       },
       {
         "heading": "Find home cleaners nearby",
-        "text": "Enter the cleaning location and property size in the HaeSiivooja Android app. Compare local providers and agree the work duration. Booking is free for registered customers, while the actual cleaning is paid separately."
+        "text": "Enter the cleaning location and property size in the HaeSiivooja Android app. Compare local providers and agree the work duration. Registration is free. Customers pay a €12.50 service fee when booking, while cleaning work is paid separately."
       }
     ],
     "faqs": [
@@ -241,34 +249,45 @@
   },
   {
     "slug": "cleaning-prices",
-    "title": "Hae Siivooja Pricing – €0 Customer Booking Fee",
-    "description": "Customers can book cleaners for free after registration. The cleaning work itself is paid according to the provider's price.",
+    "title": "HaeSiivooja Pricing – Registration, Booking & Cleaner Plans",
+    "description": "HaeSiivooja pricing in Finland: free registration, €12.50 customer booking service fee, €5.50 monthly or €60 yearly cleaner subscriptions. Cleaning extra.",
     "eyebrow": "Pricing guide",
-    "h1": "€0 booking fee for registered customers",
-    "intro": "Customers pay no Hae Siivooja booking fee after registration. The chosen cleaner or cleaning company charges for the actual cleaning work.",
+    "h1": "HaeSiivooja pricing for customers and cleaners",
+    "intro": "Registration is free. A customer service fee of €12.50 applies when making a booking. Cleaner subscriptions cost €5.50/month or €60/year. The cleaning job itself is priced separately.",
     "sections": [
       {
-        "heading": "Customer booking: free",
-        "text": "Registration and booking are free for customers on the platform. Cleaning is not free."
+        "heading": "Free registration — €0",
+        "text": "Customers and cleaning professionals can register an account without a signup fee."
       },
       {
-        "heading": "Price of the cleaning work",
-        "text": "The provider agrees a price based on the scope, location and duration.",
-        "bullets": [
-          "Check the total price including applicable VAT",
-          "Ask about travel and extras",
-          "Confirm cancellation and payment terms"
-        ]
+        "heading": "Customer booking service fee — €12.50",
+        "text": "A customer pays a €12.50 service fee when making a booking. The price of the cleaning work is separate and agreed with the chosen professional."
       },
       {
-        "heading": "Professional terms",
-        "text": "Any platform fees for cleaners are governed by the current professional conditions."
+        "heading": "Cleaner monthly subscription — €5.50",
+        "text": "The monthly professional subscription costs €5.50 per month. This is distinct from both customer service fees and the actual price of cleaning work."
+      },
+      {
+        "heading": "Cleaner annual subscription — €60",
+        "text": "The yearly professional subscription costs €60 per year. Check billing, renewal and cancellation conditions in the app before purchasing."
+      },
+      {
+        "heading": "Cleaning work and other costs",
+        "text": "Cleaning work is priced by the provider according to scope, duration and location. Confirm the total price, applicable VAT and any additional costs before booking."
       }
     ],
     "faqs": [
       {
-        "q": "Do customers pay a booking fee?",
-        "a": "No. Booking is free for registered customers. The cleaning service itself is paid separately."
+        "q": "Is registration free?",
+        "a": "Yes, both customers and cleaners can register for free."
+      },
+      {
+        "q": "What is the customer booking fee?",
+        "a": "The service fee is €12.50 when making a booking, in addition to the agreed cleaning-service price."
+      },
+      {
+        "q": "What do cleaner subscriptions cost?",
+        "a": "€5.50 per month or €60 per year."
       }
     ]
   },
@@ -302,26 +321,51 @@
   },
   {
     "slug": "for-cleaners",
-    "title": "Find Cleaning Clients in Finland – Hae Siivooja",
-    "description": "Cleaning professionals can showcase their services and find local customers through the Hae Siivooja marketplace.",
-    "eyebrow": "For professionals",
-    "h1": "Cleaning professional? Find new customers",
-    "intro": "Hae Siivooja connects people needing cleaning with professionals looking for local customers and opportunities.",
+    "title": "Cleaners Wanted Across Finland – Join HaeSiivooja",
+    "description": "We are looking for cleaners across Finland! Free HaeSiivooja registration, €5.50/month or €60/year professional plans. Find cleaning customers.",
+    "eyebrow": "Cleaners wanted",
+    "h1": "Cleaners wanted throughout Finland — join HaeSiivooja!",
+    "intro": "We are looking for cleaning professionals and service providers throughout Finland. Register for free, create your profile and make it easier for customers near your service area to discover you.",
     "sections": [
       {
-        "heading": "Create a professional profile",
-        "text": "Describe your services, experience and the areas you serve so customers can discover you."
+        "heading": "We're looking for cleaners in Finland",
+        "text": "Offer home cleaning, move-out cleaning, windows or other professional cleaning? HaeSiivooja helps people find services where cleaning is needed. Create a profile describing your skills, services and coverage."
       },
       {
-        "heading": "Connect with potential clients",
-        "text": "Customers looking for home, move-out and other cleaning can find relevant providers. Work is not guaranteed."
+        "heading": "Registration is free",
+        "text": "Creating a cleaner account on HaeSiivooja costs €0. Professional subscription options are separate from registration."
       },
       {
-        "heading": "Agree service conditions",
-        "text": "Professionals set or agree their job pricing and follow applicable professional terms."
+        "heading": "€5.50 monthly or €60 yearly",
+        "text": "Registration for cleaners is free. A professional subscription costs €5.50 per month or €60 per year. Subscription conditions are presented in the app. Select the period that fits your needs, and review billing and renewal conditions in the app."
+      },
+      {
+        "heading": "Find customers in your service area",
+        "text": "Customers search by location and cleaning needs. HaeSiivooja offers opportunities to be discovered; the number of resulting jobs is not guaranteed."
+      },
+      {
+        "heading": "Agree your cleaning prices",
+        "text": "Cleaning professionals agree the job price and scope with customers under applicable terms and law. The customer's €12.50 booking service fee is separate from a cleaner subscription."
       }
     ],
-    "faqs": []
+    "faqs": [
+      {
+        "q": "Are you looking for cleaners throughout Finland?",
+        "a": "Yes. The platform is intended for cleaning professionals across Finland; customers and availability depend on your coverage area."
+      },
+      {
+        "q": "Does cleaner registration cost anything?",
+        "a": "No. Registration costs €0, with professional subscriptions charged separately."
+      },
+      {
+        "q": "How much are professional subscriptions?",
+        "a": "€5.50 per month or €60 per year."
+      },
+      {
+        "q": "Are jobs guaranteed?",
+        "a": "No. Customer demand varies by area and service type."
+      }
+    ]
   },
   {
     "slug": "about-us",
@@ -345,7 +389,7 @@
       },
       {
         "heading": "What customers and cleaners can do",
-        "text": "Customers search by the location where cleaning is needed and can book without a platform booking fee after registration. Cleaning professionals can create a profile, showcase their skills and connect with potential customers. The actual cleaning service is a separate paid job agreed with the provider."
+        "text": "Customers search by the location where cleaning is needed and can book with a €12.50 service fee; registration is free. Cleaning professionals can create a profile, showcase their skills and connect with potential customers. The actual cleaning service is a separate paid job agreed with the provider."
       },
       {
         "heading": "Our journey continues in open testing",
@@ -396,7 +440,7 @@
       },
       {
         "heading": "When you're ready to book",
-        "text": "Open the HaeSiivooja Android app on Google Play, enter the cleaning location and choose a suitable professional. Booking is free for registered customers; the cleaning job is paid separately."
+        "text": "Open the HaeSiivooja Android app on Google Play, enter the cleaning location and choose a suitable professional. Registration is free. A €12.50 service fee applies when booking; the cleaning job is paid separately."
       }
     ],
     "faqs": []
@@ -478,7 +522,7 @@
       },
       {
         "heading": "5. Payments",
-        "text": "Bookings are free for registered customers. Cleaning prices and payment methods are agreed with the provider. Any platform payment tools or professional fees follow separately stated applicable terms."
+        "text": "Registration is free for customers and cleaners. A customer pays a €12.50 service fee when booking. The actual cleaning service is priced separately by the chosen professional. Cleaner subscriptions cost €5.50 per month or €60 per year. Payment methods and applicable subscription renewal/cancellation conditions are presented in the app."
       },
       {
         "heading": "6. Trust and safety",
@@ -525,22 +569,26 @@
   {
     "slug": "app-guide",
     "title": "App Guide – Hae Siivooja",
-    "description": "How to find and book cleaners and how cleaning professionals can find clients in Finland.",
+    "description": "HaeSiivooja app guide: free registration, €12.50 customer booking service fee, cleaner plans €5.50 monthly or €60 yearly.",
     "eyebrow": "Hae Siivooja app",
     "h1": "App guide",
     "intro": "One marketplace for customers and cleaning professionals.",
     "sections": [
       {
-        "heading": "Customers",
-        "text": "Register, search by cleaning location and book without a customer booking fee. Agree on the cleaning price and conditions before confirming."
+        "heading": "Customer: register for free",
+        "text": "Get the Android app on Google Play and create your customer account without a registration fee."
       },
       {
-        "heading": "Cleaning professionals",
-        "text": "Create a profile, describe your services and coverage, and connect with people looking for cleaners."
+        "heading": "Customer: find and book a cleaner",
+        "text": "Find professionals near the cleaning location. Customers pay a €12.50 service fee when booking; cleaning work costs extra."
       },
       {
-        "heading": "AI cleaning search",
-        "text": "Use the Hae Siivooja AI cleaning search to explore providers."
+        "heading": "Cleaner: join the marketplace",
+        "text": "We are looking for cleaners across Finland. Register for free and choose a €5.50 monthly or €60 annual professional subscription."
+      },
+      {
+        "heading": "Optional AI web search",
+        "text": "The optional AI cleaning search is separate from the Android app, the core marketplace currently in open testing."
       }
     ],
     "faqs": []
@@ -548,26 +596,30 @@
   {
     "slug": "payments",
     "title": "Payments and Prices – Hae Siivooja",
-    "description": "Customers book cleaners for free after registration. Cleaning work is paid according to provider terms.",
+    "description": "HaeSiivooja payments: registration free, €12.50 customer booking service fee, €5.50/month and €60/year cleaner subscriptions.",
     "eyebrow": "Hae Siivooja app",
     "h1": "Payments and prices",
-    "intro": "Booking a cleaner is free for registered customers.",
+    "intro": "Account registration is free. Customers pay a €12.50 service fee when making a booking. Cleaner subscriptions cost €5.50 monthly or €60 yearly.",
     "sections": [
       {
-        "heading": "Customer booking fee",
-        "text": "€0 after registration."
+        "heading": "Registration is free",
+        "text": "Creating a customer or cleaner account costs €0."
       },
       {
-        "heading": "Cleaning cost",
-        "text": "Agree the actual cleaning price with the cleaner or cleaning company. Free booking does not mean free cleaning."
+        "heading": "Customer booking service fee: €12.50",
+        "text": "Registration is free. Customers pay a €12.50 service fee when making a booking. The cleaning work is paid separately at the price agreed with the professional."
       },
       {
-        "heading": "Payment methods",
-        "text": "Confirm the selected provider's accepted methods or any separately disclosed app payment functionality."
+        "heading": "Price of the cleaning job",
+        "text": "Customers separately pay the price agreed with their cleaning professional according to the service terms."
       },
       {
-        "heading": "Professional conditions",
-        "text": "Any professional platform fees follow the currently applicable professional terms."
+        "heading": "Cleaner monthly and yearly subscriptions",
+        "text": "Registration for cleaners is free. A professional subscription costs €5.50 per month or €60 per year. Subscription conditions are presented in the app."
+      },
+      {
+        "heading": "Payment methods and conditions",
+        "text": "Review the app's current booking payment flow and subscription renewal/cancellation terms before purchase."
       }
     ],
     "faqs": []
@@ -581,20 +633,24 @@
     "intro": "Hae Siivooja can help cleaning professionals connect with local customers.",
     "sections": [
       {
-        "heading": "Profile",
-        "text": "You are responsible for accurate profile, service and service-area information."
+        "heading": "Free registration",
+        "text": "A cleaner may register without an account creation fee. Professionals are responsible for accurate profile information."
       },
       {
-        "heading": "Customer enquiries",
-        "text": "The platform helps you find prospective customers but does not guarantee work."
+        "heading": "Monthly and annual subscriptions",
+        "text": "Registration for cleaners is free. A professional subscription costs €5.50 per month or €60 per year. Subscription conditions are presented in the app."
       },
       {
-        "heading": "Pricing and responsibility",
-        "text": "The cleaner agrees pricing and is responsible for providing the cleaning service and following applicable requirements."
+        "heading": "Services and customer leads",
+        "text": "Cleaners may describe their coverage and services and connect with customers. No specific number of customers or jobs is guaranteed."
       },
       {
-        "heading": "Platform conditions",
-        "text": "Review any professional fees and applicable conditions in the current app terms."
+        "heading": "Pricing and responsibilities",
+        "text": "Professionals agree the cleaning service price and are responsible for the job under applicable terms and law."
+      },
+      {
+        "heading": "Customer booking service fee",
+        "text": "Customer registration is free. The customer pays a €12.50 service fee when booking, separately from cleaner subscriptions and the cleaning price."
       }
     ],
     "faqs": []

@@ -1,33 +1,37 @@
 [
   {
     "slug": "etsi-siivooja",
-    "title": "Etsi ja varaa siivooja läheltäsi – maksuton varaus",
-    "description": "Hae Siivooja yhdistää paikalliset siivoojat ja asiakkaat Suomessa. Asiakkaalle rekisteröityminen ja siivoojan varaus ovat maksuttomia.",
+    "title": "Etsi siivooja Suomesta – rekisteröidy maksutta | HaeSiivooja",
+    "description": "Löydä siivooja lähelläsi HaeSiivooja-sovelluksella. Rekisteröityminen maksutonta, asiakkaan palvelumaksu 12,50 € varausta tehdessä, siivoustyö erikseen.",
     "eyebrow": "Siivoojan etsiminen",
-    "h1": "Löydä siivooja läheltäsi – varaa maksutta",
-    "intro": "Rekisteröidy Hae Siivooja -sovellukseen, etsi siivoojaa siivouskohteen sijainnin perusteella ja varaa ammattilainen ilman varausmaksua. Siivoustyön hinnasta sovitaan valitun siivoojan kanssa.",
+    "h1": "Löydä siivooja läheltäsi – rekisteröidy maksutta",
+    "intro": "HaeSiivoojan Android-sovelluksessa voit etsiä siivoojaa siivouskohteen sijainnin mukaan. Rekisteröityminen on maksutonta. Varauksen yhteydessä asiakkaalta veloitetaan 12,50 € palvelumaksu, ja itse siivoustyöstä sovitaan erikseen.",
     "sections": [
       {
-        "heading": "1. Luo maksuton asiakastili",
-        "text": "Rekisteröidy Hae Siivoojaan. Asiakkaan rekisteröityminen ja varauksen tekeminen sovelluksessa ovat maksuttomia."
+        "heading": "1. Rekisteröidy maksutta",
+        "text": "Luo asiakastili HaeSiivooja-sovelluksessa ilman rekisteröitymismaksua. Käyttäjät voivat tutustua siivouspalveluihin ja paikallisiin ammattilaisiin."
       },
       {
-        "heading": "2. Etsi sopiva siivooja läheltä",
-        "text": "Anna kohteen sijainti, esimerkiksi paikkakunta, ja kuvaa tarvittava siivous. Näet hakupalvelussa saatavilla olevat ammattilaiset ja yritykset."
+        "heading": "2. Etsi siivoojaa siivouskohteen läheltä",
+        "text": "Kerro, missä siivousta tarvitaan. Vertaa alueen siivoojien palvelukuvauksia, toiminta-alueita ja saatavuutta. Käytettävissä olevat tekijät vaihtelevat alueittain."
       },
       {
-        "heading": "3. Varaa ja sovi siivoustyöstä",
-        "text": "Tarkista palveluntarjoajan hinta, aikataulu, työn sisältö sekä maksutapa. Maksuton varaus ei tarkoita, että varsinainen siivoustyö olisi ilmaista."
+        "heading": "3. Tee varaus ja tarkista kustannukset",
+        "text": "Rekisteröityminen on maksutonta. Asiakas maksaa 12,50 € palvelumaksun varausta tehdessään. Varsinaisen siivoustyön hinnasta sovitaan ammattilaisen kanssa. Tarkista lisäksi työn sisältö, sovittu siivoushinta, aikataulu ja peruutusehdot ennen varausta."
       }
     ],
     "faqs": [
       {
-        "q": "Maksaako varaus asiakkaalle?",
-        "a": "Ei. Siivoojan varaaminen on rekisteröityneelle asiakkaalle maksutonta. Varsinainen siivoustyö on maksullista."
+        "q": "Onko HaeSiivoojaan rekisteröityminen maksutonta?",
+        "a": "Kyllä. Rekisteröityminen on maksutonta."
       },
       {
-        "q": "Voinko löytää siivoojan lähellä kotiani?",
-        "a": "Voit hakea siivoojaa siivouskohteen sijainnin mukaan. Saatavuus riippuu alueen ammattilaisista."
+        "q": "Paljonko siivoojan varaaminen maksaa?",
+        "a": "Asiakas maksaa 12,50 € palvelumaksun varauksen yhteydessä. Varsinainen siivoustyö maksetaan erikseen ammattilaiselle."
+      },
+      {
+        "q": "Voiko löytää siivoojan läheltä kotia?",
+        "a": "Kyllä. Haku perustuu siivouskohteen sijaintiin. Ammattilaisten saatavuus vaihtelee alueen mukaan."
       }
     ]
   },
@@ -93,7 +97,7 @@
       },
       {
         "heading": "Löydä kotisiivooja läheltäsi",
-        "text": "Kerro siivouskohteen sijainti ja asunnon koko HaeSiivooja-Android-sovelluksessa. Vertaile paikallisia tekijöitä ja sovittavaa työaikaa. Rekisteröityneen asiakkaan varaus on maksuton, mutta siivoustyö hinnoitellaan erikseen."
+        "text": "Kerro siivouskohteen sijainti ja asunnon koko HaeSiivooja-Android-sovelluksessa. Vertaile paikallisia tekijöitä ja sovittavaa työaikaa. Rekisteröityminen on maksutonta. Asiakas maksaa varausta tehdessään 12,50 € palvelumaksun; siivoustyö hinnoitellaan erikseen."
       }
     ],
     "faqs": [
@@ -245,34 +249,45 @@
   },
   {
     "slug": "siivouksen-hinta",
-    "title": "Hae Siivooja hinnat – asiakkaan varausmaksu 0 €",
-    "description": "Asiakkaalle siivoojan varaaminen Hae Siivooja -sovelluksessa on maksutonta rekisteröitymisen jälkeen. Siivoustyön hinta sovitaan ammattilaisen kanssa.",
+    "title": "HaeSiivooja hinnasto – asiakkaat ja siivoojat",
+    "description": "HaeSiivoojan hinnat: maksuton rekisteröityminen, asiakkaan palvelumaksu 12,50 €/varaus, siivoojan kuukausitilaus 5,50 € ja vuositilaus 60 €.",
     "eyebrow": "Hinnoittelu",
-    "h1": "Siivoojan varaaminen 0 € asiakkaalle",
-    "intro": "Rekisteröityminen ja siivoojan varaaminen Hae Siivooja -sovelluksessa ovat asiakkaalle maksuttomia. Siivooja tai siivousyritys määrittää varsinaisen siivouspalvelun hinnan.",
+    "h1": "HaeSiivoojan hinnasto – selkeät maksut",
+    "intro": "Rekisteröityminen HaeSiivoojaan on maksutonta. Asiakkaan palvelumaksu on 12,50 € varausta tehdessä. Siivoojille on 5,50 €:n kuukausitilaus ja 60 €:n vuositilaus. Siivoustyön hinnasta sovitaan erikseen.",
     "sections": [
       {
-        "heading": "Asiakkaan varausmaksu: 0 €",
-        "text": "Asiakas ei maksa alustalle varausmaksua rekisteröitymisen jälkeen. Tämä ei tarkoita ilmaista siivoustyötä."
+        "heading": "Rekisteröityminen 0 €",
+        "text": "Sekä siivousta etsivä asiakas että siivousalan ammattilainen voivat luoda käyttäjätilin ilman rekisteröitymismaksua."
       },
       {
-        "heading": "Siivouksen hinta",
-        "text": "Työn hinta määräytyy siivouskohteen koon, työmäärän, sijainnin, keston ja palveluntarjoajan mukaan.",
-        "bullets": [
-          "Tarkista loppuhinta veroineen",
-          "Sovi lisätöistä ja matkakuluista",
-          "Vahvista peruutus- ja maksuehdot"
-        ]
+        "heading": "Asiakkaan palvelumaksu 12,50 € / varaus",
+        "text": "Asiakas maksaa 12,50 € palvelumaksun varauksen yhteydessä. Lisäksi asiakas maksaa siivoustyöstä ammattilaisen kanssa sovitun hinnan. Rekisteröitymisen maksuttomuutta ei pidä sekoittaa varausmaksuun."
       },
       {
-        "heading": "Ammattilaisen mahdolliset maksut",
-        "text": "Siivoojan käyttöä koskevat ehdot ja mahdolliset palvelumaksut selviävät ammattilaisehdoista; älä sekoita niitä asiakkaiden maksuttomaan varaukseen."
+        "heading": "Siivoojan kuukausitilaus 5,50 €",
+        "text": "Ammattilaisille tarkoitettu kuukausitilaus maksaa 5,50 € kuukaudessa. Se on erillinen asiakkaan varausmaksusta ja siivoustyön korvauksesta."
+      },
+      {
+        "heading": "Siivoojan vuositilaus 60 €",
+        "text": "Siivoojien vuositilaus maksaa 60 € vuodessa. Tarkista voimassa olevat maksu-, uusiutumis- ja peruutusehdot sovelluksesta."
+      },
+      {
+        "heading": "Siivoustyön hinta ja mahdolliset lisäkulut",
+        "text": "Siivoustyön hinta määräytyy työn keston, sisällön, kohteen ja tekijän mukaan. Tarkista työn kokonaishinta, mahdollinen arvonlisävero ja muut sovitut kulut ennen tilausta."
       }
     ],
     "faqs": [
       {
-        "q": "Onko siivouksen tilaaminen ilmaista?",
-        "a": "Varaaminen sovelluksessa on rekisteröityneelle asiakkaalle maksutonta. Siivoustyöstä maksetaan erikseen sovittu hinta."
+        "q": "Onko rekisteröityminen maksutonta?",
+        "a": "Kyllä, sekä asiakkaalle että siivoojalle."
+      },
+      {
+        "q": "Paljonko asiakas maksaa varatessaan?",
+        "a": "Asiakkaan palvelumaksu on 12,50 € varauksen yhteydessä. Siivoustyön hinta lisätään erikseen."
+      },
+      {
+        "q": "Mitä siivoojan tilaukset maksavat?",
+        "a": "Kuukausitilaus maksaa 5,50 € ja vuositilaus 60 €."
       }
     ]
   },
@@ -306,26 +321,51 @@
   },
   {
     "slug": "siivoojaksi",
-    "title": "Löydä siivousasiakkaita – Hae Siivooja ammattilaisille",
-    "description": "Hae Siivooja auttaa siivousalan ammattilaisia ja siivoustöitä etsiviä löytämään asiakkaita Suomessa.",
-    "eyebrow": "Ammattilaisille",
-    "h1": "Siivooja, löydä uusia asiakkaita",
-    "intro": "Hae Siivooja on kahdensuuntainen markkinapaikka: asiakkaat etsivät siivoojaa ja siivoojat etsivät siivoustarpeessa olevia asiakkaita.",
+    "title": "Siivoojat haussa Suomessa – löydä asiakkaita | HaeSiivooja",
+    "description": "Etsimme siivoojia ympäri Suomen HaeSiivoojaan! Ilmainen rekisteröityminen, kuukausitilaus 5,50 €, vuositilaus 60 €. Löydä siivousasiakkaita.",
+    "eyebrow": "Etsimme siivoojia",
+    "h1": "Etsimme siivoojia ympäri Suomen – liity mukaan!",
+    "intro": "HaeSiivooja etsii siivousalan ammattilaisia ja siivoustyöstä kiinnostuneita palveluntarjoajia kaikkialta Suomesta. Rekisteröidy maksutta, esittele siivouspalvelusi ja löydä mahdollisia asiakkaita läheltä toiminta-aluettasi.",
     "sections": [
       {
-        "heading": "Luo ammattilaisprofiili",
-        "text": "Kuvaa tarjoamasi siivoustyöt, palvelualue ja osaaminen. Näin lähellä olevat asiakkaat voivat löytää sinut."
+        "heading": "Etsimme siivousalan ammattilaisia",
+        "text": "Tarjoatko kotisiivousta, muuttosiivousta, ikkunanpesua tai muita siivoustöitä? HaeSiivooja auttaa asiakkaita löytämään ammattilaisia juuri siellä, missä siivousta tarvitaan. Luo profiili ja kuvaa osaamisesi sekä toiminta-alueesi."
       },
       {
-        "heading": "Löydä siivoustöitä",
-        "text": "Asiakkaat voivat etsiä tekijää kotisiivoukseen, muuttosiivoukseen ja muihin töihin. Työtilausten määrä riippuu alueen kysynnästä."
+        "heading": "Rekisteröidy maksutta",
+        "text": "Siivoojan rekisteröityminen HaeSiivoojaan on maksutonta. Ammattilaiskäyttöön on erilliset kuukausi- ja vuositilausvaihtoehdot."
       },
       {
-        "heading": "Sovi hinta ja työehdot",
-        "text": "Siivooja vastaa palvelun hinnasta ja toteutuksesta. Tutustu sovelluksen ammattilaisehtoihin ennen käyttöä."
+        "heading": "Kuukausitilaus 5,50 € tai vuositilaus 60 €",
+        "text": "Siivoojien rekisteröityminen on maksutonta. Ammattilaisille on 5,50 €/kk maksava kuukausitilaus ja 60 €/vuosi maksava vuositilaus. Sovelluksessa esitellään tilauksen ehdot. Valitse käyttöösi sopiva tilausjakso ja tarkista laskutus- sekä uusiutumisehdot sovelluksesta."
+      },
+      {
+        "heading": "Löydä asiakkaita omalta alueeltasi",
+        "text": "Asiakkaat etsivät siivousapua sijainnin ja työn tarpeen perusteella. HaeSiivooja tarjoaa mahdollisuuden tuoda palvelusi esille. Toteutuneiden tilausten määrää ei voida luvata."
+      },
+      {
+        "heading": "Sovi siivoustyön hinta itse",
+        "text": "Siivoustyöstä sovitaan suoraan asiakkaan kanssa palveluntarjoajan ehtojen ja soveltuvan lain mukaisesti. Asiakkaan 12,50 € palvelumaksu on eri asia kuin ammattilaisen tilaus."
       }
     ],
-    "faqs": []
+    "faqs": [
+      {
+        "q": "Etsittekö siivoojia eri puolilta Suomea?",
+        "a": "Kyllä, HaeSiivooja on tarkoitettu Suomen markkinoille. Näkyvyys ja asiakkaat riippuvat toiminta-alueestasi."
+      },
+      {
+        "q": "Onko rekisteröityminen maksutonta?",
+        "a": "Kyllä. Rekisteröityminen maksaa 0 €. Ammattilaisen kuukausi- ja vuositilaukset ovat erillisiä."
+      },
+      {
+        "q": "Paljonko siivoojan tilaus maksaa?",
+        "a": "5,50 € kuukaudessa tai 60 € vuodessa."
+      },
+      {
+        "q": "Onko asiakkaita taattu?",
+        "a": "Ei. Kysyntä riippuu sijainnista, palveluista ja markkinatilanteesta."
+      }
+    ]
   },
   {
     "slug": "tietoa-meista",
@@ -349,7 +389,7 @@
       },
       {
         "heading": "Asiakkaille ja siivoojille",
-        "text": "Asiakas voi hakea siivoojaa työn sijainnin mukaan ja tehdä varauksen ilman alustan varausmaksua rekisteröitymisen jälkeen. Siivousalan ammattilainen voi esitellä osaamisensa ja tavoittaa mahdollisia asiakkaita. Varsinaisesta siivoustyöstä maksetaan erikseen palveluntarjoajan kanssa sovitulla hinnalla."
+        "text": "Asiakas voi hakea siivoojaa työn sijainnin mukaan ja tehdä varauksen 12,50 € palvelumaksulla varauksen yhteydessä (rekisteröityminen on maksutonta). Siivousalan ammattilainen voi esitellä osaamisensa ja tavoittaa mahdollisia asiakkaita. Varsinaisesta siivoustyöstä maksetaan erikseen palveluntarjoajan kanssa sovitulla hinnalla."
       },
       {
         "heading": "Matka jatkuu avoimessa testauksessa",
@@ -400,7 +440,7 @@
       },
       {
         "heading": "Kun olet valmis varaamaan",
-        "text": "Lataa HaeSiivooja-Android-sovellus Google Playsta. Etsi siivoojaa sijaintisi tai siivouskohteen perusteella. Rekisteröitymisen jälkeen varaus ei maksa asiakkaalle, mutta sovitusta siivoustyöstä maksetaan erikseen."
+        "text": "Lataa HaeSiivooja-Android-sovellus Google Playsta. Etsi siivoojaa sijaintisi tai siivouskohteen perusteella. Rekisteröityminen on maksutonta, mutta asiakas maksaa varausta tehdessään 12,50 € palvelumaksun. Siivoustyö maksetaan erikseen."
       }
     ],
     "faqs": []
@@ -482,7 +522,7 @@
       },
       {
         "heading": "5. Maksut",
-        "text": "Rekisteröityneelle asiakkaalle siivoojan varaaminen on maksutonta. Siivoustyön hinta ja maksutapa sovitaan palveluntarjoajan kanssa. Mahdolliset sovelluksen maksutoiminnot ja ammattilaisen maksut määräytyvät erikseen näytettyjen ehtojen mukaan."
+        "text": "Rekisteröityminen on maksutonta asiakkaille ja siivoojille. Asiakkaalta veloitetaan 12,50 € palvelumaksu varausta tehdessä. Siivoustyön hinnasta sovitaan erikseen palveluntarjoajan kanssa. Siivoojan kuukausitilaus maksaa 5,50 € ja vuositilaus 60 €. Tarkemmat maksutavat, tilauksen uusiutumisehdot ja peruutusehdot esitetään sovelluksessa."
       },
       {
         "heading": "6. Luotettavuus",
@@ -529,22 +569,26 @@
   {
     "slug": "app-guide",
     "title": "Sovelluksen opas – Hae Siivooja",
-    "description": "Hae Siivooja -sovelluksen opas: asiakas etsii ja varaa siivoojan maksutta; siivooja etsii asiakkaita.",
+    "description": "HaeSiivooja-sovelluksen opas: ilmainen rekisteröityminen, 12,50 € palvelumaksu asiakkaan varauksesta, siivoojan tilaukset 5,50 €/kk ja 60 €/vuosi.",
     "eyebrow": "Hae Siivooja -sovellus",
     "h1": "Sovelluksen opas",
     "intro": "Hae Siivooja yhdistää siivousapua etsivät asiakkaat ja siivousalan ammattilaiset.",
     "sections": [
       {
-        "heading": "Asiakas",
-        "text": "Rekisteröidy, etsi siivoojaa siivouskohteen sijainnin perusteella ja varaa sovelluksessa maksutta. Tarkista työn hinta ja ehdot ennen varauksen vahvistamista."
+        "heading": "Asiakas: rekisteröidy maksutta",
+        "text": "Lataa sovellus Google Playsta ja luo asiakastili ilman rekisteröitymismaksua."
       },
       {
-        "heading": "Siivooja",
-        "text": "Luo profiili, esittele palvelualueesi ja siivousosaamisesi sekä tutustu asiakkaiden tarpeisiin."
+        "heading": "Asiakas: etsi ja varaa siivooja",
+        "text": "Etsi ammattilainen siivouskohteen sijainnin perusteella. Asiakkaan palvelumaksu on 12,50 € varausta tehdessä. Siivoustyö maksetaan erikseen."
+      },
+      {
+        "heading": "Siivooja: liity mukaan",
+        "text": "Etsimme siivoojia eri puolilta Suomea. Rekisteröidy maksutta, esittele palvelusi ja valitse kuukausitilaus 5,50 € tai vuositilaus 60 €."
       },
       {
         "heading": "AI-siivoushaku",
-        "text": "Voit etsiä siivouspalveluja myös Hae Siivoojan AI-hakutoiminnon kautta."
+        "text": "Verkossa toimiva AI-siivoushaku on erillinen lisätoiminto. Android-sovellus on varsinainen markkinapaikka, joka on avoimessa testauksessa."
       }
     ],
     "faqs": []
@@ -552,26 +596,30 @@
   {
     "slug": "maksut",
     "title": "Maksut ja hinnat – Hae Siivooja",
-    "description": "Varausmaksu 0 € rekisteröityneille asiakkaille. Tiedot siivoustyön hinnasta ja maksutavoista.",
+    "description": "HaeSiivoojan maksut: rekisteröityminen maksutonta, asiakkaan palvelumaksu 12,50 € varausta tehdessä, siivoojan tilaus 5,50 €/kk tai 60 €/vuosi.",
     "eyebrow": "Hae Siivooja -sovellus",
     "h1": "Maksut ja hinnat",
-    "intro": "Hae Siivooja ei veloita rekisteröityneeltä asiakkaalta varausmaksua.",
+    "intro": "Rekisteröityminen on maksutonta. Varausta tehdessään asiakas maksaa 12,50 € palvelumaksun. Ammattilaisen tilausvaihtoehdot ovat 5,50 € kuukaudessa ja 60 € vuodessa.",
     "sections": [
       {
-        "heading": "Asiakkaan varausmaksu",
-        "text": "0 € rekisteröitymisen jälkeen."
+        "heading": "Rekisteröityminen on maksutonta",
+        "text": "Asiakkaan ja siivoojan käyttäjätilin rekisteröityminen on maksutonta."
+      },
+      {
+        "heading": "Asiakkaan palvelumaksu 12,50 € varausta tehdessä",
+        "text": "Rekisteröityminen on maksutonta. Asiakas maksaa 12,50 € palvelumaksun varausta tehdessään. Varsinaisen siivoustyön hinnasta sovitaan ammattilaisen kanssa."
       },
       {
         "heading": "Siivoustyön hinta",
-        "text": "Asiakas ja siivouspalvelun tarjoaja sopivat työn hinnan, laajuuden ja maksuehdot. Maksuton varaus ei tarkoita ilmaista siivousta."
+        "text": "Siivoustyöstä maksetaan ammattilaiselle erikseen sovitun hinnan ja sopimusehtojen mukaisesti."
       },
       {
-        "heading": "Maksutavat",
-        "text": "Mahdolliset käytössä olevat sovelluksen maksutavat tai palveluntarjoajan hyväksymät maksutavat tarkistetaan ennen tilausta."
+        "heading": "Siivoojan kuukausi- ja vuositilaus",
+        "text": "Siivoojien rekisteröityminen on maksutonta. Ammattilaisille on 5,50 €/kk maksava kuukausitilaus ja 60 €/vuosi maksava vuositilaus. Sovelluksessa esitellään tilauksen ehdot."
       },
       {
-        "heading": "Ammattilaisten ehdot",
-        "text": "Mahdolliset ammattilaisen sovellusmaksut löytyvät kulloinkin voimassa olevista ammattilaisehdoista."
+        "heading": "Maksutavat ja ehdot",
+        "text": "Maksun suorittaminen sekä ammattilaisten tilausehdot näkyvät sovelluksessa. Tarkista ajantasaiset ehdot ennen ostoa tai varauksen vahvistamista."
       }
     ],
     "faqs": []
@@ -585,20 +633,24 @@
     "intro": "Hae Siivooja auttaa siivousalan ammattilaisia löytämään asiakkaita Suomessa.",
     "sections": [
       {
-        "heading": "Profiilin tiedot",
-        "text": "Siivooja vastaa antamiensa osaamis-, palvelualue- ja yhteystietojen oikeellisuudesta."
+        "heading": "Rekisteröityminen on maksutonta",
+        "text": "Siivoojan käyttäjätilin voi rekisteröidä ilman rekisteröitymismaksua. Ammattilainen vastaa profiilinsa tietojen oikeellisuudesta."
       },
       {
-        "heading": "Asiakaskontaktit",
-        "text": "Alusta auttaa asiakkaita ja ammattilaisia löytämään toisensa, mutta ei takaa työtilauksia."
+        "heading": "Siivoojan kuukausi- ja vuositilaus",
+        "text": "Siivoojien rekisteröityminen on maksutonta. Ammattilaisille on 5,50 €/kk maksava kuukausitilaus ja 60 €/vuosi maksava vuositilaus. Sovelluksessa esitellään tilauksen ehdot."
       },
       {
-        "heading": "Hinta ja vastuu",
-        "text": "Siivooja vastaa sovitun siivoustyön hinnasta, laadusta ja sitä koskevien velvollisuuksien noudattamisesta."
+        "heading": "Palvelualue ja asiakashaku",
+        "text": "Siivooja voi kuvailla toiminta-alueensa ja palvelunsa sekä löytää potentiaalisia asiakkaita. Alusta ei takaa asiakasmääriä eikä työtilauksia."
       },
       {
-        "heading": "Mahdolliset palvelumaksut",
-        "text": "Ammattilaisen ajantasaiset maksut ja muut ehdot tulee tarkistaa sovelluksen ammattilaisehdoista."
+        "heading": "Siivoustyön hinta ja vastuu",
+        "text": "Siivooja vastaa sopimansa työn hinnoittelusta, toteuttamisesta, laadusta ja lain edellyttämistä velvoitteista."
+      },
+      {
+        "heading": "Asiakkaan palvelumaksu",
+        "text": "Asiakkaalle rekisteröityminen on maksutonta, mutta asiakas maksaa 12,50 € palvelumaksun varausta tehdessään. Maksu on erillinen siivoojan tilaushinnasta ja siivoustyöstä."
       }
     ],
     "faqs": []
