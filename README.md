@@ -1,56 +1,39 @@
-# HaeSiivooja website — bilingual SEO-first Astro
+# Hae Siivooja — Cleaning Marketplace Website
 
-> **Ubuntu production server update (2026-11-01):** The actual VPS uses **Apache2**, not Nginx. Both `haesiivooja.fi` and `haesiivooja.com` share `/var/www/html`, and duplicate HTTP vhosts exist for `.fi`. Follow [docs/DEPLOY_APACHE.md](docs/DEPLOY_APACHE.md) for this server; do **not** run the Nginx or `/var/www/html` symlink cutover scripts. Inspect the Apache vhosts before changing live routing.
+Official Finnish and English marketing website for the **Hae Siivooja** application.
 
+**One marketplace, two audiences**
+- **Customers:** find cleaning professionals near the location of the job, compare providers and book in the app. Registration and cleaner booking are **free for customers**. The cleaning service itself is paid separately, at the price agreed with the provider.
+- **Cleaning professionals:** present cleaning services, define service areas and find potential customers.
 
-**Status: staging foundation, not yet the live WordPress replacement.** Contains 17 Finnish and 17 corresponding English routes (including the two homepages), with human-readable English slugs, fully translated service and guide copy, hreflang alternate links, Finnish/English navigation, independent self-canonicals, translated SEO titles/descriptions and structured data. Sitemap lists both sets of URLs. Original WordPress media/theme not yet imported; do not describe the result as pixel-perfect.
+Hae Siivooja is a Finnish digital marketplace, not a company providing all cleaning jobs itself. Site copy describes the app as built by Android developer **Oleg Lihvoinen** and UX/UI designer **Viktoriya Lihvoinen**, who also designed the website.
 
-## Requirements
+## Technology
+- Astro, static pre-rendered HTML, no runtime database.
+- Separate Finnish routes and English routes under `/en/`, with fully English slugs.
+- Per-page SEO titles and descriptions, canonical tags, reciprocal hreflang, JSON-LD and XML sitemap.
+- Responsive customer/cleaner landing pages and internal service guides.
+- App information pages: `/terms-of-service/`, `/privacy/`, `/accessibility-statement/`, `/app-guide/`, `/maksut/`, `/cleaner/`, `/tilin-poisto/`, plus English equivalents.
 
-- Node.js >=22.22 and npm.
-- WordPress at `/var/www/html` as the migration source, accessible on Ubuntu through WP-CLI using its existing `wp-config.php` credentials. Do not share database credentials.
-- Nginx hostname `haesiivooja.fi`, separate from the existing `app.haesiivooja.fi` and `cascadary.com` configurations.
+**Google Play privacy policy:** `https://haesiivooja.fi/privacy/`. The no-slash URL `/privacy` should redirect to this page through Apache's standard DirectorySlash behavior.
 
-## Local build and checks
+## Development
+
+Requires Node.js >= 22.22.0.
 
 ```bash
 npm install
-npm run check:content
-npm run build
-npm run check:seo
+npm run check
 npm run predeploy
+npm run dev
 ```
 
-`npm run predeploy` **deliberately fails until** legal pages have been exported from WordPress to `src/data/legacy-pages.json`. This prevents publishing a new site that removes the legal pages. `npm run check` runs content, build and technical SEO checks. Build on the VPS if dependencies cannot be downloaded in your workstation. Add the generated `package-lock.json` to Git once available.
+## Deployment
+See [docs/DEPLOY.md](docs/DEPLOY.md) for static Apache deployment.
 
-## Language routes and SEO
-
-| Finnish | English |
-|---|---|
-| `/` | `/en/` |
-| `/etsi-siivooja/` | `/en/find-a-cleaner/` |
-| `/siivouspalvelut/` | `/en/cleaning-services/` |
-| `/kotisiivous/` | `/en/home-cleaning/` |
-| `/muuttosiivous/` | `/en/move-out-cleaning/` |
-| `/perussiivous/` | `/en/deep-cleaning/` |
-| `/ikkunanpesu/` | `/en/window-cleaning/` |
-| `/toimistosiivous/` | `/en/office-cleaning/` |
-| `/siivouksen-hinta/` | `/en/cleaning-prices/` |
-| `/miten-se-toimii/` | `/en/how-it-works/` |
-| `/siivoojaksi/` | `/en/for-cleaners/` |
-| `/tietoa-meista/` | `/en/about-us/` |
-| `/yhteystiedot/` | `/en/contact/` |
-| `/oppaat/` | `/en/guides/` |
-| `/oppaat/muuttosiivouksen-tarkistuslista/` | `/en/guides/move-out-cleaning-checklist/` |
-| `/oppaat/kotisiivouksen-hinta/` | `/en/guides/home-cleaning-prices/` |
-| `/oppaat/kotitalousvahennys-siivous/` | `/en/guides/household-tax-deduction-cleaning/` |
-
-**Hreflang alternates are written in the HTML head, not the sitemap XML.** This is a supported Google approach. Astro's sitemap integration automatically indexes both sets of routes, including translated URL slugs. Because Finnish and English slugs are different, generic sitemap-i18n prefix substitution would be incorrect. Finnish is the default and `x-default` points to Finnish; no automatic geolocation redirection.
-
-**Legacy WordPress terms, privacy and accessibility pages** must be imported from the actual source. These are not translated into new English legal pages until reviewed English legal content is available. The footer links to these published original URLs once imported; no misleading English legal translations are generated.
-
-## Deployment and WordPress removal
-
-Follow **[docs/DEPLOY_UBUNTU.md](docs/DEPLOY_UBUNTU.md)**. It includes a database-and-files backup, WP-CLI content export, loopback-only staging check, Nginx vhost cutover and rollback-safe retirement of `/var/www/html`. The deployment helper only creates a release by default; activation must be explicit. Do not stop shared MySQL, PHP-FPM or Nginx services.
-
-See [docs/SEO_PLAN.md](docs/SEO_PLAN.md) for Search Console and growth planning and [docs/URL_MIGRATION.md](docs/URL_MIGRATION.md) for redirect decisions. This code alone cannot guarantee Google indexing or rankings. Current public legal text, media assets, content accuracy, and forms still require migration and acceptance checks.
+## Content accuracy checklist
+- Confirm the legal identity of the data controller against the actual Google Play developer listing.
+- Verify processing of location, account data, app analytics/SDKs, payment data and any international transfers; update policy to match the deployed app and Play Console Data safety declaration.
+- Ensure account deletion works in the app or on the web and meets Google Play requirements.
+- Verify fees for professionals in the current app conditions. Never present free **customer booking** as free **cleaning work**.
+- Confirm that service claims, availability and app features are accurate.
