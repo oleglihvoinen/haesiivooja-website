@@ -10,10 +10,8 @@ const breadcrumbs=[{title:page.h1||page.title,href:canonicalPath}];
 const schema=page.faqs?.length?[{'@type':'FAQPage',mainEntity:page.faqs.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))}]:[];
 ---
 <Base lang={lang} title={page.title} description={page.description||page.title} canonicalPath={canonicalPath} breadcrumbs={breadcrumbs} schema={schema}>
-<>
   <section class="page-intro"><div class="container"><div class="crumbs"><a href={en?'/en/':'/'}>{t.home}</a> / {page.h1}</div><span class="eyebrow">{page.eyebrow}</span><h1>{page.h1}</h1><p class="lead">{page.intro}</p><div class="cta"><a class="button" href={site.searchUrl}>{t.searchAction}</a><a class="button-secondary" href={en?'/en/cleaning-services/':'/siivouspalvelut/'}>{t.services}</a></div></div></section>
   <section class="section"><div class="container split"><div class="prose">{page.sections.map(section=><section style="margin-bottom:46px"><h2>{section.heading}</h2><p>{section.text}</p>{section.bullets?.length>0&&<ul class="list-clean">{section.bullets.map(item=><li>{item}</li>)}</ul>}</section>)}</div><aside class="card"><h3>{t.remember}</h3><p>{t.rememberText}</p><a href={en?'/en/cleaning-prices/':'/siivouksen-hinta/'}>{t.pricingTips}</a></aside></div></section>
   {page.faqs?.length>0&&<section class="section soft"><div class="container prose"><span class="eyebrow">{t.faqEyebrow}</span><h2>{t.faqTitle}</h2><div class="faq">{page.faqs.map(f=><details><summary>{f.q}</summary><p>{f.a}</p></details>)}</div></div></section>}
   <section class="section"><div class="container"><div class="cta-panel"><h2>{t.ctaTitle}</h2><p>{t.ctaText}</p><a class="button-secondary" href={site.searchUrl}>{t.cta}</a></div></div></section>
-</>
 </Base>
