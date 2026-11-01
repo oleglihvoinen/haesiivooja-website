@@ -282,22 +282,30 @@
   {
     "slug": "tietoa-meista",
     "title": "Meidän tarinamme – Hae Siivooja siivousalan markkinapaikka",
-    "description": "Tutustu Hae Siivoojan syntyyn ja kahden kehittäjän tiimiin: Oleg Lihvoinen ja Viktoriya Lihvoinen.",
+    "description": "HaeSiivoojan tarina: suomalainen siivousalan markkinapaikka, jonka kehittivät Oleg Lihvoinen ja Viktoriya Lihvoinen.",
     "eyebrow": "Meistä",
     "h1": "Meidän tarinamme: siivoojat ja asiakkaat yhteen",
     "intro": "Hae Siivooja syntyi yksinkertaisesta ideasta: siivousavun löytämisen pitäisi olla helppoa, ja ammattilaisten pitäisi voida löytää uusia asiakkaita läheltään.",
     "sections": [
       {
-        "heading": "Yksi alusta, kaksi tarvetta",
-        "text": "Asiakas etsii luotettavaa siivoojaa siivouskohteen lähellä. Ammattilainen etsii asiakkaita. Hae Siivooja yhdistää nämä tarpeet digitaaliseksi, kestäväksi ja läpinäkyväksi markkinapaikaksi."
+        "heading": "Kaikki alkoi yksinkertaisesta ideasta",
+        "text": "Suomessa moni ihminen halusi löytää luotettavan siivoojan läheltään helpommin. Samaan aikaan siivousalan ammattilaiset etsivät uusia asiakkaita ja työmahdollisuuksia. Halusimme yhdistää nämä kaksi tarvetta helppokäyttöisellä digitaalisella palvelulla."
       },
       {
-        "heading": "Suunniteltu Suomeen",
-        "text": "Tavoitteemme on luoda mahdollisuuksia siivousalan ammattilaisille ja helpottaa asiakkaiden arkea eri puolilla Suomea."
+        "heading": "Läpinäkyvä ja kestävä suomalainen markkinapaikka",
+        "text": "Pienestä ideasta kasvoi HaeSiivooja, digitaalinen markkinapaikka, jossa asiakkaat voivat löytää paikallista siivousapua ja ammattilaiset voivat esitellä palveluitaan. Tavoitteemme on rakentaa luottamusta, mahdollisuuksia ja yhteisöllisyyttä sekä tehdä valinnoista selkeämpiä."
       },
       {
         "heading": "Kahden ammattilaisen toteuttama",
-        "text": "Oleg Lihvoinen on Hae Siivooja -Android-sovelluksen kehittäjä. Viktoriya Lihvoinen suunnitteli UX/UI-kokemuksen, visuaalisen ilmeen ja haesiivooja.fi-verkkosivuston."
+        "text": "HaeSiivooja-sovelluksen kehittivät Oleg Lihvoinen ja Viktoriya Lihvoinen. Oleg vastasi Android-sovelluksen teknisestä toteutuksesta. Viktoriya suunnitteli sovelluksen käyttökokemuksen, käyttöliittymän, visuaalisen ilmeen sekä virallisen haesiivooja.fi-verkkosivuston."
+      },
+      {
+        "heading": "Asiakkaille ja siivoojille",
+        "text": "Asiakas voi hakea siivoojaa työn sijainnin mukaan ja tehdä varauksen ilman alustan varausmaksua rekisteröitymisen jälkeen. Siivousalan ammattilainen voi esitellä osaamisensa ja tavoittaa mahdollisia asiakkaita. Varsinaisesta siivoustyöstä maksetaan erikseen palveluntarjoajan kanssa sovitulla hinnalla."
+      },
+      {
+        "heading": "Matka jatkuu avoimessa testauksessa",
+        "text": "HaeSiivooja on parhaillaan avoimessa testauksessa Google Playssa. Kehitämme sovellusta käyttäjien palautteen perusteella, jotta siivousavun löytäminen ja siivousalan asiakkuuksien luominen olisi entistä helpompaa ja läpinäkyvämpää eri puolilla Suomea."
       }
     ],
     "faqs": []
