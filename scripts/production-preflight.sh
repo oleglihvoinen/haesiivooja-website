@@ -40,6 +40,49 @@ for(const slug of ['privacy','terms-of-service','accessibility-statement']){
 }
 const css=fs.readFileSync('src/styles/global.css','utf8');
 if(!css.includes('.card a.button'))throw Error('Card button contrast regression');
+// Guard against reverting to the old, incorrect free-booking business model.
+const checkPrices = [
+ ['Finnish homepage',homeFi,['12,50','5,50','60','maksutonta']],
+ ['English homepage',homeEn,['€12.50','€5.50','€60','free']],
+ ['Finnish pricing',html('dist/siivouksen-hinta/index.html'),['12,50','5,50','60']],
+ ['English pricing',html('dist/en/cleaning-prices/index.html'),['€12.50','€5.50','€60']],
+ ['Finnish cleaners',html('dist/siivoojaksi/index.html'),['5,50','60','maksutonta']],
+ ['English cleaners',html('dist/en/for-cleaners/index.html'),['€5.50','€60','free']],
+ ['Finnish app payments',html('dist/maksut/index.html'),['12,50','5,50','60']],
+ ['English app payments',html('dist/en/payments/index.html'),['€12.50','€5.50','€60']],
+ ['Finnish terms',html('dist/terms-of-service/index.html'),['12,50','5,50','60']],
+ ['English terms',html('dist/en/terms-of-service/index.html'),['€12.50','€5.50','€60']],
+];
+for(const [label,content,phrases] of checkPrices){
+ for(const value of phrases)if(!content.includes(value))throw Error(label+': missing confirmed price/registration term '+value);
+}
+const bad=[
+ /booking is free for registered customers/i,
+ /free customer booking/i,
+ /book(?:ing)? without (?:a )?(?:platform )?booking fee/i,
+ /asiakkaan varaus on maksuton/i,
+ /rekisteröityneen asiakkaan varaus on maksuton/i,
+ /varaa maksutta/i,
+ /asiakkaan varausmaksu(?::|\\s)\\s*0\\s*€/i
+];
+const copySources=[
+ ['Home.astro',fs.readFileSync('src/components/Home.astro','utf8')],
+ ['DetailPage.astro',fs.readFileSync('src/components/DetailPage.astro','utf8')],
+ ['GuidePage.astro',fs.readFileSync('src/components/GuidePage.astro','utf8')],
+ ['pages.fi',JSON.stringify(fi)],
+ ['pages.en',JSON.stringify(en)],
+ ['marketing.ts',fs.readFileSync('src/data/marketing.ts','utf8')]
+];
+for(const [label,content] of copySources){
+ for(const pattern of bad)if(pattern.test(content))throw Error(label+': stale free-booking claim: '+pattern);
+}
+for(const path of ['dist/robots.txt','dist/sitemap-index.xml']){
+ if(!fs.existsSync(path))throw Error('Missing search engine discovery file: '+path);
+}
+if(!html('dist/robots.txt').includes('https://haesiivooja.fi/sitemap-index.xml'))throw Error('robots.txt has no canonical sitemap reference');
+if(!homeFi.includes('Etsimme siivoojia')||!homeEn.includes('cleaners'))throw Error('Cleaner recruitment messaging missing from homepage');
+console.log('Confirmed pricing, free signup, cleaner recruiting and SEO sitemap regression checks passed.');
+
 console.log('Marketplace: Google Play CTAs, cleaner plans, substantive bilingual pages, FAQ and button contrast checks OK.');
 console.log('Privacy and bilingual app information pages: OK. Verify actual data processing before release.');
 JS
