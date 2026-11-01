@@ -5,14 +5,14 @@ fi:[
 ['Perussiivous','/perussiivous/','✧','Perusteellinen siivous silloin kun tavallinen ylläpito ei riitä.'],
 ['Ikkunanpesu','/ikkunanpesu/','▣','Vertaile ikkunoiden lukumäärän, turvallisuuden ja työn laajuuden perusteella.'],
 ['Toimistosiivous','/toimistosiivous/','▦','Työtilojen siivous säännöllisesti tai tarpeen mukaan.'],
-['Siivouksen hinnat','/siivouksen-hinta/','€','Asiakkaan varaus on 0 €; siivoustyön hinnasta sovitaan erikseen.']
+['Siivouksen hinnat','/siivouksen-hinta/','€','Rekisteröityminen on maksutonta. Asiakkaan varausmaksu 12,50 € ja siivoustyön hinta erikseen.']
 ],en:[
 ['Home cleaning','/en/home-cleaning/','⌂','Regular or one-off home cleaning: define the work and compare professionals.'],
 ['Move-out cleaning','/en/move-out-cleaning/','↗','Plan the tasks and timing before handing back the keys.'],
 ['Deep cleaning','/en/deep-cleaning/','✧','A thorough clean beyond ordinary day-to-day upkeep.'],
 ['Window cleaning','/en/window-cleaning/','▣','Compare scope, access, safety and the number of windows.'],
 ['Office cleaning','/en/office-cleaning/','▦','Find professionals for ongoing or one-off workplace cleaning.'],
-['Cleaning prices','/en/cleaning-prices/','€','Customer booking costs €0; the provider prices the cleaning work.']
+['Cleaning prices','/en/cleaning-prices/','€','Registration is free; the customer pays a €12.50 booking service fee plus the cleaner’s price.']
 ]};
 export const guides={
 fi:[
@@ -27,16 +27,16 @@ fi:[
 export const faqs={
 fi:[
 ['Mistä lataan sovelluksen?','HaeSiivooja-Android-sovellus löytyy Google Playsta ja on avoimessa testauksessa.'],
-['Onko siivoojan varaaminen ilmaista?','Rekisteröityneelle asiakkaalle varaus on maksuton. Siivoojan työstä maksetaan erikseen sovitun hinnan mukaan.'],
+['Mitä HaeSiivooja maksaa asiakkaalle?','Rekisteröityminen on maksutonta. Varauksen yhteydessä veloitetaan 12,50 € palvelumaksu. Siivoustyöstä maksetaan lisäksi siivoojan kanssa sovittu hinta.'],
 ['Miten löydän siivoojan läheltä?','Anna sovelluksessa siivouskohteen sijainti; tarjonta riippuu alueen ammattilaisista.'],
 ['Voiko siivooja löytää asiakkaita?','Kyllä. Ammattilaiset voivat esitellä palvelunsa ja toiminta-alueensa löytääkseen asiakkaita.'],
-['Onko siivoojille tilausvaihtoehtoja?','Kyllä, kuukausi- ja vuositilaus. Ajantasainen eurohinta ja uusiutumisen ehdot tarkistetaan sovelluksesta.'],
+['Paljonko siivoojan tilaus maksaa?','Rekisteröityminen on maksutonta. Siivoojille on 5,50 € kuukaudessa maksava tilaus tai 60 € vuodessa maksava tilaus.'],
 ['Onko AI-haku sama kuin mobiilisovellus?','Ei. AI-siivoushaku on erillinen verkkotoiminto, ei varsinainen Android-markkinapaikka.']
 ],en:[
 ['Where can I download the app?','HaeSiivooja for Android is available on Google Play in open testing.'],
-['Does it cost anything to book?','Customer registration and booking are free. The cleaning job itself is paid separately.'],
+['What does booking cost for customers?','Registration is free. A €12.50 service fee is charged when making a booking, plus the price of the cleaning job agreed with the provider.'],
 ['How do I find cleaners near me?','Search using the cleaning location; availability varies by provider coverage.'],
 ['Can cleaners find new clients?','Yes. Professionals can present their services and service area to potential customers.'],
-['Can cleaners choose monthly or yearly subscriptions?','Yes. Current prices and renewal terms should be checked in the app before subscribing.'],
+['How much do cleaner subscriptions cost?','Registration is free. Cleaner subscriptions are €5.50 per month or €60 per year. Check the subscription conditions in the app.'],
 ['Is AI search the main marketplace?','No. AI cleaning search is a separate web feature; the core marketplace is the Android app.']
 ]};

@@ -63,3 +63,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible {outline:3px solid 
  .compact-cta .button{width:100%;white-space:normal;text-align:center}
  .nav-download{white-space:normal}
 }
+
+/* Signup conversion and confirmed pricing */
+.recruit-strip{background:#e7f4ee;border-top:1px solid #d2e9df;border-bottom:1px solid #d2e9df;padding:35px 0}
+.recruit-inner{display:flex;align-items:center;justify-content:space-between;gap:35px}
+.recruit-inner h2{font-size:clamp(1.55rem,2.6vw,2.5rem);margin:7px 0 10px}
+.recruit-inner p{margin:0;max-width:70ch}
+.recruit-inner .button{flex:none}
+.subscription-price{font-size:2.3rem;font-weight:850;color:#0c594f!important;letter-spacing:-.045em;margin:14px 0!important}
+.play-inline{display:inline-flex;align-items:center;gap:6px;font-weight:750;color:#0e655b;text-underline-offset:3px}
+@media(max-width:850px){.recruit-inner{align-items:flex-start;flex-direction:column;gap:22px}}
+@media(max-width:520px){.recruit-inner .button{width:100%;white-space:normal}}

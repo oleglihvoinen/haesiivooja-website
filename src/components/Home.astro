@@ -6,47 +6,47 @@ const {lang='fi'}=Astro.props;
 const en=lang==='en';
 const t=en?{
  label:'Finnish cleaning marketplace · Android open testing',
- title:'Find a cleaner. Find customers.',
- intro:'Hae Siivooja connects people who need cleaning with professionals who want to find customers in Finland. Find nearby cleaners and arrange bookings in the Android mobile app.',
+ title:'Cleaning professionals wanted in Finland. Find customers — or find a cleaner.',
+ intro:'We are looking for cleaners across Finland. Join HaeSiivooja, reach people who need cleaning and find new customers. Customers can discover local cleaners and make bookings through the Android app. Registration is free for everyone.',
  download:'Get HaeSiivooja on Google Play',open:'Open testing now',
  cust:'I need a cleaner',clean:'I am a cleaner',
- custText:'Find a cleaning professional close to the work location. Customer registration and booking are free.',
- cleanText:'Create a professional profile, describe your service area and make it easier for customers to find you.',
- custSteps:['Install the Android app and register for free','Search by the location of the cleaning job','Check providers, services and prices','Book in the app with no customer booking fee'],
- cleanSteps:['Install the Android app','Set up your professional cleaning profile','Describe services and working area','Find prospective clients and agree the job'],
+ custText:'Register for free and find a cleaning professional near the work location. A €12.50 customer service fee applies when making a booking; the cleaning itself is paid separately.',
+ cleanText:'We are actively looking for cleaning professionals throughout Finland! Register for free, showcase your services and get discovered by customers. Monthly and yearly subscriptions are available.',
+ custSteps:['Install the Android app and register for free','Search by the location of the cleaning job','Check providers, services and prices','Book in the app with a €12.50 service fee'],
+ cleanSteps:['Install the Android app and register for free','Set up your professional cleaning profile','Describe services and working area','Find prospective clients and agree the job'],
  ai:'Explore AI cleaning search · optional web feature',two:'One app, two kinds of users',intro2:'A real marketplace for customers and cleaners — not a cleaning company supplying its own employees.',
  serviceTitle:'Cleaning services customers look for',serviceIntro:'Learn about different cleaning jobs, then open the app to find providers near you.',
  explore:'Learn more',guides:'Practical guides before booking',guideLink:'Read guide',
- plans:'Cleaner subscriptions',plansIntro:'Choose a subscription period for your professional profile. See the current amount and billing terms inside the app.',
+ plans:'Cleaner subscriptions',plansIntro:'Register for free as a cleaner and choose a €5.50/month or €60/year professional subscription. Subscription and renewal conditions are shown in the app.',
  monthly:'Monthly subscription',monthDesc:'Monthly billing option for cleaners looking for customers through HaeSiivooja.',
  annual:'Yearly subscription',yearDesc:'Annual billing option for professionals who plan to use HaeSiivooja throughout the year.',
- price:'Check the current price in the app',planLink:'Cleaner subscription details',
- noPrice:'Subscription amounts are shown in the app before purchase. Free customer booking does not mean free cleaning work.',
+ price:'Professional subscription',planLink:'Cleaner subscription details',
+ noPrice:'Registration is free. Cleaner subscriptions cost €5.50 monthly or €60 yearly. Customers pay a €12.50 service fee when booking; the cleaning work costs extra.',
  story:'Our story',storyBody:'HaeSiivooja was created by Oleg Lihvoinen, Android developer, and Viktoriya Lihvoinen, UX/UI designer responsible for the app experience, visual identity and official website.',
- storyLink:'Read our history',faq:'Frequently asked questions',free:'€0 customer booking fee after registration',
- note:'Booking through the app is free for registered customers. The cleaning job is paid separately to the chosen cleaning professional.',
+ storyLink:'Read our history',faq:'Frequently asked questions',free:'Free registration · €12.50 booking service fee',
+ note:'Creating an account is free. Customers pay a €12.50 service fee when making a booking, plus the cleaning price agreed with the professional.',
  cta:'Try the HaeSiivooja app',ctaDesc:'The Android app is available through Google Play open testing.',allGuides:'All cleaning guides'
 }:{
  label:'Suomalainen siivousalan markkinapaikka · Androidin avoin testaus',
- title:'Löydä siivooja. Löydä asiakkaita.',
- intro:'Hae Siivooja yhdistää siivousta tarvitsevat asiakkaat ja uusia asiakkaita etsivät siivousalan ammattilaiset Suomessa. Etsi lähellä toimivia siivoojia ja tee varaus Android-mobiilisovelluksessa.',
+ title:'Etsimme siivoojia ympäri Suomen! Löydä asiakkaita – tai löydä siivooja.',
+ intro:'Etsimme siivousalan ammattilaisia eri puolilta Suomea HaeSiivoojaan! Luo profiili, esittele palvelusi ja löydä asiakkaita. Siivoojaa tarvitseva asiakas voi löytää paikallisen ammattilaisen Android-sovelluksella. Rekisteröityminen on kaikille maksutonta.',
  download:'Avaa HaeSiivooja Google Playssa',open:'Avoimessa testauksessa',
  cust:'Tarvitsen siivoojan',clean:'Olen siivooja',
- custText:'Löydä sopiva siivooja siivouskohteen läheltä. Rekisteröityminen ja varaaminen ovat asiakkaalle maksuttomia.',
- cleanText:'Luo ammattilaisprofiili, esittele palvelualueesi ja tee osaamisesi löydettäväksi.',
- custSteps:['Asenna Android-sovellus ja rekisteröidy maksutta','Etsi siivoojaa siivouskohteen sijainnilla','Vertaa palveluja ja sovittavaa hintaa','Varaa sovelluksessa ilman varausmaksua'],
- cleanSteps:['Asenna Android-sovellus','Luo siivousalan ammattilaisprofiili','Kuvaile palvelusi ja toiminta-alueesi','Löydä asiakkaita ja sovi töistä'],
+ custText:'Rekisteröidy maksutta ja löydä siivooja siivouskohteen läheltä. Asiakkaalta veloitetaan varauksen yhteydessä 12,50 € palvelumaksu; siivoustyö maksetaan erikseen.',
+ cleanText:'Etsimme siivoojia kaikkialta Suomesta! Rekisteröidy maksutta, esittele palvelualueesi ja löydä uusia asiakkaita. Valittavana on kuukausi- ja vuositilaus.',
+ custSteps:['Asenna Android-sovellus ja rekisteröidy maksutta','Etsi siivoojaa siivouskohteen sijainnilla','Vertaa palveluja ja sovittavaa hintaa','Maksa varauksen yhteydessä 12,50 € palvelumaksu'],
+ cleanSteps:['Asenna Android-sovellus ja rekisteröidy maksutta','Luo siivousalan ammattilaisprofiili','Kuvaile palvelusi ja toiminta-alueesi','Löydä asiakkaita ja sovi töistä'],
  ai:'Tutustu AI-siivoushakuun · erillinen verkkotoiminto',two:'Yksi sovellus, kaksi käyttäjäryhmää',intro2:'Siivoojien ja asiakkaiden markkinapaikka – ei omaa siivoushenkilökuntaa tarjoava yritys.',
  serviceTitle:'Mihin siivoustarpeisiin etsit tekijää?',serviceIntro:'Tutustu eri siivoustöihin ja etsi sitten lähellä toimivia ammattilaisia sovelluksessa.',
  explore:'Tutustu palveluun',guides:'Oppaat ennen siivouksen tilaamista',guideLink:'Lue opas',
- plans:'Siivoojan tilausvaihtoehdot',plansIntro:'Valitse ammattilaisprofiilillesi sopiva tilausjakso. Ajantasainen hinta ja laskutusehdot näkyvät sovelluksessa.',
+ plans:'Siivoojan tilausvaihtoehdot',plansIntro:'Rekisteröidy siivoojaksi maksutta ja valitse 5,50 €/kk tai 60 €/vuosi. Tilauksen ehdot näet sovelluksesta.',
  monthly:'Kuukausitilaus',monthDesc:'Kuukausittainen vaihtoehto siivoojalle, joka etsii asiakkaita HaeSiivoojan kautta.',
  annual:'Vuositilaus',yearDesc:'Vuosittainen vaihtoehto ammattilaiselle, joka aikoo käyttää markkinapaikkaa pitkäjänteisesti.',
- price:'Tarkista ajantasainen hinta sovelluksesta',planLink:'Siivoojan tilaukset ja ehdot',
- noPrice:'Tilausten euromäärät näkyvät sovelluksessa ennen ostoa. Asiakkaan maksuton varaus ei tarkoita maksutonta siivoustyötä.',
+ price:'Siivoojan tilaus',planLink:'Siivoojan tilaukset ja ehdot',
+ noPrice:'Rekisteröityminen on maksutonta. Siivoojalle kuukausitilaus 5,50 € tai vuositilaus 60 €. Asiakas maksaa varauksen yhteydessä 12,50 € palvelumaksun ja siivoustyöstä erikseen.',
  story:'Meidän tarinamme',storyBody:'HaeSiivoojan toteuttivat Android-kehittäjä Oleg Lihvoinen ja UX/UI-suunnittelija Viktoriya Lihvoinen, joka suunnitteli myös sovelluksen visuaalisen ilmeen ja verkkosivuston.',
- storyLink:'Lue tarinamme',faq:'Usein kysytyt kysymykset',free:'0 € asiakkaan varausmaksu rekisteröitymisen jälkeen',
- note:'Rekisteröityneen asiakkaan varaus on maksuton. Varsinainen siivoustyö on maksullinen ja hinnasta sovitaan siivoojan kanssa.',
+ storyLink:'Lue tarinamme',faq:'Usein kysytyt kysymykset',free:'Maksuton rekisteröityminen · palvelumaksu 12,50 €/varaus',
+ note:'Rekisteröityminen on maksutonta. Asiakas maksaa varausta tehdessään 12,50 € palvelumaksun. Siivoustyöstä maksetaan lisäksi sovittu hinta siivoojalle.',
  cta:'Kokeile HaeSiivooja-sovellusta',ctaDesc:'Android-sovellus on saatavilla Google Playn avoimen testauksen kautta.',allGuides:'Kaikki siivousoppaat'
 };
 const custUrl=en?'/en/find-a-cleaner/':'/etsi-siivooja/';
@@ -56,10 +56,10 @@ const storyUrl=en?'/en/about-us/':'/tietoa-meista/';
 const priceUrl=en?'/en/cleaning-prices/':'/siivouksen-hinta/';
 const appSchema={'@type':'SoftwareApplication',name:'HaeSiivooja',applicationCategory:'LifestyleApplication',operatingSystem:'Android',url:site.playUrl,description:t.intro};
 ---
-<Base lang={lang} canonicalPath={en?'/en/':'/'} description={en?'HaeSiivooja Finland: find nearby cleaning professionals or find cleaning customers. Get the Android app in Google Play open testing. Free customer booking.':'HaeSiivooja: löydä siivooja läheltäsi tai uusia siivousasiakkaita Suomessa. Android-sovellus avoimessa testauksessa Google Playssa. Asiakkaan varaus 0 €.'} schema={[appSchema]}>
+<Base lang={lang} canonicalPath={en?'/en/':'/'} description={en?'Cleaners wanted across Finland! HaeSiivooja helps cleaning professionals find customers and people find nearby cleaners. Free registration; €12.50 customer booking service fee; €5.50/month or €60/year for cleaners.':'Etsimme siivoojia ympäri Suomen! HaeSiivooja yhdistää siivoojat ja asiakkaat. Maksuton rekisteröityminen, 12,50 € asiakasvarauksen palvelumaksu, siivoojalle 5,50 €/kk tai 60 €/vuosi.'} schema={[appSchema]}>
 <section class="hero"><div class="container hero-grid">
   <div><span class="eyebrow">{t.label}</span><h1>{t.title}</h1><p class="lead">{t.intro}</p>
-    <div class="cta"><a class="button" href={site.playUrl} target="_blank" rel="noopener noreferrer">▶ {t.download}</a><a class="button-secondary" href="#how-it-works">{en?'How it works':'Näin se toimii'} ↓</a></div>
+    <div class="cta"><a class="button" href={proUrl}>{en?'Join as a cleaner':'Liity siivoojaksi'} →</a><a class="button-secondary" href={custUrl}>{en?'Find a cleaner':'Etsi siivooja'} →</a></div><p><a class="play-inline" href={site.playUrl} target="_blank" rel="noopener noreferrer">▶ {t.download} · {t.open} →</a></p>
     <div class="tags"><span class="tag">✓ {t.free}</span><span class="tag">✓ {t.open}</span></div>
     <p class="market-disclaimer"><a href={site.searchUrl}>{t.ai} →</a></p>
   </div>
@@ -68,9 +68,10 @@ const appSchema={'@type':'SoftwareApplication',name:'HaeSiivooja',applicationCat
     <div class="market-persona"><span class="market-avatar">⌂</span><div><strong>{t.cust}</strong><small>{en?'Find cleaning help nearby':'Löydä siivousapua läheltä'}</small></div></div>
     <div class="market-connection">⇅</div>
     <div class="market-persona"><span class="market-avatar professional">✦</span><div><strong>{t.clean}</strong><small>{en?'Find local customers':'Löydä paikallisia asiakkaita'}</small></div></div>
-    <div class="market-price">{t.free}</div>
+    <div class="market-price">{en?'Free registration · customer booking €12.50':'Maksuton rekisteröityminen · asiakkaan palvelumaksu 12,50 €'}</div>
   </div>
 </div></section>
+<section class="recruit-strip"><div class="container recruit-inner"><div><span class="eyebrow">{en?'We are recruiting cleaner profiles':'Etsimme siivousalan ammattilaisia'}</span><h2>{en?'Are you a cleaner in Finland? We want you on HaeSiivooja.':'Oletko siivooja Suomessa? Tule mukaan HaeSiivoojaan!'}</h2><p>{en?'Register for free, reach customers near your service area and choose your professional subscription: €5.50/month or €60/year.':'Rekisteröidy maksutta, tavoita asiakkaita toiminta-alueellasi ja valitse 5,50 €/kk tai 60 €/vuosi maksava ammattilaisen tilaus.'}</p></div><a class="button" href={proUrl}>{en?'Join as a cleaner':'Liity siivoojaksi'} →</a></div></section>
 <section class="section" id="how-it-works"><div class="container">
   <span class="eyebrow">{en?'How the marketplace works':'Näin markkinapaikka toimii'}</span><h2>{t.two}</h2><p class="lead">{t.intro2}</p>
   <div class="grid2">
@@ -83,8 +84,8 @@ const appSchema={'@type':'SoftwareApplication',name:'HaeSiivooja',applicationCat
 </div></section>
 <section class="section"><div class="container"><h2>{t.plans}</h2><p class="lead">{t.plansIntro}</p>
   <div class="grid2">
-    <article class="card price-card"><span class="eyebrow">{en?'Flexible':'Joustava'}</span><h3>{t.monthly}</h3><p>{t.monthDesc}</p><p class="price-unverified">{t.price}</p><a class="button-secondary" href={proUrl}>{t.planLink} →</a></article>
-    <article class="card price-card"><span class="eyebrow">{en?'Longer term':'Pitkäaikainen'}</span><h3>{t.annual}</h3><p>{t.yearDesc}</p><p class="price-unverified">{t.price}</p><a class="button-secondary" href={proUrl}>{t.planLink} →</a></article>
+    <article class="card price-card"><span class="eyebrow">{en?'Flexible':'Joustava'}</span><h3>{t.monthly}</h3><p>{t.monthDesc}</p><p class="subscription-price">{en?'€5.50 / month':'5,50 € / kk'}</p><a class="button-secondary" href={proUrl}>{t.planLink} →</a></article>
+    <article class="card price-card"><span class="eyebrow">{en?'Longer term':'Pitkäaikainen'}</span><h3>{t.annual}</h3><p>{t.yearDesc}</p><p class="subscription-price">{en?'€60 / year':'60 € / vuosi'}</p><a class="button-secondary" href={proUrl}>{t.planLink} →</a></article>
   </div><p class="market-disclaimer">{t.noPrice}</p>
 </div></section>
 <section class="section soft"><div class="container"><h2>{t.guides}</h2>
