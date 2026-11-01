@@ -39,7 +39,7 @@ cd /opt/haesiivooja-website
 node -v
 ```
 
-Requires Node 22.12+; if not present, use a shell-user-local Node install such as nvm, not a forced global Node replacement that could affect other apps.
+Requires Node 22.22+; if not present, use a shell-user-local Node install such as nvm, not a forced global Node replacement that could affect other apps.
 
 ```bash
 sudo wp --allow-root --path=/var/www/html post list --post_type=page --post_status=publish --fields=ID,post_name,post_title
