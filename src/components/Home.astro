@@ -64,6 +64,15 @@ const appSchema={'@type':'SoftwareApplication',name:'HaeSiivooja',applicationCat
     <div class="tags"><span class="tag">✓ {t.free}</span><span class="tag">✓ {t.open}</span></div>
     
   </div>
+  {appScreenshots.length > 0 ? (
+    <figure class="real-app-hero">
+      <div class="real-phone">
+        <img src={appScreenshots[0].src} alt={en?appScreenshots[0].altEn:appScreenshots[0].altFi} width="420" height="840" loading="eager" decoding="async" />
+      </div>
+      {appScreenshots.length > 1 && <div class="real-phone secondary-phone"><img src={appScreenshots[1].src} alt={en?appScreenshots[1].altEn:appScreenshots[1].altFi} width="420" height="840" loading="eager" decoding="async" /></div>}
+      <figcaption>{en?'Real HaeSiivooja app screenshots':'Aitoja HaeSiivooja-sovelluksen kuvakaappauksia'}</figcaption>
+    </figure>
+  ) : (
   <div class="marketplace-visual" role="img" aria-label={en?'Illustration of customers and cleaners connecting in one app':'Havainnekuva asiakkaiden ja siivoojien kohtaamisesta'}>
     <div class="market-top">HaeSiivooja <span class="market-version">Android</span></div>
     <div class="market-persona"><span class="market-avatar">⌂</span><div><strong>{t.cust}</strong><small>{en?'Find cleaning help nearby':'Löydä siivousapua läheltä'}</small></div></div>
@@ -71,6 +80,7 @@ const appSchema={'@type':'SoftwareApplication',name:'HaeSiivooja',applicationCat
     <div class="market-persona"><span class="market-avatar professional">✦</span><div><strong>{t.clean}</strong><small>{en?'Find local customers':'Löydä paikallisia asiakkaita'}</small></div></div>
     <div class="market-price">{en?'Free registration · customer booking €12.50':'Maksuton rekisteröityminen · asiakkaan palvelumaksu 12,50 €'}</div>
   </div>
+  )}
 </div></section>
 <section class="recruit-strip"><div class="container recruit-inner"><div><span class="eyebrow">{en?'We are recruiting cleaner profiles':'Etsimme siivousalan ammattilaisia'}</span><h2>{en?'Are you a cleaner in Finland? We want you on HaeSiivooja.':'Oletko siivooja Suomessa? Tule mukaan HaeSiivoojaan!'}</h2><p>{en?'Register for free, reach customers near your service area and choose your professional subscription: €5.50/month or €60/year.':'Rekisteröidy maksutta, tavoita asiakkaita toiminta-alueellasi ja valitse 5,50 €/kk tai 60 €/vuosi maksava ammattilaisen tilaus.'}</p></div><a class="button" href={proUrl}>{en?'Join as a cleaner':'Liity siivoojaksi'} →</a></div></section>
 <section class="section" id="how-it-works"><div class="container">
@@ -80,6 +90,17 @@ const appSchema={'@type':'SoftwareApplication',name:'HaeSiivooja',applicationCat
     <article class="card persona-card"><div class="symbol">✦</div><h3>{t.clean}</h3><p>{t.cleanText}</p><ol>{t.cleanSteps.map(s=><li>{s}</li>)}</ol><a class="button-secondary" href={proUrl}>{t.clean} →</a></article>
   </div><p class="market-disclaimer">{t.note} <a href={priceUrl}>{en?'Pricing explained':'Lue hinnoittelusta'} →</a></p>
 </div></section>
+{appScreenshots.length > 0 && <section class="section screenshot-showcase"><div class="container">
+  <span class="eyebrow">{en?'Inside the app':'Sovelluksen näkymät'}</span>
+  <h2>{en?'See HaeSiivooja in action':'Tutustu HaeSiivooja-sovellukseen'}</h2>
+  <p class="lead">{en?'Original HaeSiivooja mobile app screenshots restored from the previous website.':'Alkuperäiseltä HaeSiivooja-verkkosivustolta palautetut sovelluksen kuvakaappaukset.'}</p>
+  <div class="app-gallery">
+    {appScreenshots.slice(0,8).map((item,index)=><figure class="app-gallery-item">
+      <img src={item.src} alt={en?item.altEn:item.altFi} loading="lazy" decoding="async" width="360" height="720" />
+      <figcaption>{en?`App screen ${index+1}`:`Sovellusnäkymä ${index+1}`}</figcaption>
+    </figure>)}
+  </div>
+</div></section>}
 <section class="section soft"><div class="container"><h2>{t.serviceTitle}</h2><p class="lead">{t.serviceIntro}</p>
   <div class="grid3">{services[lang].map(([name,href,symbol,desc])=><article class="card service-card"><div class="symbol">{symbol}</div><h3>{name}</h3><p>{desc}</p><a href={href}>{t.explore} →</a></article>)}</div>
 </div></section>
