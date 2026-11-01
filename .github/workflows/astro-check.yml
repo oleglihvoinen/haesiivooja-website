@@ -1,0 +1,25 @@
+name: Astro website checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Check all pages and SEO
+        run: npm run check
+      - name: Verify privacy and app pages
+        run: npm run predeploy
+      - name: Verify privacy page paths
+        run: |
+          test -s dist/privacy/index.html
+          test -s dist/en/privacy/index.html
+          test -s dist/terms-of-service/index.html
+          test -s dist/en/terms-of-service/index.html
