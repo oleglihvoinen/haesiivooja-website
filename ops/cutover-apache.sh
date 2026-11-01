@@ -62,7 +62,7 @@ directory=pathlib.Path(sys.argv[1]); target=sys.argv[2]
 for name in ['haesiivooja.fi.conf','haesiivooja.fi-le-ssl.conf']:
     file=directory/name; source=file.read_text(encoding='utf-8')
     updated,n=re.subn(r'(?m)^[ \t]*DocumentRoot[ \t]+/var/www/html[ \t]*$', '    DocumentRoot '+target,source)
-    block=('    <Directory '+target+'>\n'
+    block=('    <Directory /var/www/haesiivooja-astro>\n'
            '        Options +FollowSymLinks -Indexes\n'
            '        AllowOverride None\n'
            '        Require all granted\n'
