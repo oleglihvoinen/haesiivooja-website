@@ -93,3 +93,168 @@ a:focus-visible, button:focus-visible, summary:focus-visible {outline:3px solid 
 .brand-mascot{display:block;flex-shrink:0;width:54px;height:54px;object-fit:contain;overflow:visible;border-radius:0;box-shadow:none}
 .footer-brand{display:flex;align-items:center;gap:10px}
 .brand-footer-mascot{display:block;width:52px;height:52px;object-fit:contain;overflow:visible;border-radius:0;box-shadow:none}
+
+
+/* MASCOT PALETTE V2
+   Match the blue water-drop character without sacrificing accessibility:
+   ocean-teal for text and CTAs; bright cyan, sunny yellow and a restrained
+   blush accent for supporting surfaces. Original mascot artwork stays intact. */
+:root {
+  --mascot-ink: #103f49;
+  --mascot-deep: #0b3945;
+  --mascot-action: #096c7b;
+  --mascot-action-hover: #064f5c;
+  --mascot-cyan: #12cbe7;
+  --mascot-sky: #e7f9fd;
+  --mascot-wash: #f2fbfb;
+  --mascot-sun: #ffce55;
+  --mascot-blush: #fff2f8;
+  --mascot-border: #c8e9eb;
+  --mascot-muted: #47636a;
+  color: var(--mascot-ink);
+}
+a:hover, .card a, .lang-switch a, .play-inline {color: var(--mascot-action)}
+header {
+  background: rgba(255,255,255,.97);
+  border-bottom: 1px solid var(--mascot-border);
+  box-shadow: 0 2px 16px rgba(13,81,93,.045);
+}
+header .inner {min-height:102px;gap:18px}
+.logo {
+  gap:12px;
+  font-size:1.52rem;
+  font-weight:820;
+  letter-spacing:-.03em;
+  color:var(--mascot-ink);
+  white-space:nowrap;
+}
+.brand-mascot {
+  width:76px;
+  height:76px;
+  max-width:none;
+  flex-shrink:0;
+  object-fit:contain;
+  object-position:center;
+  overflow:visible;
+  filter:drop-shadow(0 3px 5px rgba(11,105,143,.12));
+}
+.brand-footer-mascot {
+  width:70px;
+  height:70px;
+  object-fit:contain;
+  overflow:visible;
+}
+.footer-brand {gap:12px}
+h1,h2,h3,.logo {color:var(--mascot-ink)}
+.lead,.card p,.prose p,.muted {color:var(--mascot-muted)}
+.eyebrow {color:#086b7b;display:inline-flex;align-items:center;gap:9px}
+.eyebrow::before {
+  content:"";
+  display:inline-block;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--mascot-sun);
+  box-shadow:0 0 0 3px rgba(18,203,231,.16);
+}
+.hero {
+  background:
+    radial-gradient(ellipse at 84% 9%, rgba(18,203,231,.16), transparent 42%),
+    radial-gradient(ellipse at 5% 96%, rgba(255,206,85,.12), transparent 38%),
+    linear-gradient(115deg,#f4fcf9 0%,#eaf9fc 62%,#fbf8fd 100%);
+}
+.page-intro {
+  background:
+    radial-gradient(ellipse at 94% 10%, rgba(18,203,231,.12), transparent 37%),
+    linear-gradient(112deg,#f4fbf8 0%,#edf9fc 100%);
+}
+.section.soft,.screenshot-showcase {background:var(--mascot-wash)}
+.button, a.button, .card a.button, .nav a.button, .compact-cta a.button {
+  background:var(--mascot-action);
+  color:#fff;
+  box-shadow:0 8px 19px rgba(9,108,123,.18);
+}
+.button:hover, a.button:hover, .card a.button:hover, .nav a.button:hover {
+  color:#fff;
+  background:var(--mascot-action-hover);
+}
+.button-secondary, a.button-secondary, .card a.button-secondary {
+  border-color:#9cd8df;
+  color:var(--mascot-action);
+  background:#fff;
+}
+.button-secondary:hover, a.button-secondary:hover, .card a.button-secondary:hover {
+  color:var(--mascot-action-hover);
+  background:var(--mascot-sky);
+}
+a:focus-visible,button:focus-visible,summary:focus-visible {
+  outline:3px solid #e9a72d;
+  outline-offset:4px;
+}
+.tag {
+  color:#25545e;
+  border-color:#bce8ed;
+  background:rgba(255,255,255,.92);
+}
+.card {
+  border-color:var(--mascot-border);
+  box-shadow:0 9px 26px rgba(14,77,88,.07);
+}
+.card .symbol {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:52px;
+  height:52px;
+  border-radius:16px;
+  margin-bottom:13px;
+  background:var(--mascot-sky);
+  color:#096a80;
+  font-size:1.6rem;
+}
+.card:nth-child(3n + 2) .symbol {background:#fff5d9;color:#796018}
+.card:nth-child(3n + 3) .symbol {background:#f9ebf6;color:#8b4771}
+.recruit-strip {
+  background:linear-gradient(105deg,#e4f9fd 0%,#e6f8f3 70%,#fff9e8 100%);
+  border-top:1px solid #aee4e9;
+  border-bottom:1px solid #aee4e9;
+}
+.recruit-inner {border-left:5px solid var(--mascot-sun);padding-left:24px}
+.price-card {border-top:4px solid var(--mascot-cyan)}
+.price-card:nth-child(2) {border-top-color:var(--mascot-sun)}
+.subscription-price {color:#075d6d!important}
+.real-app-hero {
+  background:radial-gradient(ellipse at 52% 51%,rgba(18,203,231,.14),transparent 69%);
+  border-radius:30px;
+}
+.real-phone {border-color:#115a68;box-shadow:0 25px 53px rgba(8,73,88,.18)}
+.marketplace-visual {border-color:#bfe9ec;box-shadow:0 25px 75px rgba(8,83,99,.11)}
+.market-avatar {background:var(--mascot-sky);color:#096d88}
+.market-avatar.professional {background:#fff2d4;color:#805f18}
+.market-connection {color:var(--mascot-action)}
+.market-price {background:#dcf7f8;color:#075668}
+.app-gallery-item {border-color:var(--mascot-border)}
+.faq details[open] {border-bottom-color:#8fdfe7}
+.faq summary:hover {color:var(--mascot-action)}
+.compact-cta {border-color:#a8dce1;background:linear-gradient(115deg,#fff,#f4fcfd)}
+.notice {border-left-color:var(--mascot-sun);background:#fffaeb}
+.footer {background:var(--mascot-deep);color:#deeff0}
+.footer small {color:#c1d9db}
+.bottom {border-top-color:#35636b}
+.lang-switch a {color:var(--mascot-action)}
+@media(max-width:1050px){
+  .brand-mascot {width:68px;height:68px}
+  header .inner {min-height:90px}
+  .logo {font-size:1.4rem;gap:10px}
+}
+@media(max-width:850px){
+  header .inner {min-height:unset;gap:10px}
+  .brand-mascot {width:65px;height:65px}
+  .brand-footer-mascot {width:66px;height:66px}
+}
+@media(max-width:520px){
+  .brand-mascot {width:60px;height:60px}
+  .brand-footer-mascot {width:62px;height:62px}
+  .logo {font-size:1.35rem}
+  .recruit-inner {padding-left:16px}
+}

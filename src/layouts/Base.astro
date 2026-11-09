@@ -31,7 +31,7 @@ const links=english?{
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="description" content={desc} />
-    <meta name="theme-color" content="#116f66" />
+    <meta name="theme-color" content="#0b3945" />
     <title>{fullTitle}</title>
     <link rel="canonical" href={url} />
     {altFi&&altEn&&<>
@@ -57,7 +57,7 @@ const links=english?{
   <body>
     <a class="skip" href="#content">{t.skip}</a>
     <header><div class="container inner">
-      <a class="logo" href={english?'/en/':'/'} aria-label="HaeSiivooja"><img class="brand-mascot" src="/brand/mascot.png?v=20261101b" width="46" height="46" alt="" decoding="async" /> HaeSiivooja</a>
+      <a class="logo" href={english?'/en/':'/'} aria-label="HaeSiivooja"><img class="brand-mascot" src="/brand/mascot.png?v=20261101b" width="76" height="76" alt="" decoding="async" /> HaeSiivooja</a>
       <nav class="nav" aria-label={t.navLabel}>
         {navigation[english?'en':'fi'].map(item=><a href={item.href}>{item.title}</a>)}
         <a class="button nav-download" href={site.playUrl} target="_blank" rel="noopener noreferrer">{english?'▶ Google Play · Open test':'▶ Google Play · Avoin testaus'}</a>
@@ -71,7 +71,7 @@ const links=english?{
     <main id="content"><slot /></main>
     <footer class="footer"><div class="container">
     <div class="footer-cols">
-      <div><h3 class="footer-brand"><img class="brand-footer-mascot" src="/brand/mascot.png" width="45" height="45" alt="" loading="lazy" decoding="async" />Hae Siivooja</h3><p>{english?'A Finnish digital marketplace: customers find cleaners and cleaners find customers.':'Suomalainen digitaalinen markkinapaikka: asiakkaat löytävät siivoojan ja siivoojat löytävät asiakkaita.'}</p><p><a href={`mailto:${site.email}`}>{site.email}</a></p></div>
+      <div><h3 class="footer-brand"><img class="brand-footer-mascot" src="/brand/mascot.png" width="70" height="70" alt="" loading="lazy" decoding="async" />Hae Siivooja</h3><p>{english?'A Finnish digital marketplace: customers find cleaners and cleaners find customers.':'Suomalainen digitaalinen markkinapaikka: asiakkaat löytävät siivoojan ja siivoojat löytävät asiakkaita.'}</p><p><a href={`mailto:${site.email}`}>{site.email}</a></p></div>
       <div><strong>{english?'Company':'Yritys'}</strong><ul>
         <li><a href={links.about}>{english?'Our history':'Meidän tarinamme'}</a></li>
         <li><a href={links.contact}>{english?'Contact us':'Ota meihin yhteyttä'}</a></li>
